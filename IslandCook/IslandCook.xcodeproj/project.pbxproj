@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A22A84C527B3F780004DCAC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A22A84C427B3F780004DCAC8 /* LaunchScreen.storyboard */; };
+		3904E8DC27B44FF600AF6EE8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904E8DB27B44FF600AF6EE8 /* Color.swift */; };
 		A23D170627B293C200AC4DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23D170527B293C200AC4DA8 /* AppDelegate.swift */; };
 		A23D170827B293C200AC4DA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23D170727B293C200AC4DA8 /* SceneDelegate.swift */; };
 		A23D170A27B293C200AC4DA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23D170927B293C200AC4DA8 /* ViewController.swift */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A22A84C427B3F780004DCAC8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3904E8DB27B44FF600AF6EE8 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A23D170227B293C200AC4DA8 /* IslandCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IslandCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23D170527B293C200AC4DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A23D170727B293C200AC4DA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3904E8DA27B44FDB00AF6EE8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3904E8DB27B44FF600AF6EE8 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A22A84C227B3F74E004DCAC8 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -50,7 +58,7 @@
 		A22A84C327B3F75C004DCAC8 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
-				A22A84C427B3F780004DCAC8 /* LaunchScreen.storyboard */,
+				A23D171027B293C200AC4DA8 /* LaunchScreen.storyboard */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -74,13 +82,13 @@
 		A23D170427B293C200AC4DA8 /* IslandCook */ = {
 			isa = PBXGroup;
 			children = (
+				3904E8DA27B44FDB00AF6EE8 /* Extensions */,
 				A22A84C227B3F74E004DCAC8 /* UseCases */,
 				A23D170527B293C200AC4DA8 /* AppDelegate.swift */,
 				A23D170727B293C200AC4DA8 /* SceneDelegate.swift */,
 				A23D170927B293C200AC4DA8 /* ViewController.swift */,
 				A23D170B27B293C200AC4DA8 /* Main.storyboard */,
 				A23D170E27B293C200AC4DA8 /* Assets.xcassets */,
-				A23D171027B293C200AC4DA8 /* LaunchScreen.storyboard */,
 				A23D171327B293C200AC4DA8 /* Info.plist */,
 			);
 			path = IslandCook;
@@ -144,7 +152,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A23D171227B293C200AC4DA8 /* LaunchScreen.storyboard in Resources */,
-				A22A84C527B3F780004DCAC8 /* LaunchScreen.storyboard in Resources */,
 				A23D170F27B293C200AC4DA8 /* Assets.xcassets in Resources */,
 				A23D170D27B293C200AC4DA8 /* Main.storyboard in Resources */,
 			);
@@ -158,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A23D170A27B293C200AC4DA8 /* ViewController.swift in Sources */,
+				3904E8DC27B44FF600AF6EE8 /* Color.swift in Sources */,
 				A23D170627B293C200AC4DA8 /* AppDelegate.swift in Sources */,
 				A23D170827B293C200AC4DA8 /* SceneDelegate.swift in Sources */,
 			);
