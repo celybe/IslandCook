@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <row>
+    <author>Chinua Achebe</author>
+    <country>Nigeria</country>
+    <imageLink>images/things-fall-apart.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Things_Fall_Apart
+</link>
+    <pages>209</pages>
+    <title>Things Fall Apart</title>
+    <year>1958</year>
+  </row>
+  <row>
+    <author>Hans Christian Andersen</author>
+    <country>Denmark</country>
+    <imageLink>images/fairy-tales.jpg</imageLink>
+    <language>Danish</language>
+    <link>https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.
+</link>
+    <pages>784</pages>
+    <title>Fairy tales</title>
+    <year>1836</year>
+  </row>
+  <row>
+    <author>Dante Alighieri</author>
+    <country>Italy</country>
+    <imageLink>images/the-divine-comedy.jpg</imageLink>
+    <language>Italian</language>
+    <link>https://en.wikipedia.org/wiki/Divine_Comedy
+</link>
+    <pages>928</pages>
+    <title>The Divine Comedy</title>
+    <year>1315</year>
+  </row>
+  <row>
+    <author>Unknown</author>
+    <country>Sumer and Akkadian Empire</country>
+    <imageLink>images/the-epic-of-gilgamesh.jpg</imageLink>
+    <language>Akkadian</language>
+    <link>https://en.wikipedia.org/wiki/Epic_of_Gilgamesh
+</link>
+    <pages>160</pages>
+    <title>The Epic Of Gilgamesh</title>
+    <year>-1700</year>
+  </row>
+  <row>
+    <author>Unknown</author>
+    <country>Achaemenid Empire</country>
+    <imageLink>images/the-book-of-job.jpg</imageLink>
+    <language>Hebrew</language>
+    <link>https://en.wikipedia.org/wiki/Book_of_Job
+</link>
+    <pages>176</pages>
+    <title>The Book Of Job</title>
+    <year>-600</year>
+  </row>
+  <row>
+    <author>Unknown</author>
+    <country>India/Iran/Iraq/Egypt/Tajikistan</country>
+    <imageLink>images/one-thousand-and-one-nights.jpg</imageLink>
+    <language>Arabic</language>
+    <link>https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights
+</link>
+    <pages>288</pages>
+    <title>One Thousand and One Nights</title>
+    <year>1200</year>
+  </row>
+  <row>
+    <author>Unknown</author>
+    <country>Iceland</country>
+    <imageLink>images/njals-saga.jpg</imageLink>
+    <language>Old Norse</language>
+    <link>https://en.wikipedia.org/wiki/Nj%C3%A1ls_saga
+</link>
+    <pages>384</pages>
+    <title>Njál&#x27;s Saga</title>
+    <year>1350</year>
+  </row>
+  <row>
+    <author>Jane Austen</author>
+    <country>United Kingdom</country>
+    <imageLink>images/pride-and-prejudice.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Pride_and_Prejudice
+</link>
+    <pages>226</pages>
+    <title>Pride and Prejudice</title>
+    <year>1813</year>
+  </row>
+  <row>
+    <author>Honoré de Balzac</author>
+    <country>France</country>
+    <imageLink>images/le-pere-goriot.jpg</imageLink>
+    <language>French</language>
+    <link>https://en.wikipedia.org/wiki/Le_P%C3%A8re_Goriot
+</link>
+    <pages>443</pages>
+    <title>Le Père Goriot</title>
+    <year>1835</year>
+  </row>
+  <row>
+    <author>Samuel Beckett</author>
+    <country>Republic of Ireland</country>
+    <imageLink>images/molloy-malone-dies-the-unnamable.jpg</imageLink>
+    <language>French, English</language>
+    <link>https://en.wikipedia.org/wiki/Molloy_(novel)
+</link>
+    <pages>256</pages>
+    <title>Molloy, Malone Dies, The Unnamable, the trilogy</title>
+    <year>1952</year>
+  </row>
+  <row>
+    <author>Giovanni Boccaccio</author>
+    <country>Italy</country>
+    <imageLink>images/the-decameron.jpg</imageLink>
+    <language>Italian</language>
+    <link>https://en.wikipedia.org/wiki/The_Decameron
+</link>
+    <pages>1024</pages>
+    <title>The Decameron</title>
+    <year>1351</year>
+  </row>
+  <row>
+    <author>Jorge Luis Borges</author>
+    <country>Argentina</country>
+    <imageLink>images/ficciones.jpg</imageLink>
+    <language>Spanish</language>
+    <link>https://en.wikipedia.org/wiki/Ficciones
+</link>
+    <pages>224</pages>
+    <title>Ficciones</title>
+    <year>1965</year>
+  </row>
+  <row>
+    <author>Emily Brontë</author>
+    <country>United Kingdom</country>
+    <imageLink>images/wuthering-heights.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Wuthering_Heights
+</link>
+    <pages>342</pages>
+    <title>Wuthering Heights</title>
+    <year>1847</year>
+  </row>
+  <row>
+    <author>Albert Camus</author>
+    <country>Algeria, French Empire</country>
+    <imageLink>images/l-etranger.jpg</imageLink>
+    <language>French</language>
+    <link>https://en.wikipedia.org/wiki/The_Stranger_(novel)
+</link>
+    <pages>185</pages>
+    <title>The Stranger</title>
+    <year>1942</year>
+  </row>
+  <row>
+    <author>Paul Celan</author>
+    <country>Romania, France</country>
+    <imageLink>images/poems-paul-celan.jpg</imageLink>
+    <language>German</language>
+    <link></link>
+    <pages>320</pages>
+    <title>Poems</title>
+    <year>1952</year>
+  </row>
+  <row>
+    <author>Louis-Ferdinand Céline</author>
+    <country>France</country>
+    <imageLink>images/voyage-au-bout-de-la-nuit.jpg</imageLink>
+    <language>French</language>
+    <link>https://en.wikipedia.org/wiki/Journey_to_the_End_of_the_Night
+</link>
+    <pages>505</pages>
+    <title>Journey to the End of the Night</title>
+    <year>1932</year>
+  </row>
+  <row>
+    <author>Miguel de Cervantes</author>
+    <country>Spain</country>
+    <imageLink>images/don-quijote-de-la-mancha.jpg</imageLink>
+    <language>Spanish</language>
+    <link>https://en.wikipedia.org/wiki/Don_Quixote
+</link>
+    <pages>1056</pages>
+    <title>Don Quijote De La Mancha</title>
+    <year>1610</year>
+  </row>
+  <row>
+    <author>Geoffrey Chaucer</author>
+    <country>England</country>
+    <imageLink>images/the-canterbury-tales.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/The_Canterbury_Tales
+</link>
+    <pages>544</pages>
+    <title>The Canterbury Tales</title>
+    <year>1450</year>
+  </row>
+  <row>
+    <author>Anton Chekhov</author>
+    <country>Russia</country>
+    <imageLink>images/stories-of-anton-chekhov.jpg</imageLink>
+    <language>Russian</language>
+    <link>https://en.wikipedia.org/wiki/List_of_short_stories_by_Anton_Chekhov
+</link>
+    <pages>194</pages>
+    <title>Stories</title>
+    <year>1886</year>
+  </row>
+  <row>
+    <author>Joseph Conrad</author>
+    <country>United Kingdom</country>
+    <imageLink>images/nostromo.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Nostromo
+</link>
+    <pages>320</pages>
+    <title>Nostromo</title>
+    <year>1904</year>
+  </row>
+  <row>
+    <author>Charles Dickens</author>
+    <country>United Kingdom</country>
+    <imageLink>images/great-expectations.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Great_Expectations
+</link>
+    <pages>194</pages>
+    <title>Great Expectations</title>
+    <year>1861</year>
+  </row>
+  <row>
+    <author>Denis Diderot</author>
+    <country>France</country>
+    <imageLink>images/jacques-the-fatalist.jpg</imageLink>
+    <language>French</language>
+    <link>https://en.wikipedia.org/wiki/Jacques_the_Fatalist
+</link>
+    <pages>596</pages>
+    <title>Jacques the Fatalist</title>
+    <year>1796</year>
+  </row>
+  <row>
+    <author>Alfred Döblin</author>
+    <country>Germany</country>
+    <imageLink>images/berlin-alexanderplatz.jpg</imageLink>
+    <language>German</language>
+    <link>https://en.wikipedia.org/wiki/Berlin_Alexanderplatz
+</link>
+    <pages>600</pages>
+    <title>Berlin Alexanderplatz</title>
+    <year>1929</year>
+  </row>
+  <row>
+    <author>Fyodor Dostoevsky</author>
+    <country>Russia</country>
+    <imageLink>images/crime-and-punishment.jpg</imageLink>
+    <language>Russian</language>
+    <link>https://en.wikipedia.org/wiki/Crime_and_Punishment
+</link>
+    <pages>551</pages>
+    <title>Crime and Punishment</title>
+    <year>1866</year>
+  </row>
+  <row>
+    <author>Fyodor Dostoevsky</author>
+    <country>Russia</country>
+    <imageLink>images/the-idiot.jpg</imageLink>
+    <language>Russian</language>
+    <link>https://en.wikipedia.org/wiki/The_Idiot
+</link>
+    <pages>656</pages>
+    <title>The Idiot</title>
+    <year>1869</year>
+  </row>
+  <row>
+    <author>Fyodor Dostoevsky</author>
+    <country>Russia</country>
+    <imageLink>images/the-possessed.jpg</imageLink>
+    <language>Russian</language>
+    <link>https://en.wikipedia.org/wiki/Demons_(Dostoyevsky_novel)
+</link>
+    <pages>768</pages>
+    <title>The Possessed</title>
+    <year>1872</year>
+  </row>
+  <row>
+    <author>Fyodor Dostoevsky</author>
+    <country>Russia</country>
+    <imageLink>images/the-brothers-karamazov.jpg</imageLink>
+    <language>Russian</language>
+    <link>https://en.wikipedia.org/wiki/The_Brothers_Karamazov
+</link>
+    <pages>824</pages>
+    <title>The Brothers Karamazov</title>
+    <year>1880</year>
+  </row>
+  <row>
+    <author>George Eliot</author>
+    <country>United Kingdom</country>
+    <imageLink>images/middlemarch.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Middlemarch
+</link>
+    <pages>800</pages>
+    <title>Middlemarch</title>
+    <year>1871</year>
+  </row>
+  <row>
+    <author>Ralph Ellison</author>
+    <country>United States</country>
+    <imageLink>images/invisible-man.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Invisible_Man
+</link>
+    <pages>581</pages>
+    <title>Invisible Man</title>
+    <year>1952</year>
+  </row>
+  <row>
+    <author>Euripides</author>
+    <country>Greece</country>
+    <imageLink>images/medea.jpg</imageLink>
+    <language>Greek</language>
+    <link>https://en.wikipedia.org/wiki/Medea_(play)
+</link>
+    <pages>104</pages>
+    <title>Medea</title>
+    <year>-431</year>
+  </row>
+  <row>
+    <author>William Faulkner</author>
+    <country>United States</country>
+    <imageLink>images/absalom-absalom.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Absalom,_Absalom!
+</link>
+    <pages>313</pages>
+    <title>Absalom, Absalom!</title>
+    <year>1936</year>
+  </row>
+  <row>
+    <author>William Faulkner</author>
+    <country>United States</country>
+    <imageLink>images/the-sound-and-the-fury.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/The_Sound_and_the_Fury
+</link>
+    <pages>326</pages>
+    <title>The Sound and the Fury</title>
+    <year>1929</year>
+  </row>
+  <row>
+    <author>Gustave Flaubert</author>
+    <country>France</country>
+    <imageLink>images/madame-bovary.jpg</imageLink>
+    <language>French</language>
+    <link>https://en.wikipedia.org/wiki/Madame_Bovary
+</link>
+    <pages>528</pages>
+    <title>Madame Bovary</title>
+    <year>1857</year>
+  </row>
+  <row>
+    <author>Gustave Flaubert</author>
+    <country>France</country>
+    <imageLink>images/l-education-sentimentale.jpg</imageLink>
+    <language>French</language>
+    <link>https://en.wikipedia.org/wiki/Sentimental_Education
+</link>
+    <pages>606</pages>
+    <title>Sentimental Education</title>
+    <year>1869</year>
+  </row>
+  <row>
+    <author>Federico García Lorca</author>
+    <country>Spain</country>
+    <imageLink>images/gypsy-ballads.jpg</imageLink>
+    <language>Spanish</language>
+    <link>https://en.wikipedia.org/wiki/Gypsy_Ballads
+</link>
+    <pages>218</pages>
+    <title>Gypsy Ballads</title>
+    <year>1928</year>
+  </row>
+  <row>
+    <author>Gabriel García Márquez</author>
+    <country>Colombia</country>
+    <imageLink>images/one-hundred-years-of-solitude.jpg</imageLink>
+    <language>Spanish</language>
+    <link>https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude
+</link>
+    <pages>417</pages>
+    <title>One Hundred Years of Solitude</title>
+    <year>1967</year>
+  </row>
+  <row>
+    <author>Gabriel García Márquez</author>
+    <country>Colombia</country>
+    <imageLink>images/love-in-the-time-of-cholera.jpg</imageLink>
+    <language>Spanish</language>
+    <link>https://en.wikipedia.org/wiki/Love_in_the_Time_of_Cholera
+</link>
+    <pages>368</pages>
+    <title>Love in the Time of Cholera</title>
+    <year>1985</year>
+  </row>
+  <row>
+    <author>Johann Wolfgang von Goethe</author>
+    <country>Saxe-Weimar</country>
+    <imageLink>images/faust.jpg</imageLink>
+    <language>German</language>
+    <link>https://en.wikipedia.org/wiki/Goethe%27s_Faust
+</link>
+    <pages>158</pages>
+    <title>Faust</title>
+    <year>1832</year>
+  </row>
+  <row>
+    <author>Nikolai Gogol</author>
+    <country>Russia</country>
+    <imageLink>images/dead-souls.jpg</imageLink>
+    <language>Russian</language>
+    <link>https://en.wikipedia.org/wiki/Dead_Souls
+</link>
+    <pages>432</pages>
+    <title>Dead Souls</title>
+    <year>1842</year>
+  </row>
+  <row>
+    <author>Günter Grass</author>
+    <country>Germany</country>
+    <imageLink>images/the-tin-drum.jpg</imageLink>
+    <language>German</language>
+    <link>https://en.wikipedia.org/wiki/The_Tin_Drum
+</link>
+    <pages>600</pages>
+    <title>The Tin Drum</title>
+    <year>1959</year>
+  </row>
+  <row>
+    <author>João Guimarães Rosa</author>
+    <country>Brazil</country>
+    <imageLink>images/the-devil-to-pay-in-the-backlands.jpg</imageLink>
+    <language>Portuguese</language>
+    <link>https://en.wikipedia.org/wiki/The_Devil_to_Pay_in_the_Backlands
+</link>
+    <pages>494</pages>
+    <title>The Devil to Pay in the Backlands</title>
+    <year>1956</year>
+  </row>
+  <row>
+    <author>Knut Hamsun</author>
+    <country>Norway</country>
+    <imageLink>images/hunger.jpg</imageLink>
+    <language>Norwegian</language>
+    <link>https://en.wikipedia.org/wiki/Hunger_(Hamsun_novel)
+</link>
+    <pages>176</pages>
+    <title>Hunger</title>
+    <year>1890</year>
+  </row>
+  <row>
+    <author>Ernest Hemingway</author>
+    <country>United States</country>
+    <imageLink>images/the-old-man-and-the-sea.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea
+</link>
+    <pages>128</pages>
+    <title>The Old Man and the Sea</title>
+    <year>1952</year>
+  </row>
+  <row>
+    <author>Homer</author>
+    <country>Greece</country>
+    <imageLink>images/the-iliad-of-homer.jpg</imageLink>
+    <language>Greek</language>
+    <link>https://en.wikipedia.org/wiki/Iliad
+</link>
+    <pages>608</pages>
+    <title>Iliad</title>
+    <year>-735</year>
+  </row>
+  <row>
+    <author>Homer</author>
+    <country>Greece</country>
+    <imageLink>images/the-odyssey-of-homer.jpg</imageLink>
+    <language>Greek</language>
+    <link>https://en.wikipedia.org/wiki/Odyssey
+</link>
+    <pages>374</pages>
+    <title>Odyssey</title>
+    <year>-800</year>
+  </row>
+  <row>
+    <author>Henrik Ibsen</author>
+    <country>Norway</country>
+    <imageLink>images/a-Dolls-house.jpg</imageLink>
+    <language>Norwegian</language>
+    <link>https://en.wikipedia.org/wiki/A_Doll%27s_House
+</link>
+    <pages>68</pages>
+    <title>A Doll&#x27;s House</title>
+    <year>1879</year>
+  </row>
+  <row>
+    <author>James Joyce</author>
+    <country>Irish Free State</country>
+    <imageLink>images/ulysses.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Ulysses_(novel)
+</link>
+    <pages>228</pages>
+    <title>Ulysses</title>
+    <year>1922</year>
+  </row>
+  <row>
+    <author>Franz Kafka</author>
+    <country>Czechoslovakia</country>
+    <imageLink>images/stories-of-franz-kafka.jpg</imageLink>
+    <language>German</language>
+    <link>https://en.wikipedia.org/wiki/Franz_Kafka_bibliography#Short_stories
+</link>
+    <pages>488</pages>
+    <title>Stories</title>
+    <year>1924</year>
+  </row>
+  <row>
+    <author>Franz Kafka</author>
+    <country>Czechoslovakia</country>
+    <imageLink>images/the-trial.jpg</imageLink>
+    <language>German</language>
+    <link>https://en.wikipedia.org/wiki/The_Trial
+</link>
+    <pages>160</pages>
+    <title>The Trial</title>
+    <year>1925</year>
+  </row>
+  <row>
+    <author>Franz Kafka</author>
+    <country>Czechoslovakia</country>
+    <imageLink>images/the-castle.jpg</imageLink>
+    <language>German</language>
+    <link>https://en.wikipedia.org/wiki/The_Castle_(novel)
+</link>
+    <pages>352</pages>
+    <title>The Castle</title>
+    <year>1926</year>
+  </row>
+  <row>
+    <author>Kālidāsa</author>
+    <country>India</country>
+    <imageLink>images/the-recognition-of-shakuntala.jpg</imageLink>
+    <language>Sanskrit</language>
+    <link>https://en.wikipedia.org/wiki/Abhij%C3%B1%C4%81na%C5%9B%C4%81kuntalam
+</link>
+    <pages>147</pages>
+    <title>The recognition of Shakuntala</title>
+    <year>150</year>
+  </row>
+  <row>
+    <author>Yasunari Kawabata</author>
+    <country>Japan</country>
+    <imageLink>images/the-sound-of-the-mountain.jpg</imageLink>
+    <language>Japanese</language>
+    <link>https://en.wikipedia.org/wiki/The_Sound_of_the_Mountain
+</link>
+    <pages>288</pages>
+    <title>The Sound of the Mountain</title>
+    <year>1954</year>
+  </row>
+  <row>
+    <author>Nikos Kazantzakis</author>
+    <country>Greece</country>
+    <imageLink>images/zorba-the-greek.jpg</imageLink>
+    <language>Greek</language>
+    <link>https://en.wikipedia.org/wiki/Zorba_the_Greek
+</link>
+    <pages>368</pages>
+    <title>Zorba the Greek</title>
+    <year>1946</year>
+  </row>
+  <row>
+    <author>D. H. Lawrence</author>
+    <country>United Kingdom</country>
+    <imageLink>images/sons-and-lovers.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Sons_and_Lovers
+</link>
+    <pages>432</pages>
+    <title>Sons and Lovers</title>
+    <year>1913</year>
+  </row>
+  <row>
+    <author>Halldór Laxness</author>
+    <country>Iceland</country>
+    <imageLink>images/independent-people.jpg</imageLink>
+    <language>Icelandic</language>
+    <link>https://en.wikipedia.org/wiki/Independent_People
+</link>
+    <pages>470</pages>
+    <title>Independent People</title>
+    <year>1934</year>
+  </row>
+  <row>
+    <author>Giacomo Leopardi</author>
+    <country>Italy</country>
+    <imageLink>images/poems-giacomo-leopardi.jpg</imageLink>
+    <language>Italian</language>
+    <link></link>
+    <pages>184</pages>
+    <title>Poems</title>
+    <year>1818</year>
+  </row>
+  <row>
+    <author>Doris Lessing</author>
+    <country>United Kingdom</country>
+    <imageLink>images/the-golden-notebook.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/The_Golden_Notebook
+</link>
+    <pages>688</pages>
+    <title>The Golden Notebook</title>
+    <year>1962</year>
+  </row>
+  <row>
+    <author>Astrid Lindgren</author>
+    <country>Sweden</country>
+    <imageLink>images/pippi-longstocking.jpg</imageLink>
+    <language>Swedish</language>
+    <link>https://en.wikipedia.org/wiki/Pippi_Longstocking
+</link>
+    <pages>160</pages>
+    <title>Pippi Longstocking</title>
+    <year>1945</year>
+  </row>
+  <row>
+    <author>Lu Xun</author>
+    <country>China</country>
+    <imageLink>images/diary-of-a-madman.jpg</imageLink>
+    <language>Chinese</language>
+    <link>https://en.wikipedia.org/wiki/A_Madman%27s_Diary
+</link>
+    <pages>389</pages>
+    <title>Diary of a Madman</title>
+    <year>1918</year>
+  </row>
+  <row>
+    <author>Naguib Mahfouz</author>
+    <country>Egypt</country>
+    <imageLink>images/children-of-gebelawi.jpg</imageLink>
+    <language>Arabic</language>
+    <link>https://en.wikipedia.org/wiki/Children_of_Gebelawi
+</link>
+    <pages>355</pages>
+    <title>Children of Gebelawi</title>
+    <year>1959</year>
+  </row>
+  <row>
+    <author>Thomas Mann</author>
+    <country>Germany</country>
+    <imageLink>images/buddenbrooks.jpg</imageLink>
+    <language>German</language>
+    <link>https://en.wikipedia.org/wiki/Buddenbrooks
+</link>
+    <pages>736</pages>
+    <title>Buddenbrooks</title>
+    <year>1901</year>
+  </row>
+  <row>
+    <author>Thomas Mann</author>
+    <country>Germany</country>
+    <imageLink>images/the-magic-mountain.jpg</imageLink>
+    <language>German</language>
+    <link>https://en.wikipedia.org/wiki/The_Magic_Mountain
+</link>
+    <pages>720</pages>
+    <title>The Magic Mountain</title>
+    <year>1924</year>
+  </row>
+  <row>
+    <author>Herman Melville</author>
+    <country>United States</country>
+    <imageLink>images/moby-dick.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Moby-Dick
+</link>
+    <pages>378</pages>
+    <title>Moby Dick</title>
+    <year>1851</year>
+  </row>
+  <row>
+    <author>Michel de Montaigne</author>
+    <country>France</country>
+    <imageLink>images/essais.jpg</imageLink>
+    <language>French</language>
+    <link>https://en.wikipedia.org/wiki/Essays_(Montaigne)
+</link>
+    <pages>404</pages>
+    <title>Essays</title>
+    <year>1595</year>
+  </row>
+  <row>
+    <author>Elsa Morante</author>
+    <country>Italy</country>
+    <imageLink>images/history.jpg</imageLink>
+    <language>Italian</language>
+    <link>https://en.wikipedia.org/wiki/History_(novel)
+</link>
+    <pages>600</pages>
+    <title>History</title>
+    <year>1974</year>
+  </row>
+  <row>
+    <author>Toni Morrison</author>
+    <country>United States</country>
+    <imageLink>images/beloved.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Beloved_(novel)
+</link>
+    <pages>321</pages>
+    <title>Beloved</title>
+    <year>1987</year>
+  </row>
+  <row>
+    <author>Murasaki Shikibu</author>
+    <country>Japan</country>
+    <imageLink>images/the-tale-of-genji.jpg</imageLink>
+    <language>Japanese</language>
+    <link>https://en.wikipedia.org/wiki/The_Tale_of_Genji
+</link>
+    <pages>1360</pages>
+    <title>The Tale of Genji</title>
+    <year>1006</year>
+  </row>
+  <row>
+    <author>Robert Musil</author>
+    <country>Austria</country>
+    <imageLink>images/the-man-without-qualities.jpg</imageLink>
+    <language>German</language>
+    <link>https://en.wikipedia.org/wiki/The_Man_Without_Qualities
+</link>
+    <pages>365</pages>
+    <title>The Man Without Qualities</title>
+    <year>1931</year>
+  </row>
+  <row>
+    <author>Vladimir Nabokov</author>
+    <country>Russia/United States</country>
+    <imageLink>images/lolita.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Lolita
+</link>
+    <pages>317</pages>
+    <title>Lolita</title>
+    <year>1955</year>
+  </row>
+  <row>
+    <author>George Orwell</author>
+    <country>United Kingdom</country>
+    <imageLink>images/nineteen-eighty-four.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Nineteen_Eighty-Four
+</link>
+    <pages>272</pages>
+    <title>Nineteen Eighty-Four</title>
+    <year>1949</year>
+  </row>
+  <row>
+    <author>Ovid</author>
+    <country>Roman Empire</country>
+    <imageLink>images/the-metamorphoses-of-ovid.jpg</imageLink>
+    <language>Classical Latin</language>
+    <link>https://en.wikipedia.org/wiki/Metamorphoses
+</link>
+    <pages>576</pages>
+    <title>Metamorphoses</title>
+    <year>100</year>
+  </row>
+  <row>
+    <author>Fernando Pessoa</author>
+    <country>Portugal</country>
+    <imageLink>images/the-book-of-disquiet.jpg</imageLink>
+    <language>Portuguese</language>
+    <link>https://en.wikipedia.org/wiki/The_Book_of_Disquiet
+</link>
+    <pages>272</pages>
+    <title>The Book of Disquiet</title>
+    <year>1928</year>
+  </row>
+  <row>
+    <author>Edgar Allan Poe</author>
+    <country>United States</country>
+    <imageLink>images/tales-and-poems-of-edgar-allan-poe.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Edgar_Allan_Poe_bibliography#Tales
+</link>
+    <pages>842</pages>
+    <title>Tales</title>
+    <year>1950</year>
+  </row>
+  <row>
+    <author>Marcel Proust</author>
+    <country>France</country>
+    <imageLink>images/a-la-recherche-du-temps-perdu.jpg</imageLink>
+    <language>French</language>
+    <link>https://en.wikipedia.org/wiki/In_Search_of_Lost_Time
+</link>
+    <pages>2408</pages>
+    <title>In Search of Lost Time</title>
+    <year>1920</year>
+  </row>
+  <row>
+    <author>François Rabelais</author>
+    <country>France</country>
+    <imageLink>images/gargantua-and-pantagruel.jpg</imageLink>
+    <language>French</language>
+    <link>https://en.wikipedia.org/wiki/Gargantua_and_Pantagruel
+</link>
+    <pages>623</pages>
+    <title>Gargantua and Pantagruel</title>
+    <year>1533</year>
+  </row>
+  <row>
+    <author>Juan Rulfo</author>
+    <country>Mexico</country>
+    <imageLink>images/pedro-paramo.jpg</imageLink>
+    <language>Spanish</language>
+    <link>https://en.wikipedia.org/wiki/Pedro_P%C3%A1ramo
+</link>
+    <pages>124</pages>
+    <title>Pedro Páramo</title>
+    <year>1955</year>
+  </row>
+  <row>
+    <author>Rumi</author>
+    <country>Sultanate of Rum</country>
+    <imageLink>images/the-masnavi.jpg</imageLink>
+    <language>Persian</language>
+    <link>https://en.wikipedia.org/wiki/Masnavi
+</link>
+    <pages>438</pages>
+    <title>The Masnavi</title>
+    <year>1236</year>
+  </row>
+  <row>
+    <author>Salman Rushdie</author>
+    <country>United Kingdom, India</country>
+    <imageLink>images/midnights-children.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Midnight%27s_Children
+</link>
+    <pages>536</pages>
+    <title>Midnight&#x27;s Children</title>
+    <year>1981</year>
+  </row>
+  <row>
+    <author>Saadi</author>
+    <country>Persia, Persian Empire</country>
+    <imageLink>images/bostan.jpg</imageLink>
+    <language>Persian</language>
+    <link>https://en.wikipedia.org/wiki/Bustan_(book)
+</link>
+    <pages>298</pages>
+    <title>Bostan</title>
+    <year>1257</year>
+  </row>
+  <row>
+    <author>Tayeb Salih</author>
+    <country>Sudan</country>
+    <imageLink>images/season-of-migration-to-the-north.jpg</imageLink>
+    <language>Arabic</language>
+    <link>https://en.wikipedia.org/wiki/Season_of_Migration_to_the_North
+</link>
+    <pages>139</pages>
+    <title>Season of Migration to the North</title>
+    <year>1966</year>
+  </row>
+  <row>
+    <author>José Saramago</author>
+    <country>Portugal</country>
+    <imageLink>images/blindness.jpg</imageLink>
+    <language>Portuguese</language>
+    <link>https://en.wikipedia.org/wiki/Blindness_(novel)
+</link>
+    <pages>352</pages>
+    <title>Blindness</title>
+    <year>1995</year>
+  </row>
+  <row>
+    <author>William Shakespeare</author>
+    <country>England</country>
+    <imageLink>images/hamlet.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Hamlet
+</link>
+    <pages>432</pages>
+    <title>Hamlet</title>
+    <year>1603</year>
+  </row>
+  <row>
+    <author>William Shakespeare</author>
+    <country>England</country>
+    <imageLink>images/king-lear.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/King_Lear
+</link>
+    <pages>384</pages>
+    <title>King Lear</title>
+    <year>1608</year>
+  </row>
+  <row>
+    <author>William Shakespeare</author>
+    <country>England</country>
+    <imageLink>images/othello.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Othello
+</link>
+    <pages>314</pages>
+    <title>Othello</title>
+    <year>1609</year>
+  </row>
+  <row>
+    <author>Sophocles</author>
+    <country>Greece</country>
+    <imageLink>images/oedipus-the-king.jpg</imageLink>
+    <language>Greek</language>
+    <link>https://en.wikipedia.org/wiki/Oedipus_the_King
+</link>
+    <pages>88</pages>
+    <title>Oedipus the King</title>
+    <year>-430</year>
+  </row>
+  <row>
+    <author>Stendhal</author>
+    <country>France</country>
+    <imageLink>images/le-rouge-et-le-noir.jpg</imageLink>
+    <language>French</language>
+    <link>https://en.wikipedia.org/wiki/The_Red_and_the_Black
+</link>
+    <pages>576</pages>
+    <title>The Red and the Black</title>
+    <year>1830</year>
+  </row>
+  <row>
+    <author>Laurence Sterne</author>
+    <country>England</country>
+    <imageLink>images/the-life-and-opinions-of-tristram-shandy.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/The_Life_and_Opinions_of_Tristram_Shandy,_Gentleman
+</link>
+    <pages>640</pages>
+    <title>The Life And Opinions of Tristram Shandy</title>
+    <year>1760</year>
+  </row>
+  <row>
+    <author>Italo Svevo</author>
+    <country>Italy</country>
+    <imageLink>images/confessions-of-zeno.jpg</imageLink>
+    <language>Italian</language>
+    <link>https://en.wikipedia.org/wiki/Zeno%27s_Conscience
+</link>
+    <pages>412</pages>
+    <title>Confessions of Zeno</title>
+    <year>1923</year>
+  </row>
+  <row>
+    <author>Jonathan Swift</author>
+    <country>Ireland</country>
+    <imageLink>images/gullivers-travels.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Gulliver%27s_Travels
+</link>
+    <pages>178</pages>
+    <title>Gulliver&#x27;s Travels</title>
+    <year>1726</year>
+  </row>
+  <row>
+    <author>Leo Tolstoy</author>
+    <country>Russia</country>
+    <imageLink>images/war-and-peace.jpg</imageLink>
+    <language>Russian</language>
+    <link>https://en.wikipedia.org/wiki/War_and_Peace
+</link>
+    <pages>1296</pages>
+    <title>War and Peace</title>
+    <year>1867</year>
+  </row>
+  <row>
+    <author>Leo Tolstoy</author>
+    <country>Russia</country>
+    <imageLink>images/anna-karenina.jpg</imageLink>
+    <language>Russian</language>
+    <link>https://en.wikipedia.org/wiki/Anna_Karenina
+</link>
+    <pages>864</pages>
+    <title>Anna Karenina</title>
+    <year>1877</year>
+  </row>
+  <row>
+    <author>Leo Tolstoy</author>
+    <country>Russia</country>
+    <imageLink>images/the-death-of-ivan-ilyich.jpg</imageLink>
+    <language>Russian</language>
+    <link>https://en.wikipedia.org/wiki/The_Death_of_Ivan_Ilyich
+</link>
+    <pages>92</pages>
+    <title>The Death of Ivan Ilyich</title>
+    <year>1886</year>
+  </row>
+  <row>
+    <author>Mark Twain</author>
+    <country>United States</country>
+    <imageLink>images/the-adventures-of-huckleberry-finn.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Adventures_of_Huckleberry_Finn
+</link>
+    <pages>224</pages>
+    <title>The Adventures of Huckleberry Finn</title>
+    <year>1884</year>
+  </row>
+  <row>
+    <author>Valmiki</author>
+    <country>India</country>
+    <imageLink>images/ramayana.jpg</imageLink>
+    <language>Sanskrit</language>
+    <link>https://en.wikipedia.org/wiki/Ramayana
+</link>
+    <pages>152</pages>
+    <title>Ramayana</title>
+    <year>-450</year>
+  </row>
+  <row>
+    <author>Virgil</author>
+    <country>Roman Empire</country>
+    <imageLink>images/the-aeneid.jpg</imageLink>
+    <language>Classical Latin</language>
+    <link>https://en.wikipedia.org/wiki/Aeneid
+</link>
+    <pages>442</pages>
+    <title>The Aeneid</title>
+    <year>-23</year>
+  </row>
+  <row>
+    <author>Vyasa</author>
+    <country>India</country>
+    <imageLink>images/the-mahab-harata.jpg</imageLink>
+    <language>Sanskrit</language>
+    <link>https://en.wikipedia.org/wiki/Mahabharata
+</link>
+    <pages>276</pages>
+    <title>Mahabharata</title>
+    <year>-700</year>
+  </row>
+  <row>
+    <author>Walt Whitman</author>
+    <country>United States</country>
+    <imageLink>images/leaves-of-grass.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Leaves_of_Grass
+</link>
+    <pages>152</pages>
+    <title>Leaves of Grass</title>
+    <year>1855</year>
+  </row>
+  <row>
+    <author>Virginia Woolf</author>
+    <country>United Kingdom</country>
+    <imageLink>images/mrs-dalloway.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/Mrs_Dalloway
+</link>
+    <pages>216</pages>
+    <title>Mrs Dalloway</title>
+    <year>1925</year>
+  </row>
+  <row>
+    <author>Virginia Woolf</author>
+    <country>United Kingdom</country>
+    <imageLink>images/to-the-lighthouse.jpg</imageLink>
+    <language>English</language>
+    <link>https://en.wikipedia.org/wiki/To_the_Lighthouse
+</link>
+    <pages>209</pages>
+    <title>To the Lighthouse</title>
+    <year>1927</year>
+  </row>
+  <row>
+    <author>Marguerite Yourcenar</author>
+    <country>France/Belgium</country>
+    <imageLink>images/memoirs-of-hadrian.jpg</imageLink>
+    <language>French</language>
+    <link>https://en.wikipedia.org/wiki/Memoirs_of_Hadrian
+</link>
+    <pages>408</pages>
+    <title>Memoirs of Hadrian</title>
+    <year>1951</year>
+  </row>
+</root>
