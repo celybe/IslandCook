@@ -27,6 +27,8 @@ class TVCGetAllRecipes: UITableViewController {
         
     }
     
+//    Decodificamos archivo json
+    
     func decodeJson(url: URL)
     {
         do
@@ -44,7 +46,8 @@ class TVCGetAllRecipes: UITableViewController {
         
     }
     
-    
+
+//    Cargamos datos de nuestro json local
     
     func loadDataFromLocalUrl() -> URL
     {
@@ -54,6 +57,7 @@ class TVCGetAllRecipes: UITableViewController {
         return url
     }
     
+//    Cargamos datos de nuestro server
     
     func loadDataFromremoteUrl() -> URL
     {
@@ -88,7 +92,11 @@ class TVCGetAllRecipes: UITableViewController {
 
 }
 
+//Extensión de carga de la imágen de receta
+
 extension UIImageView {
+    
+//    función de descarga de la imágen de receta
     func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {  // for swift 4.2 syntax just use ===> mode: UIView.ContentMode
         contentMode = mode
         URLSession.shared.dataTask(with: url) { data, response, error in
