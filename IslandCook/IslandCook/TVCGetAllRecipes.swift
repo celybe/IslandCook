@@ -9,7 +9,7 @@ import UIKit
 
 class TVCGetAllRecipes: UITableViewController {
     
-    var decodeData: [Datos] = []
+    var decodeData: [DatosDetalle] = []
     let origen = "Server"
 //    let origen = "Local"
     override func viewDidLoad() {
@@ -37,7 +37,7 @@ class TVCGetAllRecipes: UITableViewController {
             let decoder = JSONDecoder()
             let datosArchivo = try Data(contentsOf: url)
             
-            decodeData = try decoder.decode([Datos].self, from: datosArchivo)
+            decodeData = try decoder.decode([DatosDetalle].self, from: datosArchivo)
         }
         catch
         {
@@ -85,6 +85,7 @@ class TVCGetAllRecipes: UITableViewController {
         let urlImg = decodeData[indexPath.row].picture_url
 
         // Configure the cell...
+//        var iden = String()
         cell.textLabel?.text = decodeData [indexPath.row].name
         cell.imageView?.downloaded(from: urlImg)
 

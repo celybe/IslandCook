@@ -9,6 +9,7 @@ import Foundation
 
 struct DatosDetalle: Codable
 {
+    var _id: String
     var name: String
     
     struct ingredients: Codable
@@ -16,12 +17,12 @@ struct DatosDetalle: Codable
         var name: String
         var amount: String
     }
-    var ingredients: ingredients
-    var steps: String
+    var ingredients: [ingredients]
+    var steps: [String]
     var picture_url: String
     var difficulty: String
     var author: String
-    var tags: String
+    var tags: [String]
     
 }
 

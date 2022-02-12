@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E75F3A827B42F7300C9E5B0 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E75F3A727B42F7300C9E5B0 /* recipes.json */; };
-		0E75F3AA27B42F9100C9E5B0 /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E75F3A927B42F9100C9E5B0 /* Datos.swift */; };
 		0E75F3AC27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */; };
 		0EF7E5F427B65BB600C867E1 /* VCDetailRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */; };
 		0EF7E5F627B65E9A00C867E1 /* DatosDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7E5F527B65E9A00C867E1 /* DatosDetalle.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		0E75F3A727B42F7300C9E5B0 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
-		0E75F3A927B42F9100C9E5B0 /* Datos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
 		0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCGetAllRecipes.swift; sourceTree = "<group>"; };
 		0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetailRecipe.swift; sourceTree = "<group>"; };
 		0EF7E5F527B65E9A00C867E1 /* DatosDetalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosDetalle.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				A23D170E27B293C200AC4DA8 /* Assets.xcassets */,
 				A23D171027B293C200AC4DA8 /* LaunchScreen.storyboard */,
 				A23D171327B293C200AC4DA8 /* Info.plist */,
-				0E75F3A927B42F9100C9E5B0 /* Datos.swift */,
 				0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */,
 				0EF7E5F527B65E9A00C867E1 /* DatosDetalle.swift */,
 				0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */,
@@ -171,7 +168,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EF7E5F427B65BB600C867E1 /* VCDetailRecipe.swift in Sources */,
-				0E75F3AA27B42F9100C9E5B0 /* Datos.swift in Sources */,
 				A23D170627B293C200AC4DA8 /* AppDelegate.swift in Sources */,
 				0EF7E5F627B65E9A00C867E1 /* DatosDetalle.swift in Sources */,
 				A23D170827B293C200AC4DA8 /* SceneDelegate.swift in Sources */,
