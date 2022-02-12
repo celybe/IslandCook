@@ -11,6 +11,7 @@ class TVCGetAllRecipes: UITableViewController {
     
     var decodeData: [DatosDetalle] = []
     let origen = "Server"
+    var urlImg: String?
 //    let origen = "Local"
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,16 +83,32 @@ class TVCGetAllRecipes: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        let urlImg = decodeData[indexPath.row].picture_url
+        urlImg = decodeData[indexPath.row].picture_url
 
         // Configure the cell...
 //        var iden = String()
         cell.textLabel?.text = decodeData [indexPath.row].name
-        cell.imageView?.downloaded(from: urlImg)
+        cell.imageView?.downloaded(from: urlImg!)
 
         return cell
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let celdaSeleccionada = miTabla.indexPathForSelectedRow?.row else {return}
+        let postSeleccionado = decodeData[celdaSeleccionada]
+        let vistaDetalle = segue.destination as! VCDetailRecipe
+    
+        vistaDetalle.id = postSeleccionado._id
+        vistaDetalle.nombre = postSeleccionado.name
+        vistaDetalle.steps = postSeleccionado.steps
+        vistaDetalle.author = postSeleccionado.author
+        vistaDetalle.imageUrl = postSeleccionado.picture_url
+//        vistaDetalle.ingredients = postSeleccionado.ingredients
+    }
+    
+    
+    @IBOutlet var miTabla: UITableView!
+    
 }
 
 //Extensión de carga de la imagen de receta
