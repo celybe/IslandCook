@@ -14,8 +14,10 @@ class TVCGetAllRecipes: UITableViewController {
 //    let origen = "Local"
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         if origen == "Local" {
             var url = loadDataFromLocalUrl()
             decodeJson(url: url)
@@ -24,7 +26,6 @@ class TVCGetAllRecipes: UITableViewController {
             let url = loadDataFromremoteUrl()
             decodeJson(url: url)
         }
-        
     }
     
 //    Decodificamos archivo parseado

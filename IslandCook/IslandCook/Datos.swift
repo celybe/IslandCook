@@ -10,8 +10,6 @@ import Foundation
 struct Datos: Codable
 {
     var name: String
-    
-    
     var picture_url: String
     
 }

@@ -9,7 +9,7 @@ import UIKit
 
 class VCDetailRecipe: UIViewController {
     
-    var decodeData: [DatosDetalle] = []
+    var decodeData: [Datos] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class VCDetailRecipe: UIViewController {
                 let decoder = JSONDecoder()
                 let datosArchivo = try Data(contentsOf: url)
                 
-                decodeData = try decoder.decode([DatosDetalle].self, from: datosArchivo)
+                decodeData = try decoder.decode([Datos].self, from: datosArchivo)
             }
             catch
             {
@@ -43,8 +43,6 @@ class VCDetailRecipe: UIViewController {
     
     func loadRecipe()
     {
-        var id = decodeData.count
-        
     }
     
     
