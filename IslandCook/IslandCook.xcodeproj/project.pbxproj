@@ -13,6 +13,8 @@
 		0E75F3AC27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */; };
 		0EF7E5F427B65BB600C867E1 /* VCDetailRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */; };
 		0EF7E5F627B65E9A00C867E1 /* DatosDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7E5F527B65E9A00C867E1 /* DatosDetalle.swift */; };
+		872971C527B9B36A001AE4E3 /* TVCHomeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872971C427B9B36A001AE4E3 /* TVCHomeRow.swift */; };
+		872971C827B9B4B9001AE4E3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872971C727B9B4B9001AE4E3 /* APIService.swift */; };
 		873A0AC727B93020006F15E9 /* RecipeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 873A0AC527B93020006F15E9 /* RecipeModel.xcdatamodeld */; };
 		873A0AD027B934FB006F15E9 /* Ingredients+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A0AC827B934FB006F15E9 /* Ingredients+CoreDataClass.swift */; };
 		873A0AD127B934FB006F15E9 /* Ingredients+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A0AC927B934FB006F15E9 /* Ingredients+CoreDataProperties.swift */; };
@@ -40,6 +42,8 @@
 		0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCGetAllRecipes.swift; sourceTree = "<group>"; };
 		0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetailRecipe.swift; sourceTree = "<group>"; };
 		0EF7E5F527B65E9A00C867E1 /* DatosDetalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosDetalle.swift; sourceTree = "<group>"; };
+		872971C427B9B36A001AE4E3 /* TVCHomeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCHomeRow.swift; sourceTree = "<group>"; };
+		872971C727B9B4B9001AE4E3 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		873A0AC627B93020006F15E9 /* RecipeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecipeModel.xcdatamodel; sourceTree = "<group>"; };
 		873A0AC827B934FB006F15E9 /* Ingredients+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredients+CoreDataClass.swift"; sourceTree = "<group>"; };
 		873A0AC927B934FB006F15E9 /* Ingredients+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredients+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -73,9 +77,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		872971C627B9B47E001AE4E3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				872971C727B9B4B9001AE4E3 /* APIService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		873A0AC227B92F62006F15E9 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				872971C627B9B47E001AE4E3 /* API */,
 				873A0AC327B92F6D006F15E9 /* DataBase */,
 			);
 			path = Provider;
@@ -111,6 +124,7 @@
 			children = (
 				873A0ADC27B945CA006F15E9 /* VCHome.swift */,
 				87B53B6127B9947E0044D4A5 /* CVCHome.swift */,
+				872971C427B9B36A001AE4E3 /* TVCHomeRow.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -242,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B53B6227B9947E0044D4A5 /* CVCHome.swift in Sources */,
+				872971C827B9B4B9001AE4E3 /* APIService.swift in Sources */,
 				0EF7E5F427B65BB600C867E1 /* VCDetailRecipe.swift in Sources */,
 				873A0AD627B934FB006F15E9 /* Tags+CoreDataClass.swift in Sources */,
 				873A0AD727B934FB006F15E9 /* Tags+CoreDataProperties.swift in Sources */,
@@ -250,6 +265,7 @@
 				873A0AD927B936B1006F15E9 /* CoreDataManager.swift in Sources */,
 				A23D170627B293C200AC4DA8 /* AppDelegate.swift in Sources */,
 				0EF7E5F627B65E9A00C867E1 /* DatosDetalle.swift in Sources */,
+				872971C527B9B36A001AE4E3 /* TVCHomeRow.swift in Sources */,
 				0E5ADBE327B91600006DEC15 /* VCUpdateRecipe1.swift in Sources */,
 				873A0AD227B934FB006F15E9 /* Recipe+CoreDataClass.swift in Sources */,
 				0E5ADBE527B91DBB006DEC15 /* VCUpdateRecipe2.swift in Sources */,

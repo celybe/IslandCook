@@ -8,32 +8,27 @@
 import UIKit
 
 class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    private var recipesList : [DatosDetalle] = APIService.shared.decodeJson()
+    @IBOutlet weak var tableViewTopRecipes: UITableView!
     
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    //------------------------ TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //TODO
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //TODO
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "homeTopRecipesCell", for: indexPath) as? TVCHomeRow else { fatalError()}
+        return cell
     }
+ 
+    
+   
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
+    //------------------------ ClickListeners
     @IBAction func clickAll(_ sender: Any) {
     }
     @IBAction func clickPasta(_ sender: Any) {

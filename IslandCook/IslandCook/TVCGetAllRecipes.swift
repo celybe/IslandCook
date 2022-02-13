@@ -44,8 +44,6 @@ class TVCGetAllRecipes: UITableViewController {
         {
             print("Error, no se puede parsear el archivo")
         }
-        
-        
     }
     
 
