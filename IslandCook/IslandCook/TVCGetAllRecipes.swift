@@ -10,7 +10,6 @@ import UIKit
 class TVCGetAllRecipes: UITableViewController {
     
     var decodeData: [DatosDetalle] = []
-    let origen = "Server"
     var urlImg: String?
 //    let origen = "Local"
     override func viewDidLoad() {
@@ -19,14 +18,8 @@ class TVCGetAllRecipes: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if origen == "Local" {
-            var url = loadDataFromLocalUrl()
-            decodeJson(url: url)
-        }
-        else {
-            let url = loadDataFromremoteUrl()
-            decodeJson(url: url)
-        }
+        let url = loadDataFromremoteUrl()
+        decodeJson(url: url)
     }
     
 //    Decodificamos archivo parseado
@@ -46,17 +39,6 @@ class TVCGetAllRecipes: UITableViewController {
         }
         
         
-    }
-    
-
-//    Cargamos datos de nuestro json local
-    
-    func loadDataFromLocalUrl() -> URL
-    {
-        guard let url = Bundle.main.url(forResource: "recipes", withExtension: "json") else {
-            fatalError("No se encuentra el archivo JSON en el Bundle")
-        }
-        return url
     }
     
 //    Cargamos datos de nuestro server
