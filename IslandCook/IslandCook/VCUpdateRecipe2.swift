@@ -17,20 +17,16 @@ class VCUpdateRecipe2: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-//    override func loadView() {
-//        var valorSlider = sliderQuantity.value
-//        let stringValue = String(valorSlider)
-//        
-//        lblValueSlider.text = stringValue
-//    }
-    
     @IBOutlet weak var txtIngredients: UITextField!
     
     @IBOutlet weak var sliderQuantity: UISlider!
     
     @IBOutlet weak var lblValueSlider: UILabel!
     @IBAction func btnAddIngredient(_ sender: Any) {
-        print(sliderQuantity.value)
+        var valor = sliderQuantity.value
+        let intValor = Int(valor)
+        let stringValor = String(intValor)
+        lblValueSlider.text = stringValor
     }
     @IBOutlet weak var txtSteps: UITextField!
     @IBAction func btnAddSteps(_ sender: Any) {
