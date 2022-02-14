@@ -9,7 +9,7 @@ import UIKit
 
 class TVCHomeRow: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    private var recipesList : [DatosDetalle] = APIService.shared.decodeJson()
+    private var recipesList : [ApiResponse] = APIService.shared.decodeJson()
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -34,7 +34,7 @@ class TVCHomeRow: UITableViewCell, UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCellTopRecipes", for: indexPath) as! CVCHome
         cell.txtTitle.text = recipesList[indexPath.row].name
-        cell.ivRecipe.downloaded2(from: recipesList[indexPath.row].picture_url )
+        cell.ivRecipe.downloaded(from: recipesList[indexPath.row].picture_url )
         cell.ivRecipe.layer.cornerRadius = 15
         cell.ivRecipe.frame.size.width = 160
         cell.ivRecipe.frame.size.height = 160

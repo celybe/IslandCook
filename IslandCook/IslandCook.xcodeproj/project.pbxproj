@@ -82,8 +82,8 @@
 		872971C627B9B47E001AE4E3 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				873B313F27BAD9A7009C6F7B /* Model */,
 				872971C727B9B4B9001AE4E3 /* APIService.swift */,
-				0E499D8027BAC6D500BDEEFE /* LoadImage.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -132,6 +132,22 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		873B313E27BAD988009C6F7B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0E499D8027BAC6D500BDEEFE /* LoadImage.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		873B313F27BAD9A7009C6F7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E77F92B27BAC90D00187F93 /* ApiResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A22A84C227B3F74E004DCAC8 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +186,7 @@
 			children = (
 				873A0AC227B92F62006F15E9 /* Provider */,
 				A22A84C227B3F74E004DCAC8 /* UseCases */,
+				873B313E27BAD988009C6F7B /* Utils */,
 				A23D170527B293C200AC4DA8 /* AppDelegate.swift */,
 				0E75F3A727B42F7300C9E5B0 /* recipes.json */,
 				A23D170727B293C200AC4DA8 /* SceneDelegate.swift */,
@@ -181,7 +198,6 @@
 				0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */,
 				0E5ADBE227B91600006DEC15 /* VCUpdateRecipe1.swift */,
 				0E5ADBE427B91DBB006DEC15 /* VCUpdateRecipe2.swift */,
-				0E77F92B27BAC90D00187F93 /* ApiResponse.swift */,
 			);
 			path = IslandCook;
 			sourceTree = "<group>";
