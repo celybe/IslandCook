@@ -23,7 +23,7 @@ class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "homeTopRecipesCell", for: indexPath) as? TVCHomeRow else { fatalError()}
         return cell
     }
- 
+    
     
    
 
