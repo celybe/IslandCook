@@ -24,10 +24,12 @@ class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+       return 250
+    }
     
-   
-
-   
+    
+    
     //------------------------ ClickListeners
     @IBAction func clickAll(_ sender: Any) {
     }

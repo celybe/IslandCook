@@ -27,7 +27,7 @@ class TVCHomeRow: UITableViewCell, UICollectionViewDelegate, UICollectionViewDat
     
     //Funciones colección
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 5
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCellTopRecipes", for: indexPath)

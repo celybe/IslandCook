@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tZu-WF-y5P">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BLM-dL-Fwr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -366,7 +366,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Y2b-3N-Awh">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="550"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mzr-Zg-SeI">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -463,24 +463,31 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSf-rd-0fv">
-                                                <rect key="frame" x="0.0" y="200" width="414" height="300"/>
+                                                <rect key="frame" x="0.0" y="200" width="414" height="350"/>
                                                 <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yjU-OE-zOH">
+                                                        <rect key="frame" x="9" y="0.0" width="397" height="46"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                        <color key="textColor" name="AccentColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="voG-Jf-8gg">
-                                                        <rect key="frame" x="0.0" y="71" width="414" height="250"/>
+                                                        <rect key="frame" x="0.0" y="61" width="414" height="250"/>
                                                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="250" id="hot-q6-TSS"/>
+                                                            <constraint firstAttribute="height" constant="250" id="6f5-aF-qQ3"/>
                                                         </constraints>
                                                         <prototypes>
-                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="homeTopRecipesCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="250" id="M59-7O-t2M" customClass="TVCHomeRow" customModule="IslandCook" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="44.5" width="414" height="250"/>
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeTopRecipesCell" rowHeight="247" id="M59-7O-t2M" customClass="TVCHomeRow" customModule="IslandCook" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="44.5" width="414" height="247"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M59-7O-t2M" id="Ov0-Ga-MZG">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="247"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wx2-t9-Ffr">
-                                                                            <rect key="frame" x="0.0" y="-15" width="414" height="254"/>
+                                                                            <rect key="frame" x="0.0" y="-15" width="414" height="250"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xp8-QT-nBT">
@@ -490,8 +497,8 @@
                                                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                             </collectionViewFlowLayout>
                                                                             <cells>
-                                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="collectionCellTopRecipes" id="NuK-1o-hCU" customClass="CVCHome" customModule="IslandCook" customModuleProvider="target">
-                                                                                    <rect key="frame" x="0.0" y="2" width="190" height="250"/>
+                                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCellTopRecipes" id="NuK-1o-hCU" customClass="CVCHome" customModule="IslandCook" customModuleProvider="target">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="190" height="250"/>
                                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aKp-ry-k0C">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="190" height="250"/>
@@ -506,8 +513,12 @@
                                                                                                 <nil key="textColor"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="square.and.arrow.up.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iLb-m4-dzj">
-                                                                                                <rect key="frame" x="0.0" y="55.5" width="190" height="194"/>
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo_IslandCook" translatesAutoresizingMaskIntoConstraints="NO" id="iLb-m4-dzj">
+                                                                                                <rect key="frame" x="0.0" y="55" width="190" height="195"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="height" constant="195" id="6WI-EJ-ecg"/>
+                                                                                                    <constraint firstAttribute="width" constant="190" id="OOF-eV-OTw"/>
+                                                                                                </constraints>
                                                                                             </imageView>
                                                                                         </subviews>
                                                                                         <constraints>
@@ -540,22 +551,15 @@
                                                             <outlet property="delegate" destination="tZu-WF-y5P" id="2b1-mo-37H"/>
                                                         </connections>
                                                     </tableView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yjU-OE-zOH">
-                                                        <rect key="frame" x="9" y="0.0" width="397" height="46"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                                        <color key="textColor" name="AccentColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="voG-Jf-8gg" secondAttribute="trailing" id="0Xc-4B-AjF"/>
-                                                    <constraint firstAttribute="height" constant="300" id="56w-lm-SKF"/>
+                                                    <constraint firstAttribute="height" constant="350" id="56w-lm-SKF"/>
                                                     <constraint firstAttribute="trailing" secondItem="voG-Jf-8gg" secondAttribute="trailing" id="GAm-O9-g1X"/>
                                                     <constraint firstItem="voG-Jf-8gg" firstAttribute="leading" secondItem="aSf-rd-0fv" secondAttribute="leading" id="I7Y-ej-IBQ"/>
                                                     <constraint firstItem="voG-Jf-8gg" firstAttribute="leading" secondItem="aSf-rd-0fv" secondAttribute="leading" id="fFN-xo-l0T"/>
-                                                    <constraint firstItem="voG-Jf-8gg" firstAttribute="top" secondItem="yjU-OE-zOH" secondAttribute="bottom" constant="25" id="yx2-Lj-8gh"/>
+                                                    <constraint firstItem="voG-Jf-8gg" firstAttribute="top" secondItem="yjU-OE-zOH" secondAttribute="bottom" constant="15" id="yx2-Lj-8gh"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -591,8 +595,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Logo_IslandCook" width="488" height="437.5"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
