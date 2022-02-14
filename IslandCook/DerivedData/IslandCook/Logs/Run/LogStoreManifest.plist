@@ -40,6 +40,40 @@
 			<key>uniqueIdentifier</key>
 			<string>0252CCE0-153F-491D-9998-602AB3782198</string>
 		</dict>
+		<key>16E36B1E-7ED1-4B91-B902-50DD82A962C3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>16E36B1E-7ED1-4B91-B902-50DD82A962C3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>IslandCook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>IslandCook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run IslandCook</string>
+			<key>timeStartedRecording</key>
+			<real>666570824.61379099</real>
+			<key>timeStoppedRecording</key>
+			<real>666570897.88540196</real>
+			<key>title</key>
+			<string>Run IslandCook</string>
+			<key>uniqueIdentifier</key>
+			<string>16E36B1E-7ED1-4B91-B902-50DD82A962C3</string>
+		</dict>
 	</dict>
 </dict>
 </plist>
