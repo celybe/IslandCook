@@ -9,8 +9,7 @@ import UIKit
 
 class TVCGetAllRecipes: UITableViewController {
     
-    var decodeData: [DatosDetalle] = []
-    let origen = "Server"
+    var decodeData: [ApiResponse] = []
     var urlImg: String?
 //    let origen = "Local"
     override func viewDidLoad() {
@@ -19,14 +18,8 @@ class TVCGetAllRecipes: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if origen == "Local" {
-            var url = loadDataFromLocalUrl()
-            decodeJson(url: url)
-        }
-        else {
-            let url = loadDataFromremoteUrl()
-            decodeJson(url: url)
-        }
+        let url = loadDataFromremoteUrl()
+        decodeJson(url: url)
     }
     
 //    Decodificamos archivo parseado
@@ -38,23 +31,12 @@ class TVCGetAllRecipes: UITableViewController {
             let decoder = JSONDecoder()
             let datosArchivo = try Data(contentsOf: url)
             
-            decodeData = try decoder.decode([DatosDetalle].self, from: datosArchivo)
+            decodeData = try decoder.decode([ApiResponse].self, from: datosArchivo)
         }
         catch
         {
             print("Error, no se puede parsear el archivo")
         }
-    }
-    
-
-//    Cargamos datos de nuestro json local
-    
-    func loadDataFromLocalUrl() -> URL
-    {
-        guard let url = Bundle.main.url(forResource: "recipes", withExtension: "json") else {
-            fatalError("No se encuentra el archivo JSON en el Bundle")
-        }
-        return url
     }
     
 //    Cargamos datos de nuestro server
@@ -101,35 +83,9 @@ class TVCGetAllRecipes: UITableViewController {
         vistaDetalle.steps = postSeleccionado.steps
         vistaDetalle.author = postSeleccionado.author
         vistaDetalle.imageUrl = postSeleccionado.picture_url
-//        vistaDetalle.ingredients = postSeleccionado.ingredients
+        vistaDetalle.ingredients = postSeleccionado.ingredients
     }
     
     
     @IBOutlet var miTabla: UITableView!
-    
-}
-
-//Extensión de carga de la imagen de receta
-
-extension UIImageView {
-    
-//    función de descarga de la imagen de receta
-    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
-        contentMode = mode
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard
-                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
-                let data = data, error == nil,
-                let image = UIImage(data: data)
-                else { return }
-            DispatchQueue.main.async() { [weak self] in
-                self?.image = image
-            }
-        }.resume()
-    }
-    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
-        guard let url = URL(string: link) else { return }
-        downloaded(from: url, contentMode: mode)
-    }
 }

@@ -1,13 +1,13 @@
 //
-//  DatosDetalle.swift
+//  ApiResponse.swift
 //  IslandCook
 //
-//  Created by Xavi Giron on 11/2/22.
+//  Created by Xavi Giron on 14/2/22.
 //
 
 import Foundation
 
-struct DatosDetalle: Codable
+struct ApiResponse: Codable
 {
     var _id: String
     var name: String
@@ -25,4 +25,3 @@ struct DatosDetalle: Codable
     var tags: [String]
     
 }
-
