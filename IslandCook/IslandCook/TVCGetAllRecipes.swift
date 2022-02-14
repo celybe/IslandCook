@@ -8,7 +8,7 @@
 import UIKit
 
 class TVCGetAllRecipes: UITableViewController {
-    
+
     var filterEndPoint: String = ""
     var decodeData: [ApiResponse] = []
     var urlImg: String?
@@ -16,11 +16,11 @@ class TVCGetAllRecipes: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         decodeData = APIService.shared.decodeJson(endpoint: filterEndPoint)
     }
-    
+
 
     // MARK: - Table view data source
 
@@ -43,12 +43,12 @@ class TVCGetAllRecipes: UITableViewController {
 
         return cell
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let celdaSeleccionada = miTabla.indexPathForSelectedRow?.row else {return}
         let postSeleccionado = decodeData[celdaSeleccionada]
         let vistaDetalle = segue.destination as! VCDetailRecipe
-    
+
         vistaDetalle.id = postSeleccionado._id
         vistaDetalle.nombre = postSeleccionado.name
         vistaDetalle.steps = postSeleccionado.steps
@@ -56,7 +56,7 @@ class TVCGetAllRecipes: UITableViewController {
         vistaDetalle.imageUrl = postSeleccionado.picture_url
         vistaDetalle.ingredients = postSeleccionado.ingredients
     }
-    
-    
+
+
     @IBOutlet var miTabla: UITableView!
 }
