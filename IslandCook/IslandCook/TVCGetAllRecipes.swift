@@ -9,7 +9,7 @@ import UIKit
 
 class TVCGetAllRecipes: UITableViewController {
     
-    var decodeData: [ApiResponse] = []
+    private var decodeData: [ApiResponse] = APIService.shared.decodeJson()
     var urlImg: String?
 //    let origen = "Local"
     override func viewDidLoad() {
@@ -18,35 +18,7 @@ class TVCGetAllRecipes: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let url = loadDataFromremoteUrl()
-        decodeJson(url: url)
-    }
-    
-//    Decodificamos archivo parseado
-    
-    func decodeJson(url: URL)
-    {
-        do
-        {
-            let decoder = JSONDecoder()
-            let datosArchivo = try Data(contentsOf: url)
-            
-            decodeData = try decoder.decode([ApiResponse].self, from: datosArchivo)
-        }
-        catch
-        {
-            print("Error, no se puede parsear el archivo")
-        }
-    }
-    
-//    Cargamos datos de nuestro server
-    
-    func loadDataFromremoteUrl() -> URL
-    {
-        guard let url = URL(string: "https://island-cook.herokuapp.com/api/recipe") else {
-            fatalError("No se encuentra el JSON en la ruta remota")
-        }
-        return url
+        decodeData
     }
     
 
