@@ -8,7 +8,6 @@
 import UIKit
 
 class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    private var recipesList : [ApiResponse] = APIService.shared.decodeJson()
     @IBOutlet weak var tableViewTopRecipes: UITableView!
     
     override func viewDidLoad() {

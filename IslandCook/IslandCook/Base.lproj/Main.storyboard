@@ -539,10 +539,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="voG-Jf-8gg">
-                                                        <rect key="frame" x="0.0" y="61" width="414" height="250"/>
+                                                        <rect key="frame" x="0.0" y="61" width="414" height="270"/>
                                                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="250" id="6f5-aF-qQ3"/>
+                                                            <constraint firstAttribute="height" constant="270" id="6f5-aF-qQ3"/>
                                                         </constraints>
                                                         <prototypes>
                                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeTopRecipesCell" rowHeight="247" id="M59-7O-t2M" customClass="TVCHomeRow" customModule="IslandCook" customModuleProvider="target">
@@ -571,30 +571,30 @@
                                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                         <subviews>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo Ejemplo" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EL1-DD-1fk">
-                                                                                                <rect key="frame" x="0.0" y="0.0" width="190" height="45"/>
+                                                                                                <rect key="frame" x="10" y="0.0" width="175" height="60"/>
                                                                                                 <constraints>
-                                                                                                    <constraint firstAttribute="height" constant="45" id="Wc6-C9-buV"/>
+                                                                                                    <constraint firstAttribute="height" constant="60" id="Wc6-C9-buV"/>
                                                                                                 </constraints>
                                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                                 <nil key="textColor"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo_IslandCook" translatesAutoresizingMaskIntoConstraints="NO" id="iLb-m4-dzj">
-                                                                                                <rect key="frame" x="0.0" y="55" width="190" height="195"/>
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLb-m4-dzj">
+                                                                                                <rect key="frame" x="10" y="70" width="180" height="180"/>
                                                                                                 <constraints>
-                                                                                                    <constraint firstAttribute="height" constant="195" id="6WI-EJ-ecg"/>
-                                                                                                    <constraint firstAttribute="width" constant="190" id="OOF-eV-OTw"/>
+                                                                                                    <constraint firstAttribute="height" constant="160" id="6WI-EJ-ecg"/>
+                                                                                                    <constraint firstAttribute="width" constant="160" id="OOF-eV-OTw"/>
                                                                                                 </constraints>
                                                                                             </imageView>
                                                                                         </subviews>
                                                                                         <constraints>
-                                                                                            <constraint firstAttribute="trailing" secondItem="EL1-DD-1fk" secondAttribute="trailing" id="473-Ui-Jx8"/>
-                                                                                            <constraint firstItem="EL1-DD-1fk" firstAttribute="leading" secondItem="aKp-ry-k0C" secondAttribute="leading" id="FqE-q7-mkc"/>
+                                                                                            <constraint firstItem="EL1-DD-1fk" firstAttribute="leading" secondItem="aKp-ry-k0C" secondAttribute="leading" constant="10" id="F0c-GC-8NJ"/>
                                                                                             <constraint firstAttribute="trailing" secondItem="iLb-m4-dzj" secondAttribute="trailing" id="Iei-Yn-UrX"/>
                                                                                             <constraint firstAttribute="bottom" secondItem="iLb-m4-dzj" secondAttribute="bottom" id="JcH-xs-vd9"/>
-                                                                                            <constraint firstItem="iLb-m4-dzj" firstAttribute="leading" secondItem="aKp-ry-k0C" secondAttribute="leading" id="gTg-xV-cqv"/>
                                                                                             <constraint firstItem="EL1-DD-1fk" firstAttribute="top" secondItem="aKp-ry-k0C" secondAttribute="top" id="nqy-zX-6fE"/>
                                                                                             <constraint firstItem="iLb-m4-dzj" firstAttribute="top" secondItem="EL1-DD-1fk" secondAttribute="bottom" constant="10" id="pOh-0N-xIK"/>
+                                                                                            <constraint firstItem="iLb-m4-dzj" firstAttribute="leading" secondItem="aKp-ry-k0C" secondAttribute="leading" constant="10" id="ulo-QG-och"/>
+                                                                                            <constraint firstAttribute="trailing" secondItem="EL1-DD-1fk" secondAttribute="trailing" constant="5" id="z7Q-Js-eKB"/>
                                                                                         </constraints>
                                                                                     </collectionViewCellContentView>
                                                                                     <size key="customSize" width="190" height="250"/>
@@ -719,7 +719,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo_IslandCook" width="488" height="437.5"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

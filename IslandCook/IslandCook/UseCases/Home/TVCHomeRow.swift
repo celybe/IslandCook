@@ -8,13 +8,15 @@
 import UIKit
 
 class TVCHomeRow: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
-   
     
-
+    private var recipesList : [ApiResponse] = APIService.shared.decodeJson(endpoint: "")
+    
     @IBOutlet weak var collectionView: UICollectionView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        // Initialization
+        recipesList.shuffle()
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -27,10 +29,16 @@ class TVCHomeRow: UITableViewCell, UICollectionViewDelegate, UICollectionViewDat
     
     //Funciones colección
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 10
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCellTopRecipes", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCellTopRecipes", for: indexPath) as! CVCHome
+        cell.txtTitle.text = recipesList[indexPath.row].name
+        cell.ivRecipe.downloaded(from: recipesList[indexPath.row].picture_url )
+        cell.ivRecipe.layer.cornerRadius = 15
+        cell.ivRecipe.frame.size.width = 160
+        cell.ivRecipe.frame.size.height = 160
+        cell.ivRecipe.contentMode = UIView.ContentMode.scaleAspectFill
         return cell
     }
     func collectionView(_ collectionView:UICollectionView,layout UICollectionViewLayout: UICollectionViewLayout, sizeForItemAt IndexPath: IndexPath)-> CGSize{
