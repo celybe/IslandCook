@@ -37,8 +37,6 @@ class TVCGetAllRecipes: UITableViewController {
         {
             print("Error, no se puede parsear el archivo")
         }
-        
-        
     }
     
 //    Cargamos datos de nuestro server
