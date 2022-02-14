@@ -17,10 +17,10 @@ class APIService{
     
     
     // Decodificamos archivo parseado
-    func decodeJson() -> [ApiResponse]{
+    func decodeJson(endpoint: String) -> [ApiResponse]{
         do{
             let decoder = JSONDecoder()
-            let datosArchivo = try Data(contentsOf: loadDataFromremoteUrl())
+            let datosArchivo = try Data(contentsOf: loadDataFromremoteUrl(endpoint: endpoint))
             decodeData = try decoder.decode([ApiResponse].self, from: datosArchivo)
         }catch{
             print("Error, no se puede parsear el archivo")
@@ -29,8 +29,8 @@ class APIService{
     }
     
     // Cargamos datos de nuestro server
-    private func loadDataFromremoteUrl() -> URL{
-        guard let url = URL(string: "https://island-cook.herokuapp.com/api/recipe") else {
+    private func loadDataFromremoteUrl(endpoint: String) -> URL{
+        guard let url = URL(string: "https://island-cook.herokuapp.com/api/recipe\(endpoint)") else {
             fatalError("No se encuentra el JSON en la ruta remota")
         }
         return url

@@ -9,7 +9,7 @@ import UIKit
 
 class TVCHomeRow: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    private var recipesList : [ApiResponse] = APIService.shared.decodeJson()
+    private var recipesList : [ApiResponse] = APIService.shared.decodeJson(endpoint: "")
     
     @IBOutlet weak var collectionView: UICollectionView!
     
