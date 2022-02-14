@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E499D8127BAC6D500BDEEFE /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E499D8027BAC6D500BDEEFE /* LoadImage.swift */; };
 		0E5ADBE327B91600006DEC15 /* VCUpdateRecipe1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5ADBE227B91600006DEC15 /* VCUpdateRecipe1.swift */; };
 		0E5ADBE527B91DBB006DEC15 /* VCUpdateRecipe2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5ADBE427B91DBB006DEC15 /* VCUpdateRecipe2.swift */; };
 		0E75F3A827B42F7300C9E5B0 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E75F3A727B42F7300C9E5B0 /* recipes.json */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E499D8027BAC6D500BDEEFE /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
 		0E5ADBE227B91600006DEC15 /* VCUpdateRecipe1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCUpdateRecipe1.swift; sourceTree = "<group>"; };
 		0E5ADBE427B91DBB006DEC15 /* VCUpdateRecipe2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCUpdateRecipe2.swift; sourceTree = "<group>"; };
 		0E75F3A727B42F7300C9E5B0 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				872971C727B9B4B9001AE4E3 /* APIService.swift */,
+				0E499D8027BAC6D500BDEEFE /* LoadImage.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				873A0AD227B934FB006F15E9 /* Recipe+CoreDataClass.swift in Sources */,
 				0E5ADBE527B91DBB006DEC15 /* VCUpdateRecipe2.swift in Sources */,
 				873A0AD027B934FB006F15E9 /* Ingredients+CoreDataClass.swift in Sources */,
+				0E499D8127BAC6D500BDEEFE /* LoadImage.swift in Sources */,
 				A23D170827B293C200AC4DA8 /* SceneDelegate.swift in Sources */,
 				873A0AD527B934FB006F15E9 /* Steps+CoreDataProperties.swift in Sources */,
 				873A0AD327B934FB006F15E9 /* Recipe+CoreDataProperties.swift in Sources */,
