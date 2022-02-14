@@ -8,7 +8,7 @@
 import Foundation
 
 class APIService{
-    private var decodeData: [DatosDetalle] = []
+    private var decodeData: [ApiResponse] = []
     
     static let shared: APIService = {
         let apiService = APIService()
@@ -17,11 +17,11 @@ class APIService{
     
     
     // Decodificamos archivo parseado
-    func decodeJson() -> [DatosDetalle]{
+    func decodeJson() -> [ApiResponse]{
         do{
             let decoder = JSONDecoder()
             let datosArchivo = try Data(contentsOf: loadDataFromremoteUrl())
-            decodeData = try decoder.decode([DatosDetalle].self, from: datosArchivo)
+            decodeData = try decoder.decode([ApiResponse].self, from: datosArchivo)
         }catch{
             print("Error, no se puede parsear el archivo")
         }

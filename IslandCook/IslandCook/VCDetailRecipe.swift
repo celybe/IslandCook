@@ -9,12 +9,12 @@ import UIKit
 
 class VCDetailRecipe: UIViewController {
     
-    var decodeData: [DatosDetalle] = []
+    var decodeData: [ApiResponse] = []
     var id: String?
     var nombre: String?
     var image_url: String?
     var author: String?
-    var ingredients: [DatosDetalle.ingredients]?
+    var ingredients: [ApiResponse.ingredients]?
     var steps: [String]?
     var difficulty: String?
     var tags: [String]?
