@@ -40,6 +40,74 @@
 			<key>uniqueIdentifier</key>
 			<string>42030F2D-1B12-419A-9002-20C4B487BB71</string>
 		</dict>
+		<key>70204D1A-A8A5-416F-8AF6-C93AE6862BC7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>70204D1A-A8A5-416F-8AF6-C93AE6862BC7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Workspace Build Description</string>
+			<key>timeStartedRecording</key>
+			<real>666570584.91434705</real>
+			<key>timeStoppedRecording</key>
+			<real>666570587.15966403</real>
+			<key>title</key>
+			<string>Workspace Build Description</string>
+			<key>uniqueIdentifier</key>
+			<string>70204D1A-A8A5-416F-8AF6-C93AE6862BC7</string>
+		</dict>
+		<key>AB056038-7EA1-4A44-959D-163D8D9CC824</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>AB056038-7EA1-4A44-959D-163D8D9CC824.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Workspace Build Description</string>
+			<key>timeStartedRecording</key>
+			<real>666570648.87865901</real>
+			<key>timeStoppedRecording</key>
+			<real>666570649.02001095</real>
+			<key>title</key>
+			<string>Workspace Build Description</string>
+			<key>uniqueIdentifier</key>
+			<string>AB056038-7EA1-4A44-959D-163D8D9CC824</string>
+		</dict>
 		<key>AF739C89-4035-427D-B50D-F46650229E17</key>
 		<dict>
 			<key>className</key>
@@ -74,6 +142,74 @@
 			<key>uniqueIdentifier</key>
 			<string>AF739C89-4035-427D-B50D-F46650229E17</string>
 		</dict>
+		<key>C0748CAD-B348-4BFE-A05D-A2F6983A12CF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>C0748CAD-B348-4BFE-A05D-A2F6983A12CF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>IslandCook Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>666570587.16892695</real>
+			<key>timeStoppedRecording</key>
+			<real>666570587.24064505</real>
+			<key>title</key>
+			<string>IslandCook Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>C0748CAD-B348-4BFE-A05D-A2F6983A12CF</string>
+		</dict>
+		<key>CBDB1E09-BBEA-4BA1-98DE-A22119D79E03</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>CBDB1E09-BBEA-4BA1-98DE-A22119D79E03.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>IslandCook Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>666570649.02659404</real>
+			<key>timeStoppedRecording</key>
+			<real>666570649.09135997</real>
+			<key>title</key>
+			<string>IslandCook Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>CBDB1E09-BBEA-4BA1-98DE-A22119D79E03</string>
+		</dict>
 		<key>CD5A20EC-DDAC-4801-B803-EC06DA02625E</key>
 		<dict>
 			<key>className</key>
@@ -107,6 +243,40 @@
 			<string>IslandCook Build Preparation</string>
 			<key>uniqueIdentifier</key>
 			<string>CD5A20EC-DDAC-4801-B803-EC06DA02625E</string>
+		</dict>
+		<key>D21C3166-C467-490A-9C06-8408801C7A24</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>D21C3166-C467-490A-9C06-8408801C7A24.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>IslandCook Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>666570658.964113</real>
+			<key>timeStoppedRecording</key>
+			<real>666570659.01690805</real>
+			<key>title</key>
+			<string>IslandCook Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>D21C3166-C467-490A-9C06-8408801C7A24</string>
 		</dict>
 		<key>DBEDBA80-868F-48BD-844F-266C731C3D95</key>
 		<dict>
