@@ -25,7 +25,6 @@ class VCDetailRecipe: UIViewController {
 
         loadRecipe()
     }
-
     
     
     func loadRecipe()
@@ -39,14 +38,7 @@ class VCDetailRecipe: UIViewController {
         tvIngredients.text = stringIngredientes
         tvSteps.text = stringSteps
         ivImageRecipe.downloaded2(from: imageUrl!)
-        
-        
     }
-    
-    
-    
-    
-    
     
     @IBOutlet weak var lblNameRecipe: UILabel!
     @IBOutlet weak var ivImageRecipe: UIImageView!
