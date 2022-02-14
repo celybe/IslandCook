@@ -14,6 +14,8 @@
 		0E75F3AC27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */; };
 		0E77F92C27BAC90D00187F93 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77F92B27BAC90D00187F93 /* ApiResponse.swift */; };
 		0EF7E5F427B65BB600C867E1 /* VCDetailRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */; };
+		3987340327BADBD00066F9E4 /* Sora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3987340127BADBD00066F9E4 /* Sora-SemiBold.ttf */; };
+		3987340427BADBD00066F9E4 /* Sora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3987340227BADBD00066F9E4 /* Sora-Regular.ttf */; };
 		872971C527B9B36A001AE4E3 /* TVCHomeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872971C427B9B36A001AE4E3 /* TVCHomeRow.swift */; };
 		872971C827B9B4B9001AE4E3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872971C727B9B4B9001AE4E3 /* APIService.swift */; };
 		873A0AC727B93020006F15E9 /* RecipeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 873A0AC527B93020006F15E9 /* RecipeModel.xcdatamodeld */; };
@@ -43,6 +45,8 @@
 		0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCGetAllRecipes.swift; sourceTree = "<group>"; };
 		0E77F92B27BAC90D00187F93 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetailRecipe.swift; sourceTree = "<group>"; };
+		3987340127BADBD00066F9E4 /* Sora-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-SemiBold.ttf"; sourceTree = "<group>"; };
+		3987340227BADBD00066F9E4 /* Sora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Regular.ttf"; sourceTree = "<group>"; };
 		872971C427B9B36A001AE4E3 /* TVCHomeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCHomeRow.swift; sourceTree = "<group>"; };
 		872971C727B9B4B9001AE4E3 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		873A0AC627B93020006F15E9 /* RecipeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecipeModel.xcdatamodel; sourceTree = "<group>"; };
@@ -77,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		398733FF27BAD9910066F9E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3987340027BAD9A10066F9E4 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3987340027BAD9A10066F9E4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3987340227BADBD00066F9E4 /* Sora-Regular.ttf */,
+				3987340127BADBD00066F9E4 /* Sora-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		872971C627B9B47E001AE4E3 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +171,7 @@
 		A23D16F927B293C200AC4DA8 = {
 			isa = PBXGroup;
 			children = (
+				398733FF27BAD9910066F9E4 /* Resources */,
 				A23D170427B293C200AC4DA8 /* IslandCook */,
 				A23D170327B293C200AC4DA8 /* Products */,
 			);
@@ -244,6 +266,8 @@
 				A23D171227B293C200AC4DA8 /* LaunchScreen.storyboard in Resources */,
 				A23D170F27B293C200AC4DA8 /* Assets.xcassets in Resources */,
 				A23D170D27B293C200AC4DA8 /* Main.storyboard in Resources */,
+				3987340427BADBD00066F9E4 /* Sora-Regular.ttf in Resources */,
+				3987340327BADBD00066F9E4 /* Sora-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
