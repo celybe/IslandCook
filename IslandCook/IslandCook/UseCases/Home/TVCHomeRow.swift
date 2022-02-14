@@ -36,6 +36,9 @@ class TVCHomeRow: UITableViewCell, UICollectionViewDelegate, UICollectionViewDat
         cell.txtTitle.text = recipesList[indexPath.row].name
         cell.ivRecipe.downloaded2(from: recipesList[indexPath.row].picture_url )
         cell.ivRecipe.layer.cornerRadius = 15
+        cell.ivRecipe.frame.size.width = 160
+        cell.ivRecipe.frame.size.height = 160
+        cell.ivRecipe.contentMode = UIView.ContentMode.scaleAspectFill
         return cell
     }
     func collectionView(_ collectionView:UICollectionView,layout UICollectionViewLayout: UICollectionViewLayout, sizeForItemAt IndexPath: IndexPath)-> CGSize{
