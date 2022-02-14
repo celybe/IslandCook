@@ -85,7 +85,7 @@ class TVCGetAllRecipes: UITableViewController {
         vistaDetalle.steps = postSeleccionado.steps
         vistaDetalle.author = postSeleccionado.author
         vistaDetalle.imageUrl = postSeleccionado.picture_url
-//        vistaDetalle.ingredients = postSeleccionado.ingredients
+        vistaDetalle.ingredients = postSeleccionado.ingredients
     }
     
     
@@ -98,7 +98,7 @@ class TVCGetAllRecipes: UITableViewController {
 extension UIImageView {
     
 //    función de descarga de la imagen de receta
-    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFill) {
         contentMode = mode
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard
@@ -112,7 +112,7 @@ extension UIImageView {
             }
         }.resume()
     }
-    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFill) {
         guard let url = URL(string: link) else { return }
         downloaded(from: url, contentMode: mode)
     }
