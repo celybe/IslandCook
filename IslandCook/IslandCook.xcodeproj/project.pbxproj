@@ -115,7 +115,8 @@
 			children = (
 				3987340927BAE4C20066F9E4 /* themes.swift */,
 			);
-			path = Extensions;
+			name = Extensions;
+			path = ../Extensions;
 			sourceTree = "<group>";
 		};
 		872971C627B9B47E001AE4E3 /* API */ = {
@@ -192,8 +193,6 @@
 		A23D16F927B293C200AC4DA8 = {
 			isa = PBXGroup;
 			children = (
-				3987340827BAE4740066F9E4 /* Extensions */,
-				398733FF27BAD9910066F9E4 /* Resources */,
 				A23D170427B293C200AC4DA8 /* IslandCook */,
 				A23D170327B293C200AC4DA8 /* Products */,
 			);
@@ -210,6 +209,8 @@
 		A23D170427B293C200AC4DA8 /* IslandCook */ = {
 			isa = PBXGroup;
 			children = (
+				3987340827BAE4740066F9E4 /* Extensions */,
+				398733FF27BAD9910066F9E4 /* Resources */,
 				873A0AC227B92F62006F15E9 /* Provider */,
 				A22A84C227B3F74E004DCAC8 /* UseCases */,
 				A23D170527B293C200AC4DA8 /* AppDelegate.swift */,
