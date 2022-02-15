@@ -16,8 +16,6 @@ class CVCFavorites: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let atributes = [NSAttributedString.Key.font: UIFont(name: "Sora-Regular",size: 45)!]
-        UINavigationBar.appearance().titleTextAttributes = atributes
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

@@ -17,5 +17,6 @@ class CVCellFavorite: UICollectionViewCell {
         
         self.recipeLabel.text = recipeName
         self.recipeImage.load(urlString: recipeImage)
+        self.recipeImage.layer.cornerRadius = 11
     }
 }
