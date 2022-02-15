@@ -8,6 +8,14 @@
 import UIKit
 
 class VCUpdateRecipe2: UIViewController {
+    
+    var id: String?
+    var nombreReceta: String?
+    var author: String?
+    var urlImage: String?
+    var ingredientes = [String]()
+    var steps = [String]()
+    var tags = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +23,11 @@ class VCUpdateRecipe2: UIViewController {
         sliderQuantity.maximumValue = 10
 
         // Do any additional setup after loading the view.
+    }
+    
+    private func postNewRecipe()
+    {
+        APIService.shared.putRecipe()
     }
     
     @IBOutlet weak var txtIngredients: UITextField!
@@ -27,13 +40,37 @@ class VCUpdateRecipe2: UIViewController {
         let intValor = Int(valor)
         let stringValor = String(intValor)
         lblValueSlider.text = stringValor
+        if txtIngredients != nil
+        {
+            ingredientes.append(txtIngredients.text!)
+        }
+        else
+        {
+            print("introduce ingredientes para agregarlos a tu receta")
+        }
     }
     @IBOutlet weak var txtSteps: UITextField!
     @IBAction func btnAddSteps(_ sender: Any) {
+        if txtSteps != nil
+        {
+            steps.append(txtSteps.text!)
+        }
+        else
+        {
+            print("introduce pasos para agregarlos a tu receta")
+        }
     }
     
     @IBOutlet weak var txtTags: UITextField!
     @IBAction func btnAddTags(_ sender: Any) {
+        if txtTags != nil
+        {
+            tags.append(txtTags.text!)
+        }
+        else
+        {
+            print("introduce tags para agregarlos a tu receta")
+        }
     }
     
     

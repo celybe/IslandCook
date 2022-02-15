@@ -40,6 +40,12 @@ class VCDetailRecipe: UIViewController {
         ivImageRecipe.downloaded(from: imageUrl!)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let update = segue.destination as! VCUpdateRecipe1
+        
+        update.myId = id
+    }
+    
     @IBOutlet weak var lblNameRecipe: UILabel!
     @IBOutlet weak var ivImageRecipe: UIImageView!
     @IBOutlet weak var lblAuthor: UILabel!

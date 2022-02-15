@@ -36,6 +36,15 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         selectDifficulty = difficulties[row]
    
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let add2 = segue.destination as! VCAddRecipe2
+        
+        add2.nombreReceta = txtName.text
+        add2.author = txtAuthor.text
+        add2.urlImage = txtUrl_Image.text
+    }
+    
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtAuthor: UITextField!
     @IBOutlet weak var txtUrl_Image: UITextField!
