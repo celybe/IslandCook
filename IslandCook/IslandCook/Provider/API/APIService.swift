@@ -9,7 +9,8 @@ import Foundation
 
 class APIService{
     private var decodeData: [ApiResponse] = []
-    var id_intercambio: String?
+//    guard let celdaSeleccionada = TVCGetAllRecipes.
+//    var id_intercambio = decodeData[celdaSeleccionada]._id
     
     static let shared: APIService = {
         let apiService = APIService()

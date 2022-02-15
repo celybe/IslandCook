@@ -29,13 +29,13 @@ class VCDetailRecipe: UIViewController {
     
     func loadRecipe()
     {
-        let stringSteps = steps?.joined(separator: ",")
+        let stringSteps = steps?.joined(separator: ".")
         
         let stringIngredientes = ingredients?.description
         
         lblNameRecipe.text = nombre
         lblAuthor.text = author
-        tvIngredients.text = stringIngredientes
+        tvIngredients.text = stringIngredientes?.localizedCapitalized
         tvSteps.text = stringSteps
         ivImageRecipe.downloaded(from: imageUrl!)
     }
