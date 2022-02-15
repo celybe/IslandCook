@@ -1,0 +1,60 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "94989c73b254d6dbb1b15570bafe6c6ae20eb007761ca0ef1e4a498b445e9668"
+    }
+  ],
+  "containerPath" : "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "x86_64h",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx12.1",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64h"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/DerivedData/IslandCook/Index/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/DerivedData/IslandCook/Index/Build/Products",
+      "derivedDataPath" : "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/DerivedData/IslandCook/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/DerivedData/IslandCook/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/DerivedData/IslandCook/Index/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ARENA_INFO_REGULAR_BUILD_PRODUCTS_DIR" : "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/DerivedData/IslandCook/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
