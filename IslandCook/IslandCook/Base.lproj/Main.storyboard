@@ -517,19 +517,20 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSf-rd-0fv">
                                                 <rect key="frame" x="0.0" y="200" width="414" height="350"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yjU-OE-zOH">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yjU-OE-zOH">
                                                         <rect key="frame" x="9" y="0.0" width="397" height="46"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                         <color key="textColor" name="AccentColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="voG-Jf-8gg">
-                                                        <rect key="frame" x="0.0" y="61" width="414" height="270"/>
-                                                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="voG-Jf-8gg">
+                                                        <rect key="frame" x="0.0" y="61" width="414" height="255"/>
+                                                        <color key="backgroundColor" name="BackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="270" id="6f5-aF-qQ3"/>
+                                                            <constraint firstAttribute="height" constant="250" id="6f5-aF-qQ3"/>
                                                         </constraints>
+                                                        <color key="sectionIndexBackgroundColor" name="BackgroundColor"/>
                                                         <prototypes>
                                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeTopRecipesCell" rowHeight="247" id="M59-7O-t2M" customClass="TVCHomeRow" customModule="IslandCook" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="44.5" width="414" height="247"/>
@@ -541,7 +542,7 @@
                                                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wx2-t9-Ffr">
                                                                             <rect key="frame" x="0.0" y="-15" width="414" height="250"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="backgroundColor" name="BackgroundColor"/>
                                                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xp8-QT-nBT">
                                                                                 <size key="itemSize" width="188" height="250"/>
                                                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -583,6 +584,7 @@
                                                                                             <constraint firstAttribute="trailing" secondItem="EL1-DD-1fk" secondAttribute="trailing" constant="5" id="z7Q-Js-eKB"/>
                                                                                         </constraints>
                                                                                     </collectionViewCellContentView>
+                                                                                    <color key="backgroundColor" name="BackgroundColor"/>
                                                                                     <size key="customSize" width="190" height="250"/>
                                                                                     <connections>
                                                                                         <outlet property="ivRecipe" destination="iLb-m4-dzj" id="U2W-0s-KCJ"/>
@@ -592,7 +594,9 @@
                                                                             </cells>
                                                                         </collectionView>
                                                                     </subviews>
+                                                                    <color key="backgroundColor" name="BackgroundColor"/>
                                                                 </tableViewCellContentView>
+                                                                <color key="backgroundColor" name="BackgroundColor"/>
                                                                 <connections>
                                                                     <outlet property="collectionView" destination="wx2-t9-Ffr" id="fas-w0-nGM"/>
                                                                 </connections>
@@ -615,6 +619,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" name="BackgroundColor"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
