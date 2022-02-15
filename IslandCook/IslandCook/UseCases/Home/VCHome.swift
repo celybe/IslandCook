@@ -8,7 +8,10 @@
 import UIKit
 
 class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    private var filterEndPoint = ""
+    
     @IBOutlet weak var tableViewTopRecipes: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,18 +34,42 @@ class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //------------------------ ClickListeners
     @IBAction func clickAll(_ sender: Any) {
+        filterEndPoint = ""
+        performSegue(withIdentifier: "fromHomeToAllList", sender: self)
     }
     @IBAction func clickPasta(_ sender: Any) {
+        filterEndPoint = "/tag/Pasta"
+        performSegue(withIdentifier: "fromHomeToAllList", sender: self)
     }
     @IBAction func clickDesssert(_ sender: Any) {
+        filterEndPoint = "/tag/Dessert"
+        performSegue(withIdentifier: "fromHomeToAllList", sender: self)
     }
     @IBAction func clickDinner(_ sender: Any) {
+        filterEndPoint = "/tag/Dinner"
+        performSegue(withIdentifier: "fromHomeToAllList", sender: self)
     }
     @IBAction func clickEasy(_ sender: Any) {
+        filterEndPoint = "/difficulty/easy"
+        performSegue(withIdentifier: "fromHomeToAllList", sender: self)
     }
     @IBAction func clickMedium(_ sender: Any) {
+        filterEndPoint = "/difficulty/medium"
+        performSegue(withIdentifier: "fromHomeToAllList", sender: self)
     }
     @IBAction func clickHigh(_ sender: Any) {
+        filterEndPoint = "/difficulty/high"
+        performSegue(withIdentifier: "fromHomeToAllList", sender: self)
+
     }
+    //------------------------ Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "fromHomeToAllList"
+        {
+            let vistaDetalle = segue.destination as! TVCGetAllRecipes
+            vistaDetalle.filterEndPoint = filterEndPoint
+        }
+    }
+    
     
 }

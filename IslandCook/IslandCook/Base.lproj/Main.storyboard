@@ -49,7 +49,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tk-Wk-0ma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1083" y="3"/>
+            <point key="canvasLocation" x="216" y="-15"/>
         </scene>
         <!--Detail Recipe-->
         <scene sceneID="nOP-c7-vGT">
@@ -341,25 +341,6 @@
             </objects>
             <point key="canvasLocation" x="3821.739130434783" y="2.6785714285714284"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="Pz5-Z0-vvJ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BLM-dL-Fwr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="mmh-pJ-wun"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P1v-mK-1h2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="8so-iz-au4" kind="relationship" relationship="rootViewController" id="pFZ-kD-1Xe"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qcR-QD-gNJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="268" y="3"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="VuK-Mw-937">
             <objects>
@@ -522,7 +503,6 @@
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="sSl-vm-caE" firstAttribute="centerX" secondItem="Mzr-Zg-SeI" secondAttribute="centerX" id="AND-zu-V3s"/>
                                                     <constraint firstItem="nho-pB-eqA" firstAttribute="top" secondItem="k2s-uH-YrT" secondAttribute="bottom" constant="30" id="Azo-QM-vZA"/>
@@ -537,19 +517,20 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSf-rd-0fv">
                                                 <rect key="frame" x="0.0" y="200" width="414" height="350"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yjU-OE-zOH">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yjU-OE-zOH">
                                                         <rect key="frame" x="9" y="0.0" width="397" height="46"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                         <color key="textColor" name="AccentColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="voG-Jf-8gg">
-                                                        <rect key="frame" x="0.0" y="61" width="414" height="270"/>
-                                                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="voG-Jf-8gg">
+                                                        <rect key="frame" x="0.0" y="61" width="414" height="255"/>
+                                                        <color key="backgroundColor" name="BackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="270" id="6f5-aF-qQ3"/>
+                                                            <constraint firstAttribute="height" constant="250" id="6f5-aF-qQ3"/>
                                                         </constraints>
+                                                        <color key="sectionIndexBackgroundColor" name="BackgroundColor"/>
                                                         <prototypes>
                                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeTopRecipesCell" rowHeight="247" id="M59-7O-t2M" customClass="TVCHomeRow" customModule="IslandCook" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="44.5" width="414" height="247"/>
@@ -561,7 +542,7 @@
                                                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wx2-t9-Ffr">
                                                                             <rect key="frame" x="0.0" y="-15" width="414" height="250"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="backgroundColor" name="BackgroundColor"/>
                                                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xp8-QT-nBT">
                                                                                 <size key="itemSize" width="188" height="250"/>
                                                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -603,6 +584,7 @@
                                                                                             <constraint firstAttribute="trailing" secondItem="EL1-DD-1fk" secondAttribute="trailing" constant="5" id="z7Q-Js-eKB"/>
                                                                                         </constraints>
                                                                                     </collectionViewCellContentView>
+                                                                                    <color key="backgroundColor" name="BackgroundColor"/>
                                                                                     <size key="customSize" width="190" height="250"/>
                                                                                     <connections>
                                                                                         <outlet property="ivRecipe" destination="iLb-m4-dzj" id="U2W-0s-KCJ"/>
@@ -612,7 +594,9 @@
                                                                             </cells>
                                                                         </collectionView>
                                                                     </subviews>
+                                                                    <color key="backgroundColor" name="BackgroundColor"/>
                                                                 </tableViewCellContentView>
+                                                                <color key="backgroundColor" name="BackgroundColor"/>
                                                                 <connections>
                                                                     <outlet property="collectionView" destination="wx2-t9-Ffr" id="fas-w0-nGM"/>
                                                                 </connections>
@@ -624,7 +608,7 @@
                                                         </connections>
                                                     </tableView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="BackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="voG-Jf-8gg" secondAttribute="trailing" id="0Xc-4B-AjF"/>
                                                     <constraint firstAttribute="height" constant="350" id="56w-lm-SKF"/>
@@ -635,6 +619,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" name="BackgroundColor"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -649,7 +634,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wy7-VZ-kNk"/>
-                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="afe-JC-aTl" firstAttribute="leading" secondItem="Wy7-VZ-kNk" secondAttribute="leading" id="ORk-rd-uE4"/>
                             <constraint firstItem="Wy7-VZ-kNk" firstAttribute="bottom" secondItem="afe-JC-aTl" secondAttribute="bottom" id="f7h-hG-fPn"/>
@@ -660,11 +645,12 @@
                     <navigationItem key="navigationItem" id="IA7-Hf-p7Y"/>
                     <connections>
                         <outlet property="tableViewTopRecipes" destination="voG-Jf-8gg" id="lNE-C0-iVU"/>
+                        <segue destination="8so-iz-au4" kind="show" identifier="fromHomeToAllList" id="crX-R0-HWG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWP-N2-Urr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-703" y="3"/>
+            <point key="canvasLocation" x="-703" y="-48"/>
         </scene>
         <!--Item-->
         <scene sceneID="5h3-j9-Qjw">
@@ -683,7 +669,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FuR-dj-cjK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1613" y="3"/>
+            <point key="canvasLocation" x="-1613.0434782608697" y="-47.544642857142854"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="XLB-b6-rBf">
