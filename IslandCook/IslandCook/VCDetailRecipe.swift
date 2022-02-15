@@ -29,15 +29,21 @@ class VCDetailRecipe: UIViewController {
     
     func loadRecipe()
     {
-        let stringSteps = steps?.joined(separator: ",")
+        let stringSteps = steps?.joined(separator: ".")
         
         let stringIngredientes = ingredients?.description
         
         lblNameRecipe.text = nombre
         lblAuthor.text = author
-        tvIngredients.text = stringIngredientes
+        tvIngredients.text = stringIngredientes?.localizedCapitalized
         tvSteps.text = stringSteps
         ivImageRecipe.downloaded(from: imageUrl!)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let update = segue.destination as! VCUpdateRecipe1
+        
+        update.myId = id
     }
     
     @IBOutlet weak var lblNameRecipe: UILabel!

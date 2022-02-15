@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
+options: "86febb6a29c6a17aff98fc94217fce896629dbc4c98cad471c786bd96b14b59b"
+build_start_time: [1644439049, 274334907]
+build_end_time: [1644439053, 380393028]
+inputs:
+  "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/AppDelegate.swift": [1644423812, 559721708]
+  "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/Extensions/Color.swift": [1644439047, 949382781]
+  "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/SceneDelegate.swift": [1644423812, 562574148]
+  "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/UseCases/Launch/launch.swift": [1644439045, 446953296]
+  "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/ViewController.swift": [1644439047, 894466161]

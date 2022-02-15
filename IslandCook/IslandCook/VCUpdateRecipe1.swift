@@ -9,6 +9,7 @@ import UIKit
 
 class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    var myId: String?
     var pickedDifficulty: Int = 55
     var difficulties = ["Easy", "Medium", "Show off"]
     var selectDifficulty: String?
@@ -35,6 +36,15 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectDifficulty = difficulties[row]
    
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let update2 = segue.destination as! VCUpdateRecipe2
+        
+        update2.id = myId
+        update2.nombreReceta = txtRecipeName.text
+        update2.author = txtAuthor.text
+        update2.urlImage = txtImageUrl.text
     }
     
     

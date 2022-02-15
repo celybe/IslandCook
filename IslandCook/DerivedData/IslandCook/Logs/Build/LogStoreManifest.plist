@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>0C2237D1-3C31-4FC2-8FA3-864B8651FFED</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0C2237D1-3C31-4FC2-8FA3-864B8651FFED.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>IslandCook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>IslandCook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews IslandCook</string>
+			<key>timeStartedRecording</key>
+			<real>666131847.99761796</real>
+			<key>timeStoppedRecording</key>
+			<real>666131857.28039706</real>
+			<key>title</key>
+			<string>Build for Previews IslandCook</string>
+			<key>uniqueIdentifier</key>
+			<string>0C2237D1-3C31-4FC2-8FA3-864B8651FFED</string>
+		</dict>
+		<key>3C670400-F430-4B4A-B77E-742DA90CC7E4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3C670400-F430-4B4A-B77E-742DA90CC7E4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>IslandCook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>IslandCook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build IslandCook</string>
+			<key>timeStartedRecording</key>
+			<real>666570820.09754896</real>
+			<key>timeStoppedRecording</key>
+			<real>666570824.59649301</real>
+			<key>title</key>
+			<string>Build IslandCook</string>
+			<key>uniqueIdentifier</key>
+			<string>3C670400-F430-4B4A-B77E-742DA90CC7E4</string>
+		</dict>
+		<key>52A8AD6D-60E7-478E-878B-5DDCC34A0EB6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>52A8AD6D-60E7-478E-878B-5DDCC34A0EB6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>IslandCook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>IslandCook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build IslandCook</string>
+			<key>timeStartedRecording</key>
+			<real>666571600.722592</real>
+			<key>timeStoppedRecording</key>
+			<real>666571602.33208895</real>
+			<key>title</key>
+			<string>Build IslandCook</string>
+			<key>uniqueIdentifier</key>
+			<string>52A8AD6D-60E7-478E-878B-5DDCC34A0EB6</string>
+		</dict>
+		<key>B150B091-A262-48F4-A0FC-8DD36DF0227D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B150B091-A262-48F4-A0FC-8DD36DF0227D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>IslandCook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>IslandCook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build IslandCook</string>
+			<key>timeStartedRecording</key>
+			<real>666571298.69234097</real>
+			<key>timeStoppedRecording</key>
+			<real>666571309.25696397</real>
+			<key>title</key>
+			<string>Build IslandCook</string>
+			<key>uniqueIdentifier</key>
+			<string>B150B091-A262-48F4-A0FC-8DD36DF0227D</string>
+		</dict>
+		<key>D430F2FF-126F-4881-AEE8-6B90EEAD98B7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D430F2FF-126F-4881-AEE8-6B90EEAD98B7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>IslandCook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>IslandCook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build IslandCook</string>
+			<key>timeStartedRecording</key>
+			<real>666571583.12600005</real>
+			<key>timeStoppedRecording</key>
+			<real>666571590.68101203</real>
+			<key>title</key>
+			<string>Build IslandCook</string>
+			<key>uniqueIdentifier</key>
+			<string>D430F2FF-126F-4881-AEE8-6B90EEAD98B7</string>
+		</dict>
+		<key>FAD17584-A97C-4126-9F98-7B37D77A8106</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FAD17584-A97C-4126-9F98-7B37D77A8106.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>IslandCook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>IslandCook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build IslandCook</string>
+			<key>timeStartedRecording</key>
+			<real>666571353.41819406</real>
+			<key>timeStoppedRecording</key>
+			<real>666571353.61547399</real>
+			<key>title</key>
+			<string>Build IslandCook</string>
+			<key>uniqueIdentifier</key>
+			<string>FAD17584-A97C-4126-9F98-7B37D77A8106</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
