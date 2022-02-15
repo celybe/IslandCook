@@ -10,11 +10,6 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Sora-Regular.ttf">
-            <string>Sora-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Get All Recipes-->
         <scene sceneID="8Aw-T5-8Dn">
@@ -376,30 +371,74 @@
             </objects>
             <point key="canvasLocation" x="-702.89855072463774" y="1476.5625"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="KcN-gt-aEz">
+        <!--Favorites-->
+        <scene sceneID="EUS-E1-Qy6">
             <objects>
-                <viewController interfaceStyle="light" id="WKN-oz-kMS" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5rT-Q0-520">
+                <collectionViewController id="c9v-6p-mWV" customClass="CVCFavorites" customModule="IslandCook" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Wfw-A8-Egc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fc-5s-8YN">
-                                <rect key="frame" x="32" y="60" width="209" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Sora-Regular" family="Sora" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="rxW-zx-vdW"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ubI-1c-Dim"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VVb-bJ-nS0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1I6-oY-8UD">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="tI5-Lj-8qp" customClass="CVCellFavorite" customModule="IslandCook" customModuleProvider="target">
+                                <rect key="frame" x="110" y="10" width="194" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="v8P-Xn-bwN">
+                                    <rect key="frame" x="0.0" y="0.0" width="194" height="194"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sZu-xR-6Ds">
+                                            <rect key="frame" x="6" y="48" width="182" height="137"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="182" id="w4P-hi-1Vl"/>
+                                                <constraint firstAttribute="height" constant="137" id="xut-Pv-IYt"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baW-2J-rqF">
+                                            <rect key="frame" x="8" y="19" width="93" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="6CP-jJ-MGU"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="93" id="Rm2-hM-QMw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="sZu-xR-6Ds" firstAttribute="top" secondItem="baW-2J-rqF" secondAttribute="bottom" constant="8" symbolic="YES" id="1E4-Pe-6C7"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="baW-2J-rqF" secondAttribute="trailing" symbolic="YES" id="3rs-lz-Pys"/>
+                                        <constraint firstItem="baW-2J-rqF" firstAttribute="leading" secondItem="v8P-Xn-bwN" secondAttribute="leading" constant="8" id="CeG-Uk-CGc"/>
+                                        <constraint firstItem="sZu-xR-6Ds" firstAttribute="leading" secondItem="v8P-Xn-bwN" secondAttribute="leading" constant="6" id="Wp0-Ri-Fui"/>
+                                        <constraint firstItem="baW-2J-rqF" firstAttribute="top" secondItem="v8P-Xn-bwN" secondAttribute="top" constant="19" id="c77-hB-GP0"/>
+                                        <constraint firstItem="sZu-xR-6Ds" firstAttribute="top" secondItem="baW-2J-rqF" secondAttribute="bottom" constant="8" symbolic="YES" id="nG7-TN-v5h"/>
+                                        <constraint firstAttribute="trailing" secondItem="sZu-xR-6Ds" secondAttribute="trailing" constant="6" id="w9u-YN-Mfh"/>
+                                        <constraint firstAttribute="bottom" secondItem="sZu-xR-6Ds" secondAttribute="bottom" constant="9" id="wTZ-4Q-LOR"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="194" height="194"/>
+                                <connections>
+                                    <outlet property="recipeImage" destination="sZu-xR-6Ds" id="WgX-rT-J61"/>
+                                    <outlet property="recipeLabel" destination="baW-2J-rqF" id="XGp-B4-t9X"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="c9v-6p-mWV" id="ssf-Wq-KlF"/>
+                            <outlet property="delegate" destination="c9v-6p-mWV" id="yqv-sJ-UO6"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="3ka-mC-e9y"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yl4-rV-oy4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-702.89855072463774" y="726.5625"/>
+            <point key="canvasLocation" x="-752.17391304347836" y="726.5625"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OG7-g4-wwc">
@@ -682,16 +721,19 @@
         <!--Item 1-->
         <scene sceneID="XLB-b6-rBf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V7y-0o-Yg0" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" interfaceStyle="dark" id="V7y-0o-Yg0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item 1" id="gl4-JA-0NH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kh4-n9-ihM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="Secondary 2"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="WKN-oz-kMS" kind="relationship" relationship="rootViewController" id="mq7-qE-IN5"/>
+                        <segue destination="c9v-6p-mWV" kind="relationship" relationship="rootViewController" id="tRN-fC-69D"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPJ-DQ-pJH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -724,6 +766,9 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="BackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Secondary 2">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">

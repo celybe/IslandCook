@@ -14,6 +14,9 @@
 		0E75F3AC27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */; };
 		0E77F92C27BAC90D00187F93 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77F92B27BAC90D00187F93 /* ApiResponse.swift */; };
 		0EF7E5F427B65BB600C867E1 /* VCDetailRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */; };
+		3966F3A527BB2CFD000DD47C /* CVCFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3966F3A427BB2CFD000DD47C /* CVCFavorites.swift */; };
+		3966F3A727BB2FDF000DD47C /* CVCellFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3966F3A627BB2FDF000DD47C /* CVCellFavorites.swift */; };
+		3966F3A927BB330B000DD47C /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3966F3A827BB330B000DD47C /* extensions.swift */; };
 		3987340327BADBD00066F9E4 /* Sora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3987340127BADBD00066F9E4 /* Sora-SemiBold.ttf */; };
 		3987340427BADBD00066F9E4 /* Sora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3987340227BADBD00066F9E4 /* Sora-Regular.ttf */; };
 		3987340727BAE38F0066F9E4 /* VCFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3987340627BAE38F0066F9E4 /* VCFavorites.swift */; };
@@ -47,6 +50,9 @@
 		0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCGetAllRecipes.swift; sourceTree = "<group>"; };
 		0E77F92B27BAC90D00187F93 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetailRecipe.swift; sourceTree = "<group>"; };
+		3966F3A427BB2CFD000DD47C /* CVCFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCFavorites.swift; sourceTree = "<group>"; };
+		3966F3A627BB2FDF000DD47C /* CVCellFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCellFavorites.swift; sourceTree = "<group>"; };
+		3966F3A827BB330B000DD47C /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		3987340127BADBD00066F9E4 /* Sora-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-SemiBold.ttf"; sourceTree = "<group>"; };
 		3987340227BADBD00066F9E4 /* Sora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Regular.ttf"; sourceTree = "<group>"; };
 		3987340627BAE38F0066F9E4 /* VCFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFavorites.swift; sourceTree = "<group>"; };
@@ -105,7 +111,9 @@
 		3987340527BAE35B0066F9E4 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
+				3966F3A427BB2CFD000DD47C /* CVCFavorites.swift */,
 				3987340627BAE38F0066F9E4 /* VCFavorites.swift */,
+				3966F3A627BB2FDF000DD47C /* CVCellFavorites.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -114,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				3987340927BAE4C20066F9E4 /* themes.swift */,
+				3966F3A827BB330B000DD47C /* extensions.swift */,
 			);
 			name = Extensions;
 			path = ../Extensions;
@@ -331,8 +340,11 @@
 				0E5ADBE327B91600006DEC15 /* VCUpdateRecipe1.swift in Sources */,
 				0E77F92C27BAC90D00187F93 /* ApiResponse.swift in Sources */,
 				873A0AD227B934FB006F15E9 /* Recipe+CoreDataClass.swift in Sources */,
+				3966F3A927BB330B000DD47C /* extensions.swift in Sources */,
+				3966F3A727BB2FDF000DD47C /* CVCellFavorites.swift in Sources */,
 				0E5ADBE527B91DBB006DEC15 /* VCUpdateRecipe2.swift in Sources */,
 				873A0AD027B934FB006F15E9 /* Ingredients+CoreDataClass.swift in Sources */,
+				3966F3A527BB2CFD000DD47C /* CVCFavorites.swift in Sources */,
 				0E499D8127BAC6D500BDEEFE /* LoadImage.swift in Sources */,
 				A23D170827B293C200AC4DA8 /* SceneDelegate.swift in Sources */,
 				873A0AD527B934FB006F15E9 /* Steps+CoreDataProperties.swift in Sources */,
