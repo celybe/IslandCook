@@ -57,7 +57,7 @@ class APIService{
     }
     
     func putRecipe() {
-        // creamos la petición post
+        // creamos la petición put
         let url = URL(string: "https://island-cook.herokuapp.com/api/recipe")!//Falta añadir id
         var request = URLRequest(url: url)
         request.httpMethod = "PUT"
@@ -76,7 +76,7 @@ class APIService{
     
     
     func deleteRecipe() {
-        // creamos la petición post
+        // creamos la petición delete
         let url = URL(string: "https://island-cook.herokuapp.com/api/recipe")!//Falta añadir id
         var request = URLRequest(url: url)
         request.httpMethod = "DELETE"

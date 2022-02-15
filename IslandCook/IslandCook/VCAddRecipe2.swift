@@ -66,6 +66,14 @@ class VCAddRecipe2: UIViewController {
         {
             print("introduce tags para agregarlos a tu receta")
         }
+        do
+        {
+//            try 
+        }
+        catch let error as NSError
+        {
+            print("La cagaste burlancaster: \(error)")
+        }
     }
     
     
