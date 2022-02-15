@@ -13,6 +13,8 @@
 		0E75F3A827B42F7300C9E5B0 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E75F3A727B42F7300C9E5B0 /* recipes.json */; };
 		0E75F3AC27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */; };
 		0E77F92C27BAC90D00187F93 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77F92B27BAC90D00187F93 /* ApiResponse.swift */; };
+		0ECB0C4927BBBC8600C9792C /* VCAddRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB0C4827BBBC8600C9792C /* VCAddRecipe.swift */; };
+		0ECB0C4B27BBBCBD00C9792C /* VCAddRecipe2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB0C4A27BBBCBD00C9792C /* VCAddRecipe2.swift */; };
 		0EF7E5F427B65BB600C867E1 /* VCDetailRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */; };
 		3987340327BADBD00066F9E4 /* Sora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3987340127BADBD00066F9E4 /* Sora-SemiBold.ttf */; };
 		3987340427BADBD00066F9E4 /* Sora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3987340227BADBD00066F9E4 /* Sora-Regular.ttf */; };
@@ -46,6 +48,8 @@
 		0E75F3A727B42F7300C9E5B0 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
 		0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCGetAllRecipes.swift; sourceTree = "<group>"; };
 		0E77F92B27BAC90D00187F93 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		0ECB0C4827BBBC8600C9792C /* VCAddRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCAddRecipe.swift; sourceTree = "<group>"; };
+		0ECB0C4A27BBBCBD00C9792C /* VCAddRecipe2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCAddRecipe2.swift; sourceTree = "<group>"; };
 		0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetailRecipe.swift; sourceTree = "<group>"; };
 		3987340127BADBD00066F9E4 /* Sora-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-SemiBold.ttf"; sourceTree = "<group>"; };
 		3987340227BADBD00066F9E4 /* Sora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Regular.ttf"; sourceTree = "<group>"; };
@@ -240,6 +244,8 @@
 				0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */,
 				0E5ADBE227B91600006DEC15 /* VCUpdateRecipe1.swift */,
 				0E5ADBE427B91DBB006DEC15 /* VCUpdateRecipe2.swift */,
+				0ECB0C4827BBBC8600C9792C /* VCAddRecipe.swift */,
+				0ECB0C4A27BBBCBD00C9792C /* VCAddRecipe2.swift */,
 			);
 			path = IslandCook;
 			sourceTree = "<group>";
@@ -321,6 +327,7 @@
 				872971C827B9B4B9001AE4E3 /* APIService.swift in Sources */,
 				0EF7E5F427B65BB600C867E1 /* VCDetailRecipe.swift in Sources */,
 				873A0AD627B934FB006F15E9 /* Tags+CoreDataClass.swift in Sources */,
+				0ECB0C4927BBBC8600C9792C /* VCAddRecipe.swift in Sources */,
 				873A0AD727B934FB006F15E9 /* Tags+CoreDataProperties.swift in Sources */,
 				3987340A27BAE4C20066F9E4 /* themes.swift in Sources */,
 				873A0ADD27B945CA006F15E9 /* VCHome.swift in Sources */,
@@ -329,6 +336,7 @@
 				A23D170627B293C200AC4DA8 /* AppDelegate.swift in Sources */,
 				872971C527B9B36A001AE4E3 /* TVCHomeRow.swift in Sources */,
 				0E5ADBE327B91600006DEC15 /* VCUpdateRecipe1.swift in Sources */,
+				0ECB0C4B27BBBCBD00C9792C /* VCAddRecipe2.swift in Sources */,
 				0E77F92C27BAC90D00187F93 /* ApiResponse.swift in Sources */,
 				873A0AD227B934FB006F15E9 /* Recipe+CoreDataClass.swift in Sources */,
 				0E5ADBE527B91DBB006DEC15 /* VCUpdateRecipe2.swift in Sources */,
