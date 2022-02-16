@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0E499D8127BAC6D500BDEEFE /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E499D8027BAC6D500BDEEFE /* LoadImage.swift */; };
-		0E5ADBE327B91600006DEC15 /* VCUpdateRecipe1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5ADBE227B91600006DEC15 /* VCUpdateRecipe1.swift */; };
+		0E5ADBE327B91600006DEC15 /* UpdateRecipies in Sources */ = {isa = PBXBuildFile; fileRef = 0E5ADBE227B91600006DEC15 /* UpdateRecipies */; };
 		0E75F3A827B42F7300C9E5B0 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E75F3A727B42F7300C9E5B0 /* recipes.json */; };
-		0E75F3AC27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */; };
+		0E75F3AC27B42FBB00C9E5B0 /* GetRecipies in Sources */ = {isa = PBXBuildFile; fileRef = 0E75F3AB27B42FBB00C9E5B0 /* GetRecipies */; };
 		0E77F92C27BAC90D00187F93 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77F92B27BAC90D00187F93 /* ApiResponse.swift */; };
-		0ECB0C4927BBBC8600C9792C /* VCAddRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB0C4827BBBC8600C9792C /* VCAddRecipe.swift */; };
-		0ECB0C4B27BBBCBD00C9792C /* VCAddRecipe2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB0C4A27BBBCBD00C9792C /* VCAddRecipe2.swift */; };
-		0EF7E5F427B65BB600C867E1 /* VCDetailRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */; };
+		0ECB0C4927BBBC8600C9792C /* AddRecipies in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB0C4827BBBC8600C9792C /* AddRecipies */; };
 		3987340327BADBD00066F9E4 /* Sora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3987340127BADBD00066F9E4 /* Sora-SemiBold.ttf */; };
 		3987340427BADBD00066F9E4 /* Sora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3987340227BADBD00066F9E4 /* Sora-Regular.ttf */; };
 		3987340727BAE38F0066F9E4 /* VCFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3987340627BAE38F0066F9E4 /* VCFavorites.swift */; };
@@ -42,13 +40,12 @@
 
 /* Begin PBXFileReference section */
 		0E499D8027BAC6D500BDEEFE /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
-		0E5ADBE227B91600006DEC15 /* VCUpdateRecipe1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCUpdateRecipe1.swift; sourceTree = "<group>"; };
+		0E5ADBE227B91600006DEC15 /* UpdateRecipies */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UpdateRecipies; sourceTree = "<group>"; };
 		0E75F3A727B42F7300C9E5B0 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
-		0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCGetAllRecipes.swift; sourceTree = "<group>"; };
+		0E75F3AB27B42FBB00C9E5B0 /* GetRecipies */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GetRecipies; sourceTree = "<group>"; };
 		0E77F92B27BAC90D00187F93 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
-		0ECB0C4827BBBC8600C9792C /* VCAddRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCAddRecipe.swift; sourceTree = "<group>"; };
-		0ECB0C4A27BBBCBD00C9792C /* VCAddRecipe2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCAddRecipe2.swift; sourceTree = "<group>"; };
-		0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetailRecipe.swift; sourceTree = "<group>"; };
+		0EB6FF0927BD61460026E980 /* VCDetailRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetailRecipe.swift; sourceTree = "<group>"; };
+		0ECB0C4827BBBC8600C9792C /* AddRecipies */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AddRecipies; sourceTree = "<group>"; };
 		3987340127BADBD00066F9E4 /* Sora-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-SemiBold.ttf"; sourceTree = "<group>"; };
 		3987340227BADBD00066F9E4 /* Sora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Regular.ttf"; sourceTree = "<group>"; };
 		3987340627BAE38F0066F9E4 /* VCFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFavorites.swift; sourceTree = "<group>"; };
@@ -87,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EB6FF0827BD61460026E980 /* DetailRecipies */ = {
+			isa = PBXGroup;
+			children = (
+				0EB6FF0927BD61460026E980 /* VCDetailRecipe.swift */,
+			);
+			path = DetailRecipies;
+			sourceTree = "<group>";
+		};
 		398733FF27BAD9910066F9E4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +198,10 @@
 		A22A84C227B3F74E004DCAC8 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				0ECB0C4827BBBC8600C9792C /* AddRecipies */,
+				0E5ADBE227B91600006DEC15 /* UpdateRecipies */,
+				0EB6FF0827BD61460026E980 /* DetailRecipies */,
+				0E75F3AB27B42FBB00C9E5B0 /* GetRecipies */,
 				3987340527BAE35B0066F9E4 /* Favorites */,
 				873A0ADB27B94580006F15E9 /* Home */,
 				A22A84C327B3F75C004DCAC8 /* Launch */,
@@ -238,11 +247,6 @@
 				A23D170B27B293C200AC4DA8 /* Main.storyboard */,
 				A23D170E27B293C200AC4DA8 /* Assets.xcassets */,
 				A23D171327B293C200AC4DA8 /* Info.plist */,
-				0E75F3AB27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift */,
-				0EF7E5F327B65BB600C867E1 /* VCDetailRecipe.swift */,
-				0E5ADBE227B91600006DEC15 /* VCUpdateRecipe1.swift */,
-				0ECB0C4827BBBC8600C9792C /* VCAddRecipe.swift */,
-				0ECB0C4A27BBBCBD00C9792C /* VCAddRecipe2.swift */,
 			);
 			path = IslandCook;
 			sourceTree = "<group>";
@@ -322,9 +326,8 @@
 			files = (
 				87B53B6227B9947E0044D4A5 /* CVCHome.swift in Sources */,
 				872971C827B9B4B9001AE4E3 /* APIService.swift in Sources */,
-				0EF7E5F427B65BB600C867E1 /* VCDetailRecipe.swift in Sources */,
 				873A0AD627B934FB006F15E9 /* Tags+CoreDataClass.swift in Sources */,
-				0ECB0C4927BBBC8600C9792C /* VCAddRecipe.swift in Sources */,
+				0ECB0C4927BBBC8600C9792C /* AddRecipies in Sources */,
 				873A0AD727B934FB006F15E9 /* Tags+CoreDataProperties.swift in Sources */,
 				3987340A27BAE4C20066F9E4 /* themes.swift in Sources */,
 				873A0ADD27B945CA006F15E9 /* VCHome.swift in Sources */,
@@ -332,8 +335,7 @@
 				873A0AD927B936B1006F15E9 /* CoreDataManager.swift in Sources */,
 				A23D170627B293C200AC4DA8 /* AppDelegate.swift in Sources */,
 				872971C527B9B36A001AE4E3 /* TVCHomeRow.swift in Sources */,
-				0E5ADBE327B91600006DEC15 /* VCUpdateRecipe1.swift in Sources */,
-				0ECB0C4B27BBBCBD00C9792C /* VCAddRecipe2.swift in Sources */,
+				0E5ADBE327B91600006DEC15 /* UpdateRecipies in Sources */,
 				0E77F92C27BAC90D00187F93 /* ApiResponse.swift in Sources */,
 				873A0AD227B934FB006F15E9 /* Recipe+CoreDataClass.swift in Sources */,
 				873A0AD027B934FB006F15E9 /* Ingredients+CoreDataClass.swift in Sources */,
@@ -344,7 +346,7 @@
 				3987340727BAE38F0066F9E4 /* VCFavorites.swift in Sources */,
 				873A0AD427B934FB006F15E9 /* Steps+CoreDataClass.swift in Sources */,
 				873A0AD127B934FB006F15E9 /* Ingredients+CoreDataProperties.swift in Sources */,
-				0E75F3AC27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift in Sources */,
+				0E75F3AC27B42FBB00C9E5B0 /* GetRecipies in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
