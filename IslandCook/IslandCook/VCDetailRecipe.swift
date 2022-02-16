@@ -9,16 +9,7 @@ import UIKit
 
 class VCDetailRecipe: UIViewController {
     
-    var decodeData: [ApiResponse] = []
-    var id: String?
-    var nombre: String?
-    var image_url: String?
-    var author: String?
-    var ingredients: [ApiResponse.ingredients]?
-    var steps: [String]?
-    var difficulty: String?
-    var tags: [String]?
-    var imageUrl: String?
+    var miReceta: ApiResponse?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,21 +20,21 @@ class VCDetailRecipe: UIViewController {
     
     func loadRecipe()
     {
-        let stringSteps = steps?.joined(separator: ".")
+        let stringSteps = miReceta?.steps.joined(separator: ".")
         
-        let stringIngredientes = ingredients?.description
         
-        lblNameRecipe.text = nombre
-        lblAuthor.text = author
-        tvIngredients.text = stringIngredientes?.localizedCapitalized
+        lblNameRecipe.text = miReceta?.name
+        lblAuthor.text = miReceta?.author
+        tvIngredients.text = miReceta?.ingredients.description
         tvSteps.text = stringSteps
-        ivImageRecipe.downloaded(from: imageUrl!)
+        ivImageRecipe.downloaded(from: miReceta!.picture_url)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let update = segue.destination as! VCUpdateRecipe1
         
-        update.myId = id
+//        update.myId = id
+        update.myRecipe = miReceta
     }
     
     @IBOutlet weak var lblNameRecipe: UILabel!

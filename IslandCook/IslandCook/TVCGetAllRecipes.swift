@@ -52,12 +52,7 @@ class TVCGetAllRecipes: UITableViewController {
         let postSeleccionado = decodeData[celdaSeleccionada]
         let vistaDetalle = segue.destination as! VCDetailRecipe
 
-        vistaDetalle.id = postSeleccionado._id
-        vistaDetalle.nombre = postSeleccionado.name
-        vistaDetalle.steps = postSeleccionado.steps
-        vistaDetalle.author = postSeleccionado.author
-        vistaDetalle.imageUrl = postSeleccionado.picture_url
-        vistaDetalle.ingredients = postSeleccionado.ingredients
+        vistaDetalle.miReceta = postSeleccionado
     }
 
 

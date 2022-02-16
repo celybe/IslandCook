@@ -9,15 +9,15 @@ import UIKit
 
 class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    var myId: String?
+    var myRecipe: ApiResponse?
+    var getApi: [ApiResponse] = []
     var pickedDifficulty: Int = 55
     var difficulties = ["Easy", "Medium", "Show off"]
     var selectDifficulty: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        cargareceta()
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -38,17 +38,26 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
    
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let update2 = segue.destination as! VCUpdateRecipe2
-        
-        update2.id = myId
-        update2.nombreReceta = txtRecipeName.text
-        update2.author = txtAuthor.text
-        update2.urlImage = txtImageUrl.text
+    private func cargareceta()
+    {
+        let stringTags = myRecipe?.tags.joined(separator: ".")
+
+        txtRecipeName.text = myRecipe?.name
+        txtAuthor.text = myRecipe?.author
+        txtImageUrl.text = myRecipe?.picture_url
+        txtIngredients.text = myRecipe?.ingredients.description
+        txtSteps.text = myRecipe?.steps.description
+        txtTags.text = stringTags
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        APIService.shared.putRecipe(id: myRecipe!._id)
+    }
     
     @IBOutlet weak var txtImageUrl: UITextField!
     @IBOutlet weak var txtAuthor: UITextField!
     @IBOutlet weak var txtRecipeName: UITextField!
+    @IBOutlet weak var txtIngredients: UITextField!
+    @IBOutlet weak var txtSteps: UITextField!
+    @IBOutlet weak var txtTags: UITextField!
 }
