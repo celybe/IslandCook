@@ -295,7 +295,11 @@
                         <color key="backgroundColor" name="BackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ubI-1c-Dim">
-                        <barButtonItem key="rightBarButtonItem" title="New" id="v7M-Fv-DFp"/>
+                        <barButtonItem key="rightBarButtonItem" title="New" id="v7M-Fv-DFp">
+                            <connections>
+                                <segue destination="wDh-7k-111" kind="show" id="JRp-y5-tr3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVb-bJ-nS0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -623,10 +627,10 @@
             </objects>
             <point key="canvasLocation" x="-1613.0434782608697" y="1476.5625"/>
         </scene>
-        <!--Save-->
+        <!--Add Recipe-->
         <scene sceneID="rwk-zT-k2I">
             <objects>
-                <viewController id="wDh-7k-111" customClass="VCUpdateRecipe1" customModule="IslandCook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wDh-7k-111" customClass="VCAddRecipe" customModule="IslandCook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="URJ-og-hLt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -681,53 +685,93 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6w-lD-UH3">
-                                        <rect key="frame" x="8" y="391" width="385" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6w-lD-UH3">
+                                        <rect key="frame" x="8" y="400" width="385" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y30-YE-CTh">
-                                        <rect key="frame" x="8" y="438" width="385" height="34"/>
+                                        <rect key="frame" x="12" y="435" width="338" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rk4-kI-faR">
-                                        <rect key="frame" x="12" y="495" width="382" height="21"/>
+                                        <rect key="frame" x="8" y="554" width="382" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vKM-tM-EaJ">
-                                        <rect key="frame" x="8" y="524" width="385" height="34"/>
+                                        <rect key="frame" x="12" y="590" width="338" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRl-Li-FbN">
+                                        <rect key="frame" x="12" y="664" width="338" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdw-bf-ns2">
+                                        <rect key="frame" x="11" y="632" width="385" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsM-EP-C9G">
+                                        <rect key="frame" x="357" y="464" width="49" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title=" "/>
+                                        <connections>
+                                            <action selector="btnAddIngredient:" destination="wDh-7k-111" eventType="touchUpInside" id="HA0-z6-UCb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWw-89-qns">
+                                        <rect key="frame" x="358" y="583" width="49" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title=" "/>
+                                        <connections>
+                                            <action selector="btnAddStep:" destination="wDh-7k-111" eventType="touchUpInside" id="dtZ-EM-mjH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rse-HJ-YnG">
+                                        <rect key="frame" x="358" y="649" width="49" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title=" "/>
+                                        <connections>
+                                            <action selector="btnAddTag:" destination="wDh-7k-111" eventType="touchUpInside" id="FJW-R4-ajl"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyp-yp-5Ch">
+                                        <rect key="frame" x="7" y="477" width="385" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tGn-JX-Ex3">
+                                        <rect key="frame" x="12" y="512" width="337" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uaQ-o0-EYZ">
-                                        <rect key="frame" x="0.0" y="250" width="414" height="162"/>
+                                        <rect key="frame" x="0.0" y="239" width="414" height="162"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <outlet property="dataSource" destination="wDh-7k-111" id="jnr-6s-lid"/>
                                             <outlet property="delegate" destination="wDh-7k-111" id="S0o-yd-KY4"/>
                                         </connections>
                                     </pickerView>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRl-Li-FbN">
-                                        <rect key="frame" x="12" y="626" width="381" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdw-bf-ns2">
-                                        <rect key="frame" x="15" y="597" width="385" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="f4Z-qZ-7FL"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="fpX-We-uPb"/>
@@ -736,22 +780,24 @@
                         <viewLayoutGuide key="safeArea" id="Y3W-vq-ZGw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Save" id="yAB-79-Qx5"/>
+                    <navigationItem key="navigationItem" id="yAB-79-Qx5"/>
                     <connections>
-                        <outlet property="txtAuthor" destination="JhQ-OK-uuu" id="JLW-mj-XEa"/>
-                        <outlet property="txtImageUrl" destination="Q7S-az-wg0" id="07z-LP-8Ue"/>
-                        <outlet property="txtIngredients" destination="y30-YE-CTh" id="4ya-Gk-Iue"/>
-                        <outlet property="txtRecipeName" destination="H0G-CJ-nLB" id="T6M-rS-e87"/>
-                        <outlet property="txtSteps" destination="vKM-tM-EaJ" id="iZy-ux-LSd"/>
-                        <outlet property="txtTags" destination="bRl-Li-FbN" id="9OQ-9J-9rg"/>
+                        <outlet property="txtAuthor" destination="JhQ-OK-uuu" id="fEt-tE-reb"/>
+                        <outlet property="txtImage_Url" destination="Q7S-az-wg0" id="r9B-t3-7JA"/>
+                        <outlet property="txtIngredients" destination="y30-YE-CTh" id="ZQA-dU-3nF"/>
+                        <outlet property="txtName" destination="H0G-CJ-nLB" id="IpA-hM-89r"/>
+                        <outlet property="txtQuantityIngredients" destination="tGn-JX-Ex3" id="eg2-Su-gMu"/>
+                        <outlet property="txtSteps" destination="vKM-tM-EaJ" id="dod-1K-Kw8"/>
+                        <outlet property="txtTags" destination="bRl-Li-FbN" id="kas-Oe-ODK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VN0-tU-ugF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="317" y="727"/>
+            <point key="canvasLocation" x="314.49275362318843" y="726.5625"/>
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
