@@ -19,8 +19,9 @@
 		3966F3A927BB330B000DD47C /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3966F3A827BB330B000DD47C /* extensions.swift */; };
 		3987340327BADBD00066F9E4 /* Sora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3987340127BADBD00066F9E4 /* Sora-SemiBold.ttf */; };
 		3987340427BADBD00066F9E4 /* Sora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3987340227BADBD00066F9E4 /* Sora-Regular.ttf */; };
-		3987340727BAE38F0066F9E4 /* VCFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3987340627BAE38F0066F9E4 /* VCFavorites.swift */; };
 		3987340A27BAE4C20066F9E4 /* themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3987340927BAE4C20066F9E4 /* themes.swift */; };
+		7386BCB927BD102E00236FD0 /* CVCMyRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7386BCB827BD102E00236FD0 /* CVCMyRecipes.swift */; };
+		7386BCBB27BD104500236FD0 /* CVCellMyRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7386BCBA27BD104500236FD0 /* CVCellMyRecipes.swift */; };
 		872971C527B9B36A001AE4E3 /* TVCHomeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872971C427B9B36A001AE4E3 /* TVCHomeRow.swift */; };
 		872971C827B9B4B9001AE4E3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872971C727B9B4B9001AE4E3 /* APIService.swift */; };
 		873A0AC727B93020006F15E9 /* RecipeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 873A0AC527B93020006F15E9 /* RecipeModel.xcdatamodeld */; };
@@ -55,8 +56,9 @@
 		3966F3A827BB330B000DD47C /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		3987340127BADBD00066F9E4 /* Sora-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-SemiBold.ttf"; sourceTree = "<group>"; };
 		3987340227BADBD00066F9E4 /* Sora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Regular.ttf"; sourceTree = "<group>"; };
-		3987340627BAE38F0066F9E4 /* VCFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFavorites.swift; sourceTree = "<group>"; };
 		3987340927BAE4C20066F9E4 /* themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = themes.swift; sourceTree = "<group>"; };
+		7386BCB827BD102E00236FD0 /* CVCMyRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCMyRecipes.swift; sourceTree = "<group>"; };
+		7386BCBA27BD104500236FD0 /* CVCellMyRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCellMyRecipes.swift; sourceTree = "<group>"; };
 		872971C427B9B36A001AE4E3 /* TVCHomeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCHomeRow.swift; sourceTree = "<group>"; };
 		872971C727B9B4B9001AE4E3 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		873A0AC627B93020006F15E9 /* RecipeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecipeModel.xcdatamodel; sourceTree = "<group>"; };
@@ -112,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				3966F3A427BB2CFD000DD47C /* CVCFavorites.swift */,
-				3987340627BAE38F0066F9E4 /* VCFavorites.swift */,
 				3966F3A627BB2FDF000DD47C /* CVCellFavorites.swift */,
 			);
 			path = Favorites;
@@ -126,6 +127,15 @@
 			);
 			name = Extensions;
 			path = ../Extensions;
+			sourceTree = "<group>";
+		};
+		7386BCB727BD0FC000236FD0 /* MyRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				7386BCB827BD102E00236FD0 /* CVCMyRecipes.swift */,
+				7386BCBA27BD104500236FD0 /* CVCellMyRecipes.swift */,
+			);
+			path = MyRecipes;
 			sourceTree = "<group>";
 		};
 		872971C627B9B47E001AE4E3 /* API */ = {
@@ -200,6 +210,7 @@
 		A22A84C227B3F74E004DCAC8 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				7386BCB727BD0FC000236FD0 /* MyRecipes */,
 				3987340527BAE35B0066F9E4 /* Favorites */,
 				873A0ADB27B94580006F15E9 /* Home */,
 				A22A84C327B3F75C004DCAC8 /* Launch */,
@@ -332,6 +343,7 @@
 				873A0AD627B934FB006F15E9 /* Tags+CoreDataClass.swift in Sources */,
 				873A0AD727B934FB006F15E9 /* Tags+CoreDataProperties.swift in Sources */,
 				3987340A27BAE4C20066F9E4 /* themes.swift in Sources */,
+				7386BCB927BD102E00236FD0 /* CVCMyRecipes.swift in Sources */,
 				873A0ADD27B945CA006F15E9 /* VCHome.swift in Sources */,
 				873A0AC727B93020006F15E9 /* RecipeModel.xcdatamodeld in Sources */,
 				873A0AD927B936B1006F15E9 /* CoreDataManager.swift in Sources */,
@@ -340,6 +352,7 @@
 				0E5ADBE327B91600006DEC15 /* VCUpdateRecipe1.swift in Sources */,
 				0E77F92C27BAC90D00187F93 /* ApiResponse.swift in Sources */,
 				873A0AD227B934FB006F15E9 /* Recipe+CoreDataClass.swift in Sources */,
+				7386BCBB27BD104500236FD0 /* CVCellMyRecipes.swift in Sources */,
 				3966F3A927BB330B000DD47C /* extensions.swift in Sources */,
 				3966F3A727BB2FDF000DD47C /* CVCellFavorites.swift in Sources */,
 				0E5ADBE527B91DBB006DEC15 /* VCUpdateRecipe2.swift in Sources */,
@@ -349,7 +362,6 @@
 				A23D170827B293C200AC4DA8 /* SceneDelegate.swift in Sources */,
 				873A0AD527B934FB006F15E9 /* Steps+CoreDataProperties.swift in Sources */,
 				873A0AD327B934FB006F15E9 /* Recipe+CoreDataProperties.swift in Sources */,
-				3987340727BAE38F0066F9E4 /* VCFavorites.swift in Sources */,
 				873A0AD427B934FB006F15E9 /* Steps+CoreDataClass.swift in Sources */,
 				873A0AD127B934FB006F15E9 /* Ingredients+CoreDataProperties.swift in Sources */,
 				0E75F3AC27B42FBB00C9E5B0 /* TVCGetAllRecipes.swift in Sources */,
