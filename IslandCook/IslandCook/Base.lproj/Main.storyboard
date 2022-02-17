@@ -49,7 +49,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tk-Wk-0ma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="216" y="-15"/>
+            <point key="canvasLocation" x="367" y="-374"/>
         </scene>
         <!--Detail Recipe-->
         <scene sceneID="nOP-c7-vGT">
@@ -450,8 +450,8 @@
                                                         <color key="textColor" name="AccentColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="voG-Jf-8gg">
-                                                        <rect key="frame" x="0.0" y="61" width="414" height="255"/>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="voG-Jf-8gg">
+                                                        <rect key="frame" x="0.0" y="61" width="414" height="250"/>
                                                         <color key="backgroundColor" name="BackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="250" id="6f5-aF-qQ3"/>
@@ -518,6 +518,10 @@
                                                                                     </connections>
                                                                                 </collectionViewCell>
                                                                             </cells>
+                                                                            <connections>
+                                                                                <outlet property="dataSource" destination="tZu-WF-y5P" id="Yug-Qm-XFy"/>
+                                                                                <outlet property="delegate" destination="tZu-WF-y5P" id="oL1-pk-Mrq"/>
+                                                                            </connections>
                                                                         </collectionView>
                                                                     </subviews>
                                                                     <color key="backgroundColor" name="BackgroundColor"/>
@@ -572,6 +576,7 @@
                     <connections>
                         <outlet property="tableViewTopRecipes" destination="voG-Jf-8gg" id="lNE-C0-iVU"/>
                         <segue destination="8so-iz-au4" kind="show" identifier="fromHomeToAllList" id="crX-R0-HWG"/>
+                        <segue destination="qei-aU-kwD" kind="show" identifier="homeToDetail" destinationCreationSelector="perform:" id="Ivq-2z-a3m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWP-N2-Urr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -810,6 +815,9 @@
             <point key="canvasLocation" x="314.49275362318843" y="726.5625"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ivq-2z-a3m"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="plus" catalog="system" width="128" height="113"/>
