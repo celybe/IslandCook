@@ -49,8 +49,7 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         txtSteps.text = myRecipe?.steps.description
         txtTags.text = stringTags
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
+    @IBAction func btnSaveUpdate(_ sender: Any) {
         APIService.shared.putRecipe(id: myRecipe!._id)
     }
     

@@ -140,7 +140,7 @@
             </objects>
             <point key="canvasLocation" x="1055" y="-15"/>
         </scene>
-        <!--Save-->
+        <!--Update Recipe1-->
         <scene sceneID="RCU-ne-brE">
             <objects>
                 <viewController id="imZ-2L-g3q" customClass="VCUpdateRecipe1" customModule="IslandCook" customModuleProvider="target" sceneMemberID="viewController">
@@ -253,7 +253,13 @@
                         <viewLayoutGuide key="safeArea" id="ArA-Ag-sAf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Save" id="Ttu-UR-YPn"/>
+                    <navigationItem key="navigationItem" id="Ttu-UR-YPn">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="bpP-VS-hiS">
+                            <connections>
+                                <action selector="btnSaveUpdate:" destination="imZ-2L-g3q" id="4O5-EA-6Pi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="txtAuthor" destination="82Z-7J-gAX" id="0mV-Lp-GsA"/>
                         <outlet property="txtImageUrl" destination="Y05-nX-c1J" id="SYf-Sn-6NU"/>
