@@ -7,18 +7,16 @@
 
 import UIKit
 
-class TVCHomeRow: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+class TVCHomeRow: UITableViewCell {
     
     private var recipesList : [ApiResponse] = APIService.shared.decodeJson(endpoint: "")
-    
+    private var recipeId: String = ""
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization
         recipesList.shuffle()
-        collectionView.delegate = self
-        collectionView.dataSource = self
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -27,22 +25,7 @@ class TVCHomeRow: UITableViewCell, UICollectionViewDelegate, UICollectionViewDat
         // Configure the view for the selected state
     }
     
-    //Funciones colección
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
-    }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCellTopRecipes", for: indexPath) as! CVCHome
-        cell.txtTitle.text = recipesList[indexPath.row].name
-        cell.ivRecipe.downloaded(from: recipesList[indexPath.row].picture_url )
-        cell.ivRecipe.layer.cornerRadius = 15
-        cell.ivRecipe.frame.size.width = 160
-        cell.ivRecipe.frame.size.height = 160
-        cell.ivRecipe.contentMode = UIView.ContentMode.scaleAspectFill
-        return cell
-    }
     func collectionView(_ collectionView:UICollectionView,layout UICollectionViewLayout: UICollectionViewLayout, sizeForItemAt IndexPath: IndexPath)-> CGSize{
         return CGSize(width: 190, height: 250)
     }
-
 }
