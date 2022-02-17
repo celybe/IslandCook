@@ -44,13 +44,24 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     
     private func pasaDatos()
     {
-        myRecipe?.name = txtName.text!
-        myRecipe?.author = txtAuthor.text!
-        myRecipe?.picture_url = txtImage_Url.text!
-        myRecipe?.difficulty = selectDifficulty!
-        myRecipe?.tags = tags
-        myRecipe?.steps = steps
-//        myRecipe?.ingredients = ingredients
+            
+        do
+        {
+            var myIngredients = try [ApiResponse.ingredients](from: ingredients as! Decoder)
+            
+            myRecipe?.name = txtName.text!
+            myRecipe?.author = txtAuthor.text!
+            myRecipe?.picture_url = txtImage_Url.text!
+            myRecipe?.difficulty = selectDifficulty!
+            myRecipe?.tags = tags
+            myRecipe?.steps = steps
+            myRecipe?.ingredients = myIngredients
+        }
+        catch
+        {
+            let error = error as NSError
+            print("Valor erroneo, \(error)")
+        }
     }
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtAuthor: UITextField!
