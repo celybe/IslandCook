@@ -45,7 +45,7 @@ class APIService{
         request.httpMethod = "POST"
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
-                print(error?.localizedDescription ?? "No hay datos")
+                ACPushRecipes()
                 return
             }
             print ("RESPUESTA: \(response)")
@@ -63,7 +63,7 @@ class APIService{
         request.httpMethod = "PUT"
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
-                print(error?.localizedDescription ?? "No hay datos")
+                ACPutRecipes()
                 return
             }
             print ("RESPUESTA: \(response)")

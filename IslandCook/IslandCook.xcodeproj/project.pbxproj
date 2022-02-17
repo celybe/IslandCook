@@ -12,6 +12,8 @@
 		0E77F92C27BAC90D00187F93 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77F92B27BAC90D00187F93 /* ApiResponse.swift */; };
 		0E80126F27BEAEE700DA3687 /* ACGetRecipies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E80126E27BEAEE700DA3687 /* ACGetRecipies.swift */; };
 		0E80127127BEAFA200DA3687 /* VCAlertDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E80127027BEAFA200DA3687 /* VCAlertDelete.swift */; };
+		0E80127F27BEB65900DA3687 /* ACPutRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E80127E27BEB65900DA3687 /* ACPutRecipes.swift */; };
+		0E80128227BEB67600DA3687 /* ACPushRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E80128127BEB67600DA3687 /* ACPushRecipes.swift */; };
 		0EB6FF0C27BD6ED70026E980 /* TVCGetAllRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB6FF0B27BD6ED70026E980 /* TVCGetAllRecipes.swift */; };
 		0EB6FF0D27BD6EDD0026E980 /* VCDetailRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB6FF0927BD61460026E980 /* VCDetailRecipe.swift */; };
 		0EB6FF0F27BD6EE00026E980 /* VCUpdateRecipe1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB6FF0E27BD6EE00026E980 /* VCUpdateRecipe1.swift */; };
@@ -47,6 +49,8 @@
 		0E77F92B27BAC90D00187F93 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		0E80126E27BEAEE700DA3687 /* ACGetRecipies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACGetRecipies.swift; sourceTree = "<group>"; };
 		0E80127027BEAFA200DA3687 /* VCAlertDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCAlertDelete.swift; sourceTree = "<group>"; };
+		0E80127E27BEB65900DA3687 /* ACPutRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACPutRecipes.swift; sourceTree = "<group>"; };
+		0E80128127BEB67600DA3687 /* ACPushRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACPushRecipes.swift; sourceTree = "<group>"; };
 		0EB6FF0927BD61460026E980 /* VCDetailRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetailRecipe.swift; sourceTree = "<group>"; };
 		0EB6FF0B27BD6ED70026E980 /* TVCGetAllRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCGetAllRecipes.swift; sourceTree = "<group>"; };
 		0EB6FF0E27BD6EE00026E980 /* VCUpdateRecipe1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCUpdateRecipe1.swift; sourceTree = "<group>"; };
@@ -92,11 +96,45 @@
 		0E80126D27BEAEBD00DA3687 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
-				0E80126E27BEAEE700DA3687 /* ACGetRecipies.swift */,
-				0E80127027BEAFA200DA3687 /* VCAlertDelete.swift */,
+				0E80127D27BEB62700DA3687 /* AlertPushRecipes */,
+				0E80127C27BEB61300DA3687 /* AlertPutRecipes */,
+				0E80127B27BEB60300DA3687 /* AlertDeleteRecipes */,
+				0E80127A27BEB5F400DA3687 /* AlertGetRecipes */,
 			);
 			name = Alerts;
 			path = API/Model/Alerts;
+			sourceTree = "<group>";
+		};
+		0E80127A27BEB5F400DA3687 /* AlertGetRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				0E80126E27BEAEE700DA3687 /* ACGetRecipies.swift */,
+			);
+			path = AlertGetRecipes;
+			sourceTree = "<group>";
+		};
+		0E80127B27BEB60300DA3687 /* AlertDeleteRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				0E80127027BEAFA200DA3687 /* VCAlertDelete.swift */,
+			);
+			path = AlertDeleteRecipes;
+			sourceTree = "<group>";
+		};
+		0E80127C27BEB61300DA3687 /* AlertPutRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				0E80127E27BEB65900DA3687 /* ACPutRecipes.swift */,
+			);
+			path = AlertPutRecipes;
+			sourceTree = "<group>";
+		};
+		0E80127D27BEB62700DA3687 /* AlertPushRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				0E80128127BEB67600DA3687 /* ACPushRecipes.swift */,
+			);
+			path = AlertPushRecipes;
 			sourceTree = "<group>";
 		};
 		0EB6FF0827BD61460026E980 /* DetailRecipies */ = {
@@ -365,12 +403,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B53B6227B9947E0044D4A5 /* CVCHome.swift in Sources */,
+				0E80128227BEB67600DA3687 /* ACPushRecipes.swift in Sources */,
 				872971C827B9B4B9001AE4E3 /* APIService.swift in Sources */,
 				873A0AD627B934FB006F15E9 /* Tags+CoreDataClass.swift in Sources */,
 				873A0AD727B934FB006F15E9 /* Tags+CoreDataProperties.swift in Sources */,
 				0EB6FF0F27BD6EE00026E980 /* VCUpdateRecipe1.swift in Sources */,
 				3987340A27BAE4C20066F9E4 /* themes.swift in Sources */,
 				873A0ADD27B945CA006F15E9 /* VCHome.swift in Sources */,
+				0E80127F27BEB65900DA3687 /* ACPutRecipes.swift in Sources */,
 				0EB6FF0C27BD6ED70026E980 /* TVCGetAllRecipes.swift in Sources */,
 				873A0AC727B93020006F15E9 /* RecipeModel.xcdatamodeld in Sources */,
 				873A0AD927B936B1006F15E9 /* CoreDataManager.swift in Sources */,
