@@ -52,11 +52,6 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         myRecipe?.steps = steps
 //        myRecipe?.ingredients = ingredients
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        pasaDatos()
-        APIService.shared.postRecipe()
-    }
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtAuthor: UITextField!
     @IBOutlet weak var txtImage_Url: UITextField!
@@ -78,5 +73,9 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         tags.append(txtTags.text!)
     }
     
+    @IBAction func btnSave(_ sender: Any) {
+        pasaDatos()
+        APIService.shared.postRecipe()
+    }
     
 }

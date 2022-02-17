@@ -109,27 +109,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZj-To-abJ">
-                                <rect key="frame" x="336" y="88" width="65" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Borrar">
-                                    <color key="baseBackgroundColor" name="Error"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="btnDelete:" destination="qei-aU-kwD" eventType="touchUpInside" id="Y5Y-eI-eNc"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4XC-EF-X6e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="y04-5R-gqv">
-                        <barButtonItem key="rightBarButtonItem" title="Update" id="div-m6-2NZ">
-                            <connections>
-                                <segue destination="imZ-2L-g3q" kind="show" id="ryZ-j7-M8c"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="pencil" catalog="system" id="div-m6-2NZ">
+                                <connections>
+                                    <segue destination="imZ-2L-g3q" kind="show" id="ryZ-j7-M8c"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="trash" catalog="system" id="Khh-aj-8jS">
+                                <color key="tintColor" name="Error"/>
+                                <connections>
+                                    <action selector="btnDelet5e:" destination="qei-aU-kwD" id="VQW-hM-met"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="ivImageRecipe" destination="TeE-eI-vrp" id="XWa-9b-YGb"/>
@@ -209,7 +206,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JqZ-J2-wAZ">
-                                        <rect key="frame" x="8" y="438" width="385" height="34"/>
+                                        <rect key="frame" x="20" y="438" width="373" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -222,7 +219,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lmr-oR-iRj">
-                                        <rect key="frame" x="8" y="524" width="385" height="34"/>
+                                        <rect key="frame" x="20" y="524" width="373" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -236,7 +233,7 @@
                                         </connections>
                                     </pickerView>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qoi-le-P4a">
-                                        <rect key="frame" x="12" y="626" width="381" height="34"/>
+                                        <rect key="frame" x="20" y="626" width="373" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -795,7 +792,13 @@
                         <viewLayoutGuide key="safeArea" id="Y3W-vq-ZGw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yAB-79-Qx5"/>
+                    <navigationItem key="navigationItem" id="yAB-79-Qx5">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="B6Q-gt-U86">
+                            <connections>
+                                <action selector="btnSave:" destination="wDh-7k-111" id="Jnd-NH-LiW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="txtAuthor" destination="JhQ-OK-uuu" id="fEt-tE-reb"/>
                         <outlet property="txtImage_Url" destination="Q7S-az-wg0" id="r9B-t3-7JA"/>
@@ -815,7 +818,9 @@
         <segue reference="Ivq-2z-a3m"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

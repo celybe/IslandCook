@@ -25,7 +25,7 @@ class APIService{
             let datosArchivo = try Data(contentsOf: loadDataFromremoteUrl(endpoint: endpoint))
             decodeData = try decoder.decode([ApiResponse].self, from: datosArchivo)
         }catch{
-            print("Error, no se puede parsear el archivo")
+            ACGetRecipies()
         }
         return decodeData
     }
@@ -82,7 +82,7 @@ class APIService{
         request.httpMethod = "DELETE"
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
-                print(error?.localizedDescription ?? "No hay datos")
+                VCAlertDelete()
                 return
             }
             print ("RESPUESTA: \(response)")
