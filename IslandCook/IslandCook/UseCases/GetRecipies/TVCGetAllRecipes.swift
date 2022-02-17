@@ -12,6 +12,7 @@ class TVCGetAllRecipes: UITableViewController {
     var filterEndPoint: String = ""
     var decodeData: [ApiResponse] = []
     var urlImg: String?
+//    let origen = "Local"
     override func viewDidLoad() {
         super.viewDidLoad()
         print(filterEndPoint)
@@ -39,6 +40,7 @@ class TVCGetAllRecipes: UITableViewController {
         urlImg = decodeData[indexPath.row].picture_url
 
         // Configure the cell...
+//        var iden = String()
         cell.textLabel?.text = decodeData [indexPath.row].name
         cell.imageView?.downloaded(from: urlImg!)
 

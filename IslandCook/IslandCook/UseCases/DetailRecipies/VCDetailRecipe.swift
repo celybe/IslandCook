@@ -33,6 +33,7 @@ class VCDetailRecipe: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let update = segue.destination as! VCUpdateRecipe1
         
+//        update.myId = id
         update.myRecipe = miReceta
     }
     
