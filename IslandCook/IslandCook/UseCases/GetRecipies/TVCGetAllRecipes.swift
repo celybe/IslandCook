@@ -38,9 +38,6 @@ class TVCGetAllRecipes: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         urlImg = decodeData[indexPath.row].picture_url
-
-        // Configure the cell...
-//        var iden = String()
         cell.textLabel?.text = decodeData [indexPath.row].name
         cell.imageView?.downloaded(from: urlImg!)
 
