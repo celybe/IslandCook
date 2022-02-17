@@ -10,6 +10,8 @@
 		0E499D8127BAC6D500BDEEFE /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E499D8027BAC6D500BDEEFE /* LoadImage.swift */; };
 		0E75F3A827B42F7300C9E5B0 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E75F3A727B42F7300C9E5B0 /* recipes.json */; };
 		0E77F92C27BAC90D00187F93 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77F92B27BAC90D00187F93 /* ApiResponse.swift */; };
+		0E80126F27BEAEE700DA3687 /* ACGetRecipies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E80126E27BEAEE700DA3687 /* ACGetRecipies.swift */; };
+		0E80127127BEAFA200DA3687 /* VCAlertDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E80127027BEAFA200DA3687 /* VCAlertDelete.swift */; };
 		0EB6FF0C27BD6ED70026E980 /* TVCGetAllRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB6FF0B27BD6ED70026E980 /* TVCGetAllRecipes.swift */; };
 		0EB6FF0D27BD6EDD0026E980 /* VCDetailRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB6FF0927BD61460026E980 /* VCDetailRecipe.swift */; };
 		0EB6FF0F27BD6EE00026E980 /* VCUpdateRecipe1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB6FF0E27BD6EE00026E980 /* VCUpdateRecipe1.swift */; };
@@ -43,6 +45,8 @@
 		0E499D8027BAC6D500BDEEFE /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
 		0E75F3A727B42F7300C9E5B0 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
 		0E77F92B27BAC90D00187F93 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		0E80126E27BEAEE700DA3687 /* ACGetRecipies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACGetRecipies.swift; sourceTree = "<group>"; };
+		0E80127027BEAFA200DA3687 /* VCAlertDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCAlertDelete.swift; sourceTree = "<group>"; };
 		0EB6FF0927BD61460026E980 /* VCDetailRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetailRecipe.swift; sourceTree = "<group>"; };
 		0EB6FF0B27BD6ED70026E980 /* TVCGetAllRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCGetAllRecipes.swift; sourceTree = "<group>"; };
 		0EB6FF0E27BD6EE00026E980 /* VCUpdateRecipe1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCUpdateRecipe1.swift; sourceTree = "<group>"; };
@@ -85,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E80126D27BEAEBD00DA3687 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				0E80126E27BEAEE700DA3687 /* ACGetRecipies.swift */,
+				0E80127027BEAFA200DA3687 /* VCAlertDelete.swift */,
+			);
+			name = Alerts;
+			path = API/Model/Alerts;
+			sourceTree = "<group>";
+		};
 		0EB6FF0827BD61460026E980 /* DetailRecipies */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +177,7 @@
 		873A0AC227B92F62006F15E9 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				0E80126D27BEAEBD00DA3687 /* Alerts */,
 				872971C627B9B47E001AE4E3 /* API */,
 				873A0AC327B92F6D006F15E9 /* DataBase */,
 			);
@@ -367,8 +382,10 @@
 				873A0AD027B934FB006F15E9 /* Ingredients+CoreDataClass.swift in Sources */,
 				0E499D8127BAC6D500BDEEFE /* LoadImage.swift in Sources */,
 				A23D170827B293C200AC4DA8 /* SceneDelegate.swift in Sources */,
+				0E80127127BEAFA200DA3687 /* VCAlertDelete.swift in Sources */,
 				873A0AD527B934FB006F15E9 /* Steps+CoreDataProperties.swift in Sources */,
 				873A0AD327B934FB006F15E9 /* Recipe+CoreDataProperties.swift in Sources */,
+				0E80126F27BEAEE700DA3687 /* ACGetRecipies.swift in Sources */,
 				0EB6FF0D27BD6EDD0026E980 /* VCDetailRecipe.swift in Sources */,
 				3987340727BAE38F0066F9E4 /* VCFavorites.swift in Sources */,
 				873A0AD427B934FB006F15E9 /* Steps+CoreDataClass.swift in Sources */,
