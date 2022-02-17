@@ -38,22 +38,33 @@ class APIService{
         return url
     }
     
-    func postRecipe() {
+    func postRecipe(recipe: ApiBody) {
         // creamos la petición post
         let url = URL(string: "https://island-cook.herokuapp.com/api/recipe")!
         var request = URLRequest(url: url)
+        let data = [
+            "name" : recipe.name,
+            "picture_url": recipe.picture_url,
+            "difficultity":recipe.difficulty,
+            "author": recipe.author,
+        ]
+        
+        let bodyData = try? JSONSerialization.data(withJSONObject: data, options: [])
         request.httpMethod = "POST"
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else {
-                ACPushRecipes()
-                return
+        request.httpBody = bodyData
+        let session = URLSession.shared
+        let task = session.dataTask(with: request) { (data, response, error) in
+            
+            if let error = error {
+                print(error)
+            } else if let data = data {
+                // Handle HTTP request response
+                print(data)
+            } else {
+                // Handle unexpected error
             }
-            print ("RESPUESTA: \(response)")
-            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
-            if let responseJSON = responseJSON as? [String: Any] {
-            }
-            print(responseJSON)
         }
+        task.resume()
     }
     
     func putRecipe(id: String) {
@@ -64,6 +75,7 @@ class APIService{
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
                 ACPutRecipes()
+                print(error)
                 return
             }
             print ("RESPUESTA: \(response)")
