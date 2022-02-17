@@ -9,7 +9,8 @@ import Foundation
 
 class APIService{
     private var decodeData: [ApiResponse] = []
-    var id_intercambio: String?
+//    guard let celdaSeleccionada = TVCGetAllRecipes.
+//    var id_intercambio = decodeData[celdaSeleccionada]._id
     
     static let shared: APIService = {
         let apiService = APIService()
@@ -24,7 +25,7 @@ class APIService{
             let datosArchivo = try Data(contentsOf: loadDataFromremoteUrl(endpoint: endpoint))
             decodeData = try decoder.decode([ApiResponse].self, from: datosArchivo)
         }catch{
-            print("Error, no se puede parsear el archivo")
+            ACGetRecipies()
         }
         return decodeData
     }
@@ -55,9 +56,9 @@ class APIService{
         }
     }
     
-    func putRecipe() {
-        // creamos la petición post
-        let url = URL(string: "https://island-cook.herokuapp.com/api/recipe")!//Falta añadir id
+    func putRecipe(id: String) {
+        // creamos la petición put
+        let url = URL(string: "https://island-cook.herokuapp.com/api/recipe\(id)")!//Falta añadir id
         var request = URLRequest(url: url)
         request.httpMethod = "PUT"
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
@@ -74,14 +75,14 @@ class APIService{
     }
     
     
-    func deleteRecipe() {
-        // creamos la petición post
-        let url = URL(string: "https://island-cook.herokuapp.com/api/recipe")!//Falta añadir id
+    func deleteRecipe(id: String) {
+        // creamos la petición delete
+        let url = URL(string: "https://island-cook.herokuapp.com/api/recipe\(id)")!//Falta añadir id
         var request = URLRequest(url: url)
         request.httpMethod = "DELETE"
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
-                print(error?.localizedDescription ?? "No hay datos")
+                VCAlertDelete()
                 return
             }
             print ("RESPUESTA: \(response)")

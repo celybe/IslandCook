@@ -1,9 +1,8 @@
 version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
 options: "7c210285ad91bfaec743ad1cdc75c0a36a39d4994ee93a2203d801d0d6081829"
-build_start_time: [1644923607, 981910943]
-build_end_time: [1644923608, 496914863]
+build_start_time: [1644878785, 277444839]
+build_end_time: [1644878785, 941593170]
 inputs:
-  "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/Extensions/extensions.swift": [1644888476, 403808116]
   "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/Extensions/themes.swift": [1644878596, 526790142]
   "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/AppDelegate.swift": [1644861411, 987547636]
   "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/Provider/API/APIService.swift": [1644877843, 403970718]
@@ -20,8 +19,6 @@ inputs:
   "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/Provider/DataBase/Entities/Tags+CoreDataProperties.swift": [1644861581, 25235652]
   "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/SceneDelegate.swift": [1644861411, 991262435]
   "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/TVCGetAllRecipes.swift": [1644877843, 404906749]
-  "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/UseCases/Favorites/CVCFavorites.swift": [1644922529, 416485786]
-  "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/UseCases/Favorites/CVCellFavorites.swift": [1644923607, 798436880]
   "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/UseCases/Favorites/VCFavorites.swift": [1644878596, 544458389]
   "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/UseCases/Home/CVCHome.swift": [1644861581, 26809215]
   "/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/UseCases/Home/TVCHomeRow.swift": [1644877843, 405410528]
