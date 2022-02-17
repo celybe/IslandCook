@@ -31,6 +31,7 @@
 		873A0AD727B934FB006F15E9 /* Tags+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A0ACF27B934FB006F15E9 /* Tags+CoreDataProperties.swift */; };
 		873A0AD927B936B1006F15E9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A0AD827B936B1006F15E9 /* CoreDataManager.swift */; };
 		873A0ADD27B945CA006F15E9 /* VCHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A0ADC27B945CA006F15E9 /* VCHome.swift */; };
+		87A410DF27BE802B008BF4EB /* TVCHomeSweetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A410DE27BE802B008BF4EB /* TVCHomeSweetRow.swift */; };
 		87B53B6227B9947E0044D4A5 /* CVCHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B53B6127B9947E0044D4A5 /* CVCHome.swift */; };
 		A23D170627B293C200AC4DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23D170527B293C200AC4DA8 /* AppDelegate.swift */; };
 		A23D170827B293C200AC4DA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23D170727B293C200AC4DA8 /* SceneDelegate.swift */; };
@@ -64,6 +65,7 @@
 		873A0ACF27B934FB006F15E9 /* Tags+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tags+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		873A0AD827B936B1006F15E9 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		873A0ADC27B945CA006F15E9 /* VCHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCHome.swift; sourceTree = "<group>"; };
+		87A410DE27BE802B008BF4EB /* TVCHomeSweetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCHomeSweetRow.swift; sourceTree = "<group>"; };
 		87B53B6127B9947E0044D4A5 /* CVCHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCHome.swift; sourceTree = "<group>"; };
 		A23D170227B293C200AC4DA8 /* IslandCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IslandCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23D170527B293C200AC4DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				873A0ADC27B945CA006F15E9 /* VCHome.swift */,
 				87B53B6127B9947E0044D4A5 /* CVCHome.swift */,
 				872971C427B9B36A001AE4E3 /* TVCHomeRow.swift */,
+				87A410DE27BE802B008BF4EB /* TVCHomeSweetRow.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				872971C827B9B4B9001AE4E3 /* APIService.swift in Sources */,
 				873A0AD627B934FB006F15E9 /* Tags+CoreDataClass.swift in Sources */,
 				873A0AD727B934FB006F15E9 /* Tags+CoreDataProperties.swift in Sources */,
+				87A410DF27BE802B008BF4EB /* TVCHomeSweetRow.swift in Sources */,
 				0EB6FF0F27BD6EE00026E980 /* VCUpdateRecipe1.swift in Sources */,
 				3987340A27BAE4C20066F9E4 /* themes.swift in Sources */,
 				873A0ADD27B945CA006F15E9 /* VCHome.swift in Sources */,
