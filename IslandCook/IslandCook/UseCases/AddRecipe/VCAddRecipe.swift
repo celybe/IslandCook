@@ -17,6 +17,9 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     var pickedDifficulty: Int = 55
     var difficulties = ["Easy", "Medium", "Show off"]
     var selectDifficulty: String?
+    @IBOutlet weak var lblIngredients: UILabel!
+    @IBOutlet weak var lblTags: UILabel!
+    @IBOutlet weak var lblStep: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,17 +70,41 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
             {return}
         let dicciIngredients: [String:String] = ["Name": name, "Amount": amount]
         ingredients.append(dicciIngredients)
+        addIngredientToLbl()
     }
     @IBAction func btnAddStep(_ sender: Any) {
         steps.append(txtSteps.text!)
+        addStepToLbl()
     }
     @IBAction func btnAddTag(_ sender: Any) {
         tags.append(txtTags.text!)
+        addTagsToLbl()
     }
     
     @IBAction func btnSave(_ sender: Any) {
         let receta = pasaDatos()
         APIService.shared.postRecipe(recipe: receta )
+    }
+    private func addIngredientToLbl(){
+        var tagsString : String = ""
+        for item in ingredients{
+            tagsString += "\(item["Name"]!) "
+        }
+        lblIngredients.text = tagsString
+    }
+    private func addStepToLbl(){
+        var stepsString : String = ""
+        for item in steps{
+            stepsString += "- \(item) \n"
+        }
+        lblStep.text = stepsString
+    }
+    private func addTagsToLbl(){
+        var tagsString : String = ""
+        for item in tags{
+            tagsString += "\(item) "
+        }
+        lblTags.text = tagsString
     }
     
 }
