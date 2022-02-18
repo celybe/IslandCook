@@ -11,13 +11,12 @@ class TVCHomeRow: UITableViewCell {
     
     private var recipesList : [ApiResponse] = APIService.shared.decodeJson(endpoint: "")
     private var recipeId: String = ""
-    @IBOutlet weak var collectionView: UICollectionView!
-    
+
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization
-        recipesList.shuffle()
-    }
+        recipesList.shuffle()    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -26,6 +25,6 @@ class TVCHomeRow: UITableViewCell {
     }
     
     func collectionView(_ collectionView:UICollectionView,layout UICollectionViewLayout: UICollectionViewLayout, sizeForItemAt IndexPath: IndexPath)-> CGSize{
-        return CGSize(width: 190, height: 250)
+        return CGSize(width: UIScreen.main.bounds.width, height: 250)
     }
 }

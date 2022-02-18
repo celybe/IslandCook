@@ -11,8 +11,8 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
 
     var myRecipe: ApiResponse?
     var getApi: [ApiResponse] = []
-    var tags = [String]()
-    var steps = [String]()
+    var tags: [String] = []
+    var steps: [String] = []
     var ingredients = [[String:String]]()
     var pickedDifficulty: Int = 55
     var difficulties = ["Easy", "Medium", "Show off"]
@@ -42,15 +42,17 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         
     }
     
-    private func pasaDatos()
+    private func pasaDatos()-> ApiBody
     {
-        myRecipe?.name = txtName.text!
-        myRecipe?.author = txtAuthor.text!
-        myRecipe?.picture_url = txtImage_Url.text!
-        myRecipe?.difficulty = selectDifficulty!
-        myRecipe?.tags = tags
-        myRecipe?.steps = steps
-//        myRecipe?.ingredients = ingredients
+        let nameRecipe = "Pan con mantequilla y azucar"
+        let author = "Lisa"
+        let picture_url = "https://www.afuegolento.com/img_db/timthumb.php?src=img_db/interviews/2020/05/interview-5ec66c8b8cb26.jpg"
+        let difficulty = "Easy"
+        let recipeTags = ["Bread","Sweet"]
+        let recipeSteps = ["Spread that butter, bitch"]
+        let recipeIngredients: [Ingredients] = []
+        let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: recipeIngredients, steps: recipeSteps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
+        return myRecipe
     }
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtAuthor: UITextField!
@@ -63,7 +65,7 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     @IBAction func btnAddIngredient(_ sender: Any) {
         guard let name = txtIngredients.text, let amount = txtQuantityIngredients.text else
             {return}
-        var dicciIngredients: [String:String] = ["Name": name, "Amount": amount]
+        let dicciIngredients: [String:String] = ["Name": name, "Amount": amount]
         ingredients.append(dicciIngredients)
     }
     @IBAction func btnAddStep(_ sender: Any) {
@@ -74,8 +76,8 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     }
     
     @IBAction func btnSave(_ sender: Any) {
-        pasaDatos()
-        APIService.shared.postRecipe()
+        let receta = pasaDatos()
+        APIService.shared.postRecipe(recipe: receta )
     }
     
 }

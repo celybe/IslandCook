@@ -9,13 +9,38 @@ import UIKit
 
 class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource {
     private var filterEndPoint = ""
-    private var recipeId: String = ""
+    private var decodeData: ApiResponse?
+    
+    
     private var recipesList : [ApiResponse] = APIService.shared.decodeJson(endpoint: "")
-    @IBOutlet weak var tableViewTopRecipes: UITableView!
+    
+    @IBOutlet weak var stackLblsDifficultity: UIStackView!
+    @IBOutlet weak var stackLblsTags: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        recipesList.shuffle()
     }
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        let orientation = UIDevice.current.orientation
+        if orientation.isLandscape
+        {
+            asignLandScapeLayout()
+        }else{
+            asignVerticalLayout()
+        }
+    }
+    //------------------------ Autolayout
+    func asignLandScapeLayout(){
+        stackLblsTags.spacing = 50
+        stackLblsDifficultity.spacing = 50
+    }
+    func asignVerticalLayout(){
+        //stackLblsTags.spacing = 10
+       // stackLblsDifficultity.spacing = 10
+    }
+
+
     //------------------------ TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -68,14 +93,25 @@ class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource,UICol
             let vistaDetalle = segue.destination as! TVCGetAllRecipes
             vistaDetalle.filterEndPoint = filterEndPoint
         }
+        
+        if segue.identifier == "homeToDetail"
+        {
+            let vistaDetalle = segue.destination as! VCDetailRecipe
+            vistaDetalle.miReceta = decodeData
+        }
     }
+    
+    
     //------------------------ Funciones colección
+    func collectionView(_ collectionView:UICollectionView,layout UICollectionViewLayout: UICollectionViewLayout, sizeForItemAt IndexPath: IndexPath)-> CGSize{
+        return CGSize(width: UIScreen.main.bounds.width, height: 250)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 20
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        recipeId = recipesList[indexPath.row]._id
-        print(recipeId)
+        decodeData  = recipesList[indexPath.row]
          performSegue(withIdentifier: "homeToDetail", sender: self)
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -88,10 +124,5 @@ class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource,UICol
         cell.ivRecipe.contentMode = UIView.ContentMode.scaleAspectFill
         return cell
     }
-    func collectionView(_ collectionView:UICollectionView,layout UICollectionViewLayout: UICollectionViewLayout, sizeForItemAt IndexPath: IndexPath)-> CGSize{
-        return CGSize(width: 190, height: 250)
-    }
-    
-    
     
 }
