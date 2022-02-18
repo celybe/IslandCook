@@ -42,14 +42,19 @@ class APIService{
         // creamos la petición post
         let url = URL(string: "https://island-cook.herokuapp.com/api/recipe")!
         var request = URLRequest(url: url)
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type") // change as per server requirements
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
         let data = [
             "name" : recipe.name,
             "picture_url": recipe.picture_url,
             "difficultity":recipe.difficulty,
             "author": recipe.author,
-        ]
+            "steps": recipe.steps,
+            "ingredients": recipe.ingredients,
+            "tags": recipe.tags
+        ] as? [String: Any]
         
-        let bodyData = try? JSONSerialization.data(withJSONObject: data, options: [])
+        let bodyData = try? JSONSerialization.data(withJSONObject: data)
         request.httpMethod = "POST"
         request.httpBody = bodyData
         let session = URLSession.shared

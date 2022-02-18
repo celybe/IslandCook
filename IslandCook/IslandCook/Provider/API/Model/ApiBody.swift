@@ -16,6 +16,7 @@ class ApiBody
     var difficulty: String
     var author: String
     var tags: [String]
+    
     init(name: String, ingredients : [Ingredients], steps: [String], picture_url: String, difficulty: String,author: String, tags: [String]) {
         self.name = name
         self.ingredients = ingredients
