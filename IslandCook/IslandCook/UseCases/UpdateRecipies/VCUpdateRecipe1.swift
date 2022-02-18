@@ -67,6 +67,7 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         steps.append(stringSteps!)
         let recipeSteps = steps
         let recipeIngredients: [Ingredients] = myRecipe?.ingredients as! [Ingredients]
+//        let recipeIngredients: [Ingredients] = myIngredients as! [Ingredients]
         let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: recipeIngredients, steps: recipeSteps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
         return myRecipe
         
