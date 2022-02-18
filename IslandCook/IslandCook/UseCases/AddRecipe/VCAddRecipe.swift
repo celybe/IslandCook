@@ -44,13 +44,14 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     
     private func pasaDatos()-> ApiBody
     {
-        let nameRecipe = "Pan con mantequilla y azucar"
-        let author = "Lisa"
-        let picture_url = "https://www.afuegolento.com/img_db/timthumb.php?src=img_db/interviews/2020/05/interview-5ec66c8b8cb26.jpg"
-        let difficulty = "Easy"
-        let recipeTags = ["Bread","Sweet"]
-        let recipeSteps = ["Spread that butter, bitch"]
-        let recipeIngredients: [Ingredients] = []
+        let nameRecipe = txtName.text!
+        let author = txtAuthor.text!
+        let picture_url = txtImage_Url.text!
+        let difficulty = selectDifficulty!
+        let recipeTags = tags
+        let recipeSteps = steps
+        
+        let recipeIngredients: [Ingredients] = myRecipe?.ingredients as! [Ingredients]
         let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: recipeIngredients, steps: recipeSteps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
         return myRecipe
     }
