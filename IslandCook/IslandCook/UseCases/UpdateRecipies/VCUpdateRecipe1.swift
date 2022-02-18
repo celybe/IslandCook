@@ -41,6 +41,8 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     private func cargareceta()
     {
         let stringTags = myRecipe?.tags.joined(separator: ".")
+        
+        
 
         txtRecipeName.text = myRecipe?.name
         txtAuthor.text = myRecipe?.author
