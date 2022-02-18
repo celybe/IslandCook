@@ -42,17 +42,18 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     
     private func cargareceta()
     {
-        let stringTags = myRecipe?.tags.joined(separator: ".")
+        let stringTags = myRecipe?.tags!.joined(separator: ".")
         
         
 
         txtRecipeName.text = myRecipe?.name
         txtAuthor.text = myRecipe?.author
         txtImageUrl.text = myRecipe?.picture_url
-        txtIngredients.text = myRecipe?.ingredients.description
-        txtSteps.text = myRecipe?.steps.description
+        txtIngredients.text = myRecipe?.ingredients?.description
+        txtSteps.text = myRecipe?.steps?.description
         txtTags.text = stringTags
     }
+    
     
     private func pasaReceta()-> ApiBody {
         
