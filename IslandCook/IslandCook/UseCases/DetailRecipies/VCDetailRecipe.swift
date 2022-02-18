@@ -20,12 +20,12 @@ class VCDetailRecipe: UIViewController {
     
     func loadRecipe()
     {
-        let stringSteps = miReceta?.steps.joined(separator: ".")
+        let stringSteps = miReceta?.steps?.joined(separator: ".")
         
         
         lblNameRecipe.text = miReceta?.name
         lblAuthor.text = miReceta?.author
-        tvIngredients.text = miReceta?.ingredients.description
+        tvIngredients.text = miReceta?.ingredients?.description
         tvSteps.text = stringSteps
         ivImageRecipe.downloaded(from: miReceta!.picture_url)
     }

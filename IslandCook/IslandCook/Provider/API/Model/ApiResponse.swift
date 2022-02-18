@@ -17,11 +17,11 @@ struct ApiResponse: Codable
         var name: String
         var amount: String
     }
-    var ingredients: [ingredients]
-    var steps: [String]
+    var ingredients: [ingredients]?
+    var steps: [String]?
     var picture_url: String
-    var difficulty: String
-    var author: String
-    var tags: [String]
+    var difficulty: String?
+    var author: String?
+    var tags: [String]?
     
 }

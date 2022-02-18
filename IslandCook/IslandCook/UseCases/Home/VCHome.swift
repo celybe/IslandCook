@@ -8,11 +8,11 @@
 import UIKit
 
 class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource {
-    private var filterEndPoint = ""
+    private var filterEndPoint = "/"
     private var decodeData: ApiResponse?
     
     
-    private var recipesList : [ApiResponse] = APIService.shared.decodeJson(endpoint: "")
+    private var recipesList : [ApiResponse] = APIService.shared.decodeJson(endpoint: "/")
     
     @IBOutlet weak var stackLblsDifficultity: UIStackView!
     @IBOutlet weak var stackLblsTags: UIStackView!
@@ -108,6 +108,9 @@ class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource,UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if(recipesList.count<20){
+            return recipesList.count
+        }
         return 20
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
