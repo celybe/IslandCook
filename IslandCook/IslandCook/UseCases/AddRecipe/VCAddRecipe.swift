@@ -10,10 +10,11 @@ import UIKit
 class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     var myRecipe: ApiResponse?
+    var dicciIngredients: [String:String] = [:]
     var getApi: [ApiResponse] = []
     var tags: [String] = []
     var steps: [String] = []
-    var ingredients = [[String:String]]()
+    private var myIngredients = [[String:String]]()
     var pickedDifficulty: Int = 55
     var difficulties = ["Easy", "Medium", "Show off"]
     var selectDifficulty: String?
@@ -51,7 +52,7 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         let recipeTags = tags
         let recipeSteps = steps
         
-        let recipeIngredients: [Ingredients] = myRecipe?.ingredients as! [Ingredients]
+        let recipeIngredients: [Ingredients] = myIngredients as! [Ingredients]
         let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: recipeIngredients, steps: recipeSteps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
         return myRecipe
     }
@@ -66,14 +67,18 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     @IBAction func btnAddIngredient(_ sender: Any) {
         guard let name = txtIngredients.text, let amount = txtQuantityIngredients.text else
             {return}
-        let dicciIngredients: [String:String] = ["Name": name, "Amount": amount]
-        ingredients.append(dicciIngredients)
+        dicciIngredients = ["Name": name, "Amount": amount]
+        myIngredients.append(dicciIngredients)
+        txtIngredients.text = ""
+        txtQuantityIngredients.text = ""
     }
     @IBAction func btnAddStep(_ sender: Any) {
         steps.append(txtSteps.text!)
+        txtSteps.text = ""
     }
     @IBAction func btnAddTag(_ sender: Any) {
         tags.append(txtTags.text!)
+        txtTags.text = ""
     }
     
     @IBAction func btnSave(_ sender: Any) {
