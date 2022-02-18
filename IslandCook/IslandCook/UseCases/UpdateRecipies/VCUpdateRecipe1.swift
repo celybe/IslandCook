@@ -11,6 +11,8 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     
     var myRecipe: ApiResponse?
     var getApi: [ApiResponse] = []
+    var tags: [String] = []
+    var steps: [String] = []
     var pickedDifficulty: Int = 55
     var difficulties = ["Easy", "Medium", "Show off"]
     var selectDifficulty: String?
@@ -40,7 +42,9 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     
     private func cargareceta()
     {
-        let stringTags = myRecipe?.tags?.joined(separator: ".")
+        let stringTags = myRecipe?.tags!.joined(separator: ".")
+        
+        
 
         txtRecipeName.text = myRecipe?.name
         txtAuthor.text = myRecipe?.author
@@ -50,8 +54,29 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         txtTags.text = stringTags
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        APIService.shared.putRecipe(id: myRecipe!._id)
+    
+    private func pasaReceta()-> ApiBody {
+        
+        let nameRecipe = txtRecipeName.text!
+        let author = txtAuthor.text!
+        let picture_url = txtImageUrl.text!
+        let difficulty = selectDifficulty!
+        var stringTags = txtTags.text!
+        tags.append(stringTags)
+        let recipeTags = tags
+        var stringSteps = txtSteps.text
+        steps.append(stringSteps!)
+        let recipeSteps = steps
+        let recipeIngredients: [Ingredients] = myRecipe?.ingredients as! [Ingredients]
+//        let recipeIngredients: [Ingredients] = myIngredients as! [Ingredients]
+        let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: recipeIngredients, steps: recipeSteps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
+        return myRecipe
+        
+    }
+    
+    @IBAction func btnSaveUpdate(_ sender: Any) {
+        let receta = pasaReceta()
+        APIService.shared.putRecipe(id: myRecipe!._id, recipe: receta )
     }
     
     @IBOutlet weak var txtImageUrl: UITextField!

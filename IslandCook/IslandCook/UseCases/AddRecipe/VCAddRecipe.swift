@@ -8,12 +8,13 @@
 import UIKit
 
 class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-
+    
     var myRecipe: ApiResponse?
+    var dicciIngredients: [String:String] = [:]
     var getApi: [ApiResponse] = []
     var tags: [String] = []
     var steps: [String] = []
-    var ingredients = [[String:String]]()
+    private var myIngredients = [[String:String]]()
     var pickedDifficulty: Int = 55
     var difficulties = ["Easy", "Medium", "Show off"]
     var selectDifficulty: String?
@@ -23,7 +24,7 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -47,13 +48,14 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     
     private func pasaDatos()-> ApiBody
     {
-        let nameRecipe = "Pan con mantequilla y azucar"
-        let author = "Lisa"
-        let picture_url = "https://www.afuegolento.com/img_db/timthumb.php?src=img_db/interviews/2020/05/interview-5ec66c8b8cb26.jpg"
-        let difficulty = "Easy"
-        let recipeTags = ["Bread","Sweet"]
-        let recipeSteps = ["Spread that butter, bitch"]
-        let recipeIngredients: [Ingredients] = []
+        let nameRecipe = txtName.text!
+        let author = txtAuthor.text!
+        let picture_url = txtImage_Url.text!
+        let difficulty = selectDifficulty!
+        let recipeTags = tags
+        let recipeSteps = steps
+        
+        let recipeIngredients: [Ingredients] = myIngredients as! [Ingredients]
         let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: recipeIngredients, steps: recipeSteps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
         return myRecipe
     }
@@ -67,18 +69,22 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     @IBOutlet weak var txtTags: UITextField!
     @IBAction func btnAddIngredient(_ sender: Any) {
         guard let name = txtIngredients.text, let amount = txtQuantityIngredients.text else
-            {return}
-        let dicciIngredients: [String:String] = ["Name": name, "Amount": amount]
-        ingredients.append(dicciIngredients)
+        {return}
+        dicciIngredients = ["Name": name, "Amount": amount]
+        myIngredients.append(dicciIngredients)
+        txtIngredients.text = ""
+        txtQuantityIngredients.text = ""
         addIngredientToLbl()
     }
     @IBAction func btnAddStep(_ sender: Any) {
         steps.append(txtSteps.text!)
         addStepToLbl()
+        txtSteps.text = ""
     }
     @IBAction func btnAddTag(_ sender: Any) {
         tags.append(txtTags.text!)
         addTagsToLbl()
+        txtTags.text = ""
     }
     
     @IBAction func btnSave(_ sender: Any) {
@@ -87,7 +93,7 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     }
     private func addIngredientToLbl(){
         var tagsString : String = ""
-        for item in ingredients{
+        for item in myIngredients{
             tagsString += "\(item["Name"]!) "
         }
         lblIngredients.text = tagsString
