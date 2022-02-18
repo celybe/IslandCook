@@ -9,7 +9,7 @@ import UIKit
 
 class VCDetailRecipe: UIViewController {
     
-    var miReceta: ApiResponse?
+    var miReceta: ApiResponse!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +21,17 @@ class VCDetailRecipe: UIViewController {
     func loadRecipe()
     {
         let stringSteps = miReceta?.steps?.joined(separator: ".")
-        
-        
         lblNameRecipe.text = miReceta?.name
         lblAuthor.text = miReceta?.author
-        tvIngredients.text = miReceta?.ingredients?.description
-        tvSteps.text = stringSteps
+        tvIngredients.text = ""
+        for item in miReceta.ingredients! {
+            tvIngredients.text += "- \(item.name) \(item.amount)\n"
+        }
+        tvSteps.text = ""
+        for item in miReceta.steps! {
+            tvSteps.text += "- \(item)\n\n"
+        }
+        ivImageRecipe.layer.cornerRadius = 15
         ivImageRecipe.downloaded(from: miReceta!.picture_url)
     }
     
