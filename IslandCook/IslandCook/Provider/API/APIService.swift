@@ -111,7 +111,7 @@ class APIService{
     
     func deleteRecipe(id: String) {
         // creamos la petición delete
-        let url = URL(string: "https://island-cook.herokuapp.com/api/recipe\(id)")!
+        let url = URL(string: "https://island-cook.herokuapp.com/api/recipe/\(id)")!
         var request = URLRequest(url: url)
         request.httpMethod = "DELETE"
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
