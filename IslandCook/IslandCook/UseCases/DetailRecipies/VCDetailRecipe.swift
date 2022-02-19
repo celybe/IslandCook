@@ -47,7 +47,7 @@ class VCDetailRecipe: UIViewController {
     @IBOutlet weak var tvIngredients: UITextView!
     @IBOutlet weak var tvSteps: UITextView!
     @IBAction func btnDelet5e(_ sender: Any) {
-        APIService.shared.deleteRecipe(id: miReceta!._id)
+//        APIService.shared.deleteRecipe(id: miReceta!._id, recipe: receta)
     }
     
 }

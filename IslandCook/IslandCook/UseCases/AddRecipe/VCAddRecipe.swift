@@ -54,8 +54,8 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         let difficulty = selectDifficulty!
         let recipeTags = tags
         let recipeSteps = steps
-        
         let recipeIngredients = myIngredients
+        print(recipeIngredients)
         let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: recipeIngredients, steps: recipeSteps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
         return myRecipe
     }
