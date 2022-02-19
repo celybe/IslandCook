@@ -8,7 +8,7 @@
 import UIKit
 
 class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    
+    var recipeIngredients = ""
     var myRecipe: ApiResponse?
     var getApi: [ApiResponse] = []
     var tags: [String] = []
@@ -54,6 +54,10 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         txtTags.text = stringTags
     }
     
+   /* private func recogeIngredients()
+    {
+        
+    }
     
     private func pasaReceta()-> ApiBody {
         
@@ -67,15 +71,16 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         var stringSteps = txtSteps.text
         steps.append(stringSteps!)
         let recipeSteps = steps
-        let recipeIngredients: [Ingredients] = myRecipe?.ingredients as! [Ingredients]
+        recipeIngredients = myRecipe?.ingredients
         let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: recipeIngredients, steps: recipeSteps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
         return myRecipe
         
     }
+    */
     
     @IBAction func btnSaveUpdate(_ sender: Any) {
-        let receta = pasaReceta()
-        APIService.shared.putRecipe(id: myRecipe!._id, recipe: receta )
+//        let receta = pasaReceta()
+//        APIService.shared.putRecipe(id: myRecipe!._id, recipe: receta )
     }
     
     @IBOutlet weak var txtImageUrl: UITextField!
