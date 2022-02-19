@@ -10,7 +10,6 @@ import UIKit
 class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var myRecipe: ApiResponse?
-    var dicciIngredients: [String:String] = [:]
     var getApi: [ApiResponse] = []
     var tags: [String] = []
     var steps: [String] = []
@@ -70,7 +69,7 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     @IBAction func btnAddIngredient(_ sender: Any) {
         guard let name = txtIngredients.text, let amount = txtQuantityIngredients.text else
         {return}
-        dicciIngredients = ["Name": name, "Amount": amount]
+        var dicciIngredients = ["Name": name, "Amount": amount]
         myIngredients.append(dicciIngredients)
         txtIngredients.text = ""
         txtQuantityIngredients.text = ""
