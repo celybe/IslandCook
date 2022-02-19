@@ -36,8 +36,8 @@ class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource,UICol
         stackLblsDifficultity.spacing = 50
     }
     func asignVerticalLayout(){
-        //stackLblsTags.spacing = 10
-       // stackLblsDifficultity.spacing = 10
+        stackLblsTags.spacing = 10
+        stackLblsDifficultity.spacing = 10
     }
 
 

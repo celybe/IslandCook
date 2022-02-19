@@ -8,7 +8,7 @@
 import UIKit
 
 class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-
+    
     var myRecipe: ApiResponse?
     var dicciIngredients: [String:String] = [:]
     var getApi: [ApiResponse] = []
@@ -18,10 +18,13 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     var pickedDifficulty: Int = 55
     var difficulties = ["Easy", "Medium", "Show off"]
     var selectDifficulty: String?
+    @IBOutlet weak var lblIngredients: UILabel!
+    @IBOutlet weak var lblTags: UILabel!
+    @IBOutlet weak var lblStep: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -66,24 +69,48 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     @IBOutlet weak var txtTags: UITextField!
     @IBAction func btnAddIngredient(_ sender: Any) {
         guard let name = txtIngredients.text, let amount = txtQuantityIngredients.text else
-            {return}
+        {return}
         dicciIngredients = ["Name": name, "Amount": amount]
         myIngredients.append(dicciIngredients)
         txtIngredients.text = ""
         txtQuantityIngredients.text = ""
+        addIngredientToLbl()
     }
     @IBAction func btnAddStep(_ sender: Any) {
         steps.append(txtSteps.text!)
+        addStepToLbl()
         txtSteps.text = ""
     }
     @IBAction func btnAddTag(_ sender: Any) {
         tags.append(txtTags.text!)
+        addTagsToLbl()
         txtTags.text = ""
     }
     
     @IBAction func btnSave(_ sender: Any) {
         let receta = pasaDatos()
         APIService.shared.postRecipe(recipe: receta )
+    }
+    private func addIngredientToLbl(){
+        var tagsString : String = ""
+        for item in myIngredients{
+            tagsString += "\(item["Name"]!) "
+        }
+        lblIngredients.text = tagsString
+    }
+    private func addStepToLbl(){
+        var stepsString : String = ""
+        for item in steps{
+            stepsString += "- \(item) \n"
+        }
+        lblStep.text = stepsString
+    }
+    private func addTagsToLbl(){
+        var tagsString : String = ""
+        for item in tags{
+            tagsString += "\(item) "
+        }
+        lblTags.text = tagsString
     }
     
 }
