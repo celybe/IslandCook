@@ -76,7 +76,7 @@ class APIService{
     
     func putRecipe(id: String, recipe: ApiBody) {
         // creamos la petición put
-        let url = URL(string: "https://island-cook.herokuapp.com/api/recipe\(id)")!
+        let url = URL(string: "https://island-cook.herokuapp.com/api/recipe/\(id)")!
         var request = URLRequest(url: url)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type") // change as per server requirements
         request.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -110,7 +110,7 @@ class APIService{
     
     func deleteRecipe(id: String, recipe: ApiBody) {
         // creamos la petición put
-        let url = URL(string: "https://island-cook.herokuapp.com/api/recipe\(id)")!
+        let url = URL(string: "https://island-cook.herokuapp.com/api/recipe/\(id)")!
         var request = URLRequest(url: url)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type") // change as per server requirements
         request.addValue("application/json", forHTTPHeaderField: "Accept")
