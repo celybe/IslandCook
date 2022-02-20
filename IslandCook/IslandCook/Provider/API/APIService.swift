@@ -49,7 +49,7 @@ class APIService{
         let data = [
             "name" : recipe.name,
             "picture_url": recipe.picture_url,
-            "difficultity":recipe.difficulty,
+            "difficulty":recipe.difficulty.lowercased(),
             "author": recipe.author,
             "steps": recipe.steps,
             "ingredients": recipe.ingredients,
