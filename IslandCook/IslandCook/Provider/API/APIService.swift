@@ -83,7 +83,7 @@ class APIService{
         let data = [
             "name" : recipe.name,
             "picture_url": recipe.picture_url,
-            "difficultity":recipe.difficulty,
+            "difficulty":recipe.difficulty.lowercased(),
             "author": recipe.author,
             "steps": recipe.steps,
             "ingredients": recipe.ingredients,
@@ -108,25 +108,6 @@ class APIService{
         task.resume()
     }
     
-    
-    /*func deleteRecipe(id: String) {
-        // creamos la petición delete
-        let url = URL(string: "https://island-cook.herokuapp.com/api/recipe/\(id)")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "DELETE"
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else {
-                VCAlertDelete()
-                return
-            }
-            print ("RESPUESTA: \(response)")
-            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
-            if let responseJSON = responseJSON as? [String: Any] {
-            }
-            print(responseJSON)
-        }
-    }*/
-    
     func deleteRecipe(id: String, recipe: ApiBody) {
         // creamos la petición put
         let url = URL(string: "https://island-cook.herokuapp.com/api/recipe\(id)")!
@@ -136,7 +117,7 @@ class APIService{
         let data = [
             "name" : recipe.name,
             "picture_url": recipe.picture_url,
-            "difficultity":recipe.difficulty,
+            "difficulty":recipe.difficulty.lowercased(),
             "author": recipe.author,
             "steps": recipe.steps,
             "ingredients": recipe.ingredients,
