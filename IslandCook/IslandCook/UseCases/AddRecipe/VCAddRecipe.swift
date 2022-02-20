@@ -97,7 +97,6 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
             let error = error as NSError
             print("Error al editar, \(error)")
         }
-        APIService.shared.postRecipe(recipe: receta )
     }
     private func addIngredientToLbl(){
         var tagsString : String = ""
