@@ -72,7 +72,15 @@ class VCDetailRecipe: UIViewController {
     @IBOutlet weak var tvSteps: UITextView!
     @IBAction func btnDelet5e(_ sender: Any) {
         let receta = pasaReceta()
-        APIService.shared.deleteRecipe(id: miReceta!._id, recipe: receta)
+        do
+        {
+            try APIService.shared.deleteRecipe(id: miReceta!._id, recipe: receta)
+        }
+        catch
+        {
+            let error = error as NSError
+            print("Error al eliminar, \(error)")
+        }
     }
     
 }

@@ -80,7 +80,15 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     
     @IBAction func btnUpdate(_ sender: Any) {
         let receta = pasaReceta()
-        APIService.shared.putRecipe(id: myRecipe!._id, recipe: receta )
+        do
+        {
+            try APIService.shared.putRecipe(id: myRecipe!._id, recipe: receta )
+        }
+        catch
+        {
+            let error = error as NSError
+            print("Error al editar, \(error)")
+        }
     }
     
     @IBOutlet weak var txtImageUrl: UITextField!

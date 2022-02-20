@@ -88,6 +88,15 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     
     @IBAction func btnSave(_ sender: Any) {
         let receta = pasaDatos()
+        do
+        {
+            try APIService.shared.postRecipe(recipe: receta )
+        }
+        catch
+        {
+            let error = error as NSError
+            print("Error al editar, \(error)")
+        }
         APIService.shared.postRecipe(recipe: receta )
     }
     private func addIngredientToLbl(){
@@ -111,5 +120,4 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         }
         lblTags.text = tagsString
     }
-    
 }
