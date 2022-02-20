@@ -11,6 +11,7 @@ class VCDetailRecipe: UIViewController {
     
     var miReceta: ApiResponse!
     var arraysDicci = [[String:String]]()
+    var steps = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +50,6 @@ class VCDetailRecipe: UIViewController {
         let picture_url = miReceta!.picture_url
         let difficulty = miReceta.difficulty!
         let recipeTags = miReceta.tags!
-        var recipeSteps = tvSteps.text!
         for item in miReceta?.ingredients as! [ApiResponse.ingredients] {
             var name = item.name
             var amount = item.amount
@@ -57,11 +57,10 @@ class VCDetailRecipe: UIViewController {
             arraysDicci.append(diccionario)
         }
         for item in miReceta.steps! {
-            var stringItem = String(item)
-            recipeSteps = stringItem
+            steps.append(item)
         }
         
-        let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: arraysDicci, steps: recipeSteps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
+        let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: arraysDicci, steps: steps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
         return myRecipe
         
     }
