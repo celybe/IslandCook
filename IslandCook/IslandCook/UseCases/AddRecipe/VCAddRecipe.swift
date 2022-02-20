@@ -15,7 +15,7 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     var steps: [String] = []
     private var myIngredients = [[String:String]]()
     var pickedDifficulty: Int = 55
-    var difficulties = ["Easy", "Medium", "Show off"]
+    var difficulties = ["Easy", "Medium", "Hard"]
     var selectDifficulty: String?
     @IBOutlet weak var lblIngredients: UILabel!
     @IBOutlet weak var lblTags: UILabel!
@@ -69,7 +69,7 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     @IBAction func btnAddIngredient(_ sender: Any) {
         guard let name = txtIngredients.text, let amount = txtQuantityIngredients.text else
         {return}
-        var dicciIngredients = ["Name": name, "Amount": amount]
+        var dicciIngredients = ["name": name, "amount": amount]
         myIngredients.append(dicciIngredients)
         txtIngredients.text = ""
         txtQuantityIngredients.text = ""
@@ -102,7 +102,7 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     private func addIngredientToLbl(){
         var tagsString : String = ""
         for item in myIngredients{
-            tagsString += "\(item["Name"]!) "
+            tagsString += "\(item["name"]!) "
         }
         lblIngredients.text = tagsString
     }
