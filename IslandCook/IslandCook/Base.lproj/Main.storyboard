@@ -220,7 +220,7 @@
             </objects>
             <point key="canvasLocation" x="1052.8037383177571" y="-15.550755939524839"/>
         </scene>
-        <!--Save-->
+        <!--Update Recipe1-->
         <scene sceneID="RCU-ne-brE">
             <objects>
                 <viewController id="imZ-2L-g3q" customClass="VCUpdateRecipe1" customModule="IslandCook" customModuleProvider="target" sceneMemberID="viewController">
@@ -393,7 +393,13 @@
                             <constraint firstItem="ArA-Ag-sAf" firstAttribute="trailing" secondItem="24m-hk-PpB" secondAttribute="trailing" id="fp3-74-7NP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Save" id="Ttu-UR-YPn"/>
+                    <navigationItem key="navigationItem" id="Ttu-UR-YPn">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="21F-XZ-ldl">
+                            <connections>
+                                <action selector="btnUpdate:" destination="imZ-2L-g3q" id="Wjo-5L-VcJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="txtAuthor" destination="82Z-7J-gAX" id="0mV-Lp-GsA"/>
                         <outlet property="txtImageUrl" destination="Y05-nX-c1J" id="SYf-Sn-6NU"/>

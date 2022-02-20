@@ -16,6 +16,7 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     var pickedDifficulty: Int = 55
     var difficulties = ["Easy", "Medium", "Show off"]
     var selectDifficulty: String?
+    var arraysDicci = [[String:String]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,11 +55,6 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         txtTags.text = stringTags
     }
     
-   /* private func recogeIngredients()
-    {
-        
-    }
-    
     private func pasaReceta()-> ApiBody {
         
         let nameRecipe = txtRecipeName.text!
@@ -71,16 +67,20 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         var stringSteps = txtSteps.text
         steps.append(stringSteps!)
         let recipeSteps = steps
-        recipeIngredients = myRecipe?.ingredients
-        let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: recipeIngredients, steps: recipeSteps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
+        for item in myRecipe?.ingredients as! [ApiResponse.ingredients] {
+            var name = item.name
+            var amount = item.amount
+            var diccionario = ["name": name, "amount": amount]
+            arraysDicci.append(diccionario)
+        }
+        let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: arraysDicci, steps: recipeSteps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
         return myRecipe
         
     }
-    */
     
-    @IBAction func btnSaveUpdate(_ sender: Any) {
-//        let receta = pasaReceta()
-//        APIService.shared.putRecipe(id: myRecipe!._id, recipe: receta )
+    @IBAction func btnUpdate(_ sender: Any) {
+        let receta = pasaReceta()
+        APIService.shared.putRecipe(id: myRecipe!._id, recipe: receta )
     }
     
     @IBOutlet weak var txtImageUrl: UITextField!
