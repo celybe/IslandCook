@@ -3,7 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>LastAccessedDate</key>
+<<<<<<< HEAD
 	<date>2022-02-21T20:09:16Z</date>
+=======
+	<date>2022-02-21T19:36:11Z</date>
+>>>>>>> cely2.0
 	<key>WorkspacePath</key>
 	<string>../../IslandCook.xcodeproj</string>
 </dict>

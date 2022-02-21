@@ -2,7 +2,11 @@
 //  extensions.swift
 //  IslandCook
 //
+<<<<<<< HEAD
 //  Created by user209640 on 2/15/22.
+=======
+//  Created by user209640 on 2/21/22.
+>>>>>>> cely2.0
 //
 
 import Foundation
@@ -20,9 +24,16 @@ extension UIImageView {
                         self?.image = image
                     }
                 }
+<<<<<<< HEAD
             
             }
         }
        
+=======
+
+            }
+        }
+
+>>>>>>> cely2.0
     }
 }
