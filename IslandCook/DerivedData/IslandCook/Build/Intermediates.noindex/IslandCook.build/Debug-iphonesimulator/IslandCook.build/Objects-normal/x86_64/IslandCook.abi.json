@@ -5383,8 +5383,8 @@
           "moduleName": "IslandCook",
           "isOpen": true,
           "declAttributes": [
-            "HasInitialValue",
             "Custom",
+            "HasInitialValue",
             "HasStorage"
           ],
           "fixedbinaryorder": 0,
@@ -13752,119 +13752,6 @@
                   "printedName": "Swift.String",
                   "usr": "s:SS"
                 }
-<<<<<<< HEAD
-              ]
-            }
-          ],
-          "usr": "s:7Combine16ObservableObjectP",
-          "mangledName": "$s7Combine16ObservableObjectP"
-        }
-      ]
-    },
-    {
-      "kind": "Import",
-      "name": "CoreData",
-      "printedName": "CoreData",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "Foundation",
-      "printedName": "Foundation",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftOnoneSupport",
-      "printedName": "SwiftOnoneSupport",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftUI",
-      "printedName": "SwiftUI",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "UIKit",
-      "printedName": "UIKit",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "_Concurrency",
-      "printedName": "_Concurrency",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "CoreData",
-      "printedName": "CoreData",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "Foundation",
-      "printedName": "Foundation",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftOnoneSupport",
-      "printedName": "SwiftOnoneSupport",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftUI",
-      "printedName": "SwiftUI",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "UIKit",
-      "printedName": "UIKit",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "_Concurrency",
-      "printedName": "_Concurrency",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "TypeDecl",
-      "name": "CVCellFavorite",
-      "printedName": "CVCellFavorite",
-      "children": [
-        {
-          "kind": "Var",
-          "name": "recipeImage",
-          "printedName": "recipeImage",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "WeakStorage",
-              "printedName": "UIKit.UIImageView?"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "c:@M@IslandCook@objc(cs)CVCellFavorite(py)recipeImage",
-          "mangledName": "$s10IslandCook14CVCellFavoriteC11recipeImageSo11UIImageViewCSgvp",
-=======
               ],
               "declKind": "Accessor",
               "usr": "s:10IslandCook7ApiBodyC6authorSSvg",
@@ -13952,7 +13839,6 @@
           "declKind": "Var",
           "usr": "s:10IslandCook7ApiBodyC4tagsSaySSGvp",
           "mangledName": "$s10IslandCook7ApiBodyC4tagsSaySSGvp",
->>>>>>> cely2.0
           "moduleName": "IslandCook",
           "isOpen": true,
           "declAttributes": [
@@ -13968,24 +13854,6 @@
               "children": [
                 {
                   "kind": "TypeNominal",
-<<<<<<< HEAD
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UIImageView?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UIImageView",
-                      "printedName": "UIKit.UIImageView",
-                      "usr": "c:objc(cs)UIImageView"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)CVCellFavorite(im)recipeImage",
-              "mangledName": "$s10IslandCook14CVCellFavoriteC11recipeImageSo11UIImageViewCSgvg",
-=======
                   "name": "Array",
                   "printedName": "[Swift.String]",
                   "children": [
@@ -14218,7 +14086,6 @@
               "declKind": "Accessor",
               "usr": "s:10IslandCook11ingredientsC4nameSSvg",
               "mangledName": "$s10IslandCook11ingredientsC4nameSSvg",
->>>>>>> cely2.0
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -14239,24 +14106,6 @@
                 },
                 {
                   "kind": "TypeNominal",
-<<<<<<< HEAD
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UIImageView?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UIImageView",
-                      "printedName": "UIKit.UIImageView",
-                      "usr": "c:objc(cs)UIImageView"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)CVCellFavorite(im)setRecipeImage:",
-              "mangledName": "$s10IslandCook14CVCellFavoriteC11recipeImageSo11UIImageViewCSgvs",
-=======
                   "name": "String",
                   "printedName": "Swift.String",
                   "usr": "s:SS"
@@ -14265,7 +14114,6 @@
               "declKind": "Accessor",
               "usr": "s:10IslandCook11ingredientsC4nameSSvs",
               "mangledName": "$s10IslandCook11ingredientsC4nameSSvs",
->>>>>>> cely2.0
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -14286,13 +14134,8 @@
                 }
               ],
               "declKind": "Accessor",
-<<<<<<< HEAD
-              "usr": "s:10IslandCook14CVCellFavoriteC11recipeImageSo11UIImageViewCSgvM",
-              "mangledName": "$s10IslandCook14CVCellFavoriteC11recipeImageSo11UIImageViewCSgvM",
-=======
               "usr": "s:10IslandCook11ingredientsC4nameSSvM",
               "mangledName": "$s10IslandCook11ingredientsC4nameSSvM",
->>>>>>> cely2.0
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -14305,13 +14148,8 @@
         },
         {
           "kind": "Var",
-<<<<<<< HEAD
-          "name": "recipeLabel",
-          "printedName": "recipeLabel",
-=======
           "name": "amount",
           "printedName": "amount",
->>>>>>> cely2.0
           "children": [
             {
               "kind": "TypeNominal",
@@ -14321,23 +14159,14 @@
             }
           ],
           "declKind": "Var",
-<<<<<<< HEAD
-          "usr": "c:@M@IslandCook@objc(cs)CVCellFavorite(py)recipeLabel",
-          "mangledName": "$s10IslandCook14CVCellFavoriteC11recipeLabelSo7UILabelCSgvp",
-=======
           "usr": "s:10IslandCook11ingredientsC6amountSSvp",
           "mangledName": "$s10IslandCook11ingredientsC6amountSSvp",
->>>>>>> cely2.0
           "moduleName": "IslandCook",
           "isOpen": true,
           "declAttributes": [
             "HasStorage"
           ],
           "fixedbinaryorder": 1,
-<<<<<<< HEAD
-          "ownership": 1,
-=======
->>>>>>> cely2.0
           "hasStorage": true,
           "accessors": [
             {
@@ -14353,13 +14182,8 @@
                 }
               ],
               "declKind": "Accessor",
-<<<<<<< HEAD
-              "usr": "c:@M@IslandCook@objc(cs)CVCellFavorite(im)recipeLabel",
-              "mangledName": "$s10IslandCook14CVCellFavoriteC11recipeLabelSo7UILabelCSgvg",
-=======
               "usr": "s:10IslandCook11ingredientsC6amountSSvg",
               "mangledName": "$s10IslandCook11ingredientsC6amountSSvg",
->>>>>>> cely2.0
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -14386,13 +14210,8 @@
                 }
               ],
               "declKind": "Accessor",
-<<<<<<< HEAD
-              "usr": "c:@M@IslandCook@objc(cs)CVCellFavorite(im)setRecipeLabel:",
-              "mangledName": "$s10IslandCook14CVCellFavoriteC11recipeLabelSo7UILabelCSgvs",
-=======
               "usr": "s:10IslandCook11ingredientsC6amountSSvs",
               "mangledName": "$s10IslandCook11ingredientsC6amountSSvs",
->>>>>>> cely2.0
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -14413,13 +14232,8 @@
                 }
               ],
               "declKind": "Accessor",
-<<<<<<< HEAD
-              "usr": "s:10IslandCook14CVCellFavoriteC11recipeLabelSo7UILabelCSgvM",
-              "mangledName": "$s10IslandCook14CVCellFavoriteC11recipeLabelSo7UILabelCSgvM",
-=======
               "usr": "s:10IslandCook11ingredientsC6amountSSvM",
               "mangledName": "$s10IslandCook11ingredientsC6amountSSvM",
->>>>>>> cely2.0
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -14431,15 +14245,9 @@
           ]
         },
         {
-<<<<<<< HEAD
-          "kind": "Function",
-          "name": "configure",
-          "printedName": "configure(with:recipeImage:)",
-=======
           "kind": "Constructor",
           "name": "init",
           "printedName": "init(name:amount:)",
->>>>>>> cely2.0
           "children": [
             {
               "kind": "TypeNominal",
@@ -14460,257 +14268,6 @@
               "usr": "s:SS"
             }
           ],
-<<<<<<< HEAD
-          "declKind": "Func",
-          "usr": "s:10IslandCook14CVCellFavoriteC9configure4with11recipeImageySS_SStF",
-          "mangledName": "$s10IslandCook14CVCellFavoriteC9configure4with11recipeImageySS_SStF",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "Custom"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Constructor",
-          "name": "init",
-          "printedName": "init(frame:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "CVCellFavorite",
-              "printedName": "IslandCook.CVCellFavorite",
-              "usr": "c:@M@IslandCook@objc(cs)CVCellFavorite"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "CGRect",
-              "printedName": "CoreGraphics.CGRect",
-              "usr": "c:@S@CGRect"
-            }
-          ],
-          "declKind": "Constructor",
-          "usr": "c:@M@IslandCook@objc(cs)CVCellFavorite(im)initWithFrame:",
-          "mangledName": "$s10IslandCook14CVCellFavoriteC5frameACSo6CGRectV_tcfc",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "implicit": true,
-          "objc_name": "initWithFrame:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "init_kind": "Designated"
-        },
-        {
-          "kind": "Constructor",
-          "name": "init",
-          "printedName": "init(coder:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "IslandCook.CVCellFavorite?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "CVCellFavorite",
-                  "printedName": "IslandCook.CVCellFavorite",
-                  "usr": "c:@M@IslandCook@objc(cs)CVCellFavorite"
-                }
-              ],
-              "usr": "s:Sq"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "NSCoder",
-              "printedName": "Foundation.NSCoder",
-              "usr": "c:objc(cs)NSCoder"
-            }
-          ],
-          "declKind": "Constructor",
-          "usr": "c:@M@IslandCook@objc(cs)CVCellFavorite(im)initWithCoder:",
-          "mangledName": "$s10IslandCook14CVCellFavoriteC5coderACSgSo7NSCoderC_tcfc",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "implicit": true,
-          "objc_name": "initWithCoder:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Required"
-          ],
-          "init_kind": "Designated"
-        }
-      ],
-      "declKind": "Class",
-      "usr": "c:@M@IslandCook@objc(cs)CVCellFavorite",
-      "mangledName": "$s10IslandCook14CVCellFavoriteC",
-      "moduleName": "IslandCook",
-      "isOpen": true,
-      "declAttributes": [
-        "Custom",
-        "ObjC"
-      ],
-      "superclassUsr": "c:objc(cs)UICollectionViewCell",
-      "inheritsConvenienceInitializers": true,
-      "superclassNames": [
-        "UIKit.UICollectionViewCell",
-        "UIKit.UICollectionReusableView",
-        "UIKit.UIView",
-        "UIKit.UIResponder",
-        "ObjectiveC.NSObject"
-      ],
-      "conformances": [
-        {
-          "kind": "Conformance",
-          "name": "Equatable",
-          "printedName": "Equatable",
-          "usr": "s:SQ",
-          "mangledName": "$sSQ"
-        },
-        {
-          "kind": "Conformance",
-          "name": "Hashable",
-          "printedName": "Hashable",
-          "usr": "s:SH",
-          "mangledName": "$sSH"
-        },
-        {
-          "kind": "Conformance",
-          "name": "CVarArg",
-          "printedName": "CVarArg",
-          "usr": "s:s7CVarArgP",
-          "mangledName": "$ss7CVarArgP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "_KeyValueCodingAndObservingPublishing",
-          "printedName": "_KeyValueCodingAndObservingPublishing",
-          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "_KeyValueCodingAndObserving",
-          "printedName": "_KeyValueCodingAndObserving",
-          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "CustomStringConvertible",
-          "printedName": "CustomStringConvertible",
-          "usr": "s:s23CustomStringConvertibleP",
-          "mangledName": "$ss23CustomStringConvertibleP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "CustomDebugStringConvertible",
-          "printedName": "CustomDebugStringConvertible",
-          "usr": "s:s28CustomDebugStringConvertibleP",
-          "mangledName": "$ss28CustomDebugStringConvertibleP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "__DefaultCustomPlaygroundQuickLookable",
-          "printedName": "__DefaultCustomPlaygroundQuickLookable",
-          "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-          "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-        }
-      ]
-    },
-    {
-      "kind": "Import",
-      "name": "CoreData",
-      "printedName": "CoreData",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "Foundation",
-      "printedName": "Foundation",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftOnoneSupport",
-      "printedName": "SwiftOnoneSupport",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftUI",
-      "printedName": "SwiftUI",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "UIKit",
-      "printedName": "UIKit",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "_Concurrency",
-      "printedName": "_Concurrency",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "TypeDecl",
-      "name": "VCUpdateRecipe2",
-      "printedName": "VCUpdateRecipe2",
-      "children": [
-        {
-          "kind": "Function",
-          "name": "viewDidLoad",
-          "printedName": "viewDidLoad()",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)viewDidLoad",
-          "mangledName": "$s10IslandCook15VCUpdateRecipe2C11viewDidLoadyyF",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "isOpen": true,
-          "objc_name": "viewDidLoad",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Var",
-          "name": "txtIngredients",
-          "printedName": "txtIngredients",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "WeakStorage",
-              "printedName": "UIKit.UITextField?"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(py)txtIngredients",
-          "mangledName": "$s10IslandCook15VCUpdateRecipe2C14txtIngredientsSo11UITextFieldCSgvp",
-=======
           "declKind": "Constructor",
           "usr": "s:10IslandCook11ingredientsC4name6amountACSS_SStcfc",
           "mangledName": "$s10IslandCook11ingredientsC4name6amountACSS_SStcfc",
@@ -14785,7 +14342,6 @@
           "declKind": "Var",
           "usr": "c:@M@IslandCook@objc(cs)CVCellMyRecipes(py)imageRecipe",
           "mangledName": "$s10IslandCook15CVCellMyRecipesC11imageRecipeSo11UIImageViewCSgvp",
->>>>>>> cely2.0
           "moduleName": "IslandCook",
           "isOpen": true,
           "declAttributes": [
@@ -14821,13 +14377,8 @@
                 }
               ],
               "declKind": "Accessor",
-<<<<<<< HEAD
-              "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)txtIngredients",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C14txtIngredientsSo11UITextFieldCSgvg",
-=======
               "usr": "c:@M@IslandCook@objc(cs)CVCellMyRecipes(im)imageRecipe",
               "mangledName": "$s10IslandCook15CVCellMyRecipesC11imageRecipeSo11UIImageViewCSgvg",
->>>>>>> cely2.0
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -14862,13 +14413,8 @@
                 }
               ],
               "declKind": "Accessor",
-<<<<<<< HEAD
-              "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)setTxtIngredients:",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C14txtIngredientsSo11UITextFieldCSgvs",
-=======
               "usr": "c:@M@IslandCook@objc(cs)CVCellMyRecipes(im)setImageRecipe:",
               "mangledName": "$s10IslandCook15CVCellMyRecipesC11imageRecipeSo11UIImageViewCSgvs",
->>>>>>> cely2.0
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -14889,13 +14435,8 @@
                 }
               ],
               "declKind": "Accessor",
-<<<<<<< HEAD
-              "usr": "s:10IslandCook15VCUpdateRecipe2C14txtIngredientsSo11UITextFieldCSgvM",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C14txtIngredientsSo11UITextFieldCSgvM",
-=======
               "usr": "s:10IslandCook15CVCellMyRecipesC11imageRecipeSo11UIImageViewCSgvM",
               "mangledName": "$s10IslandCook15CVCellMyRecipesC11imageRecipeSo11UIImageViewCSgvM",
->>>>>>> cely2.0
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -14904,131 +14445,9 @@
           ]
         },
         {
-<<<<<<< HEAD
-          "kind": "Var",
-          "name": "sliderQuantity",
-          "printedName": "sliderQuantity",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "WeakStorage",
-              "printedName": "UIKit.UISlider?"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(py)sliderQuantity",
-          "mangledName": "$s10IslandCook15VCUpdateRecipe2C14sliderQuantitySo8UISliderCSgvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "HasInitialValue",
-            "Custom",
-            "IBOutlet",
-            "ReferenceOwnership",
-            "HasStorage",
-            "ObjC"
-          ],
-          "fixedbinaryorder": 1,
-          "ownership": 1,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UISlider?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UISlider",
-                      "printedName": "UIKit.UISlider",
-                      "usr": "c:objc(cs)UISlider"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)sliderQuantity",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C14sliderQuantitySo8UISliderCSgvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "get"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UISlider?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UISlider",
-                      "printedName": "UIKit.UISlider",
-                      "usr": "c:objc(cs)UISlider"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)setSliderQuantity:",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C14sliderQuantitySo8UISliderCSgvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook15VCUpdateRecipe2C14sliderQuantitySo8UISliderCSgvM",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C14sliderQuantitySo8UISliderCSgvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Var",
-          "name": "lblValueSlider",
-          "printedName": "lblValueSlider",
-=======
           "kind": "Var",
           "name": "nameRecipe",
           "printedName": "nameRecipe",
->>>>>>> cely2.0
           "children": [
             {
               "kind": "TypeNominal",
@@ -15037,13 +14456,8 @@
             }
           ],
           "declKind": "Var",
-<<<<<<< HEAD
-          "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(py)lblValueSlider",
-          "mangledName": "$s10IslandCook15VCUpdateRecipe2C14lblValueSliderSo7UILabelCSgvp",
-=======
           "usr": "c:@M@IslandCook@objc(cs)CVCellMyRecipes(py)nameRecipe",
           "mangledName": "$s10IslandCook15CVCellMyRecipesC10nameRecipeSo7UILabelCSgvp",
->>>>>>> cely2.0
           "moduleName": "IslandCook",
           "isOpen": true,
           "declAttributes": [
@@ -15054,11 +14468,7 @@
             "HasStorage",
             "ObjC"
           ],
-<<<<<<< HEAD
-          "fixedbinaryorder": 2,
-=======
           "fixedbinaryorder": 1,
->>>>>>> cely2.0
           "ownership": 1,
           "hasStorage": true,
           "accessors": [
@@ -15083,13 +14493,8 @@
                 }
               ],
               "declKind": "Accessor",
-<<<<<<< HEAD
-              "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)lblValueSlider",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C14lblValueSliderSo7UILabelCSgvg",
-=======
               "usr": "c:@M@IslandCook@objc(cs)CVCellMyRecipes(im)nameRecipe",
               "mangledName": "$s10IslandCook15CVCellMyRecipesC10nameRecipeSo7UILabelCSgvg",
->>>>>>> cely2.0
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -15124,13 +14529,8 @@
                 }
               ],
               "declKind": "Accessor",
-<<<<<<< HEAD
-              "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)setLblValueSlider:",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C14lblValueSliderSo7UILabelCSgvs",
-=======
               "usr": "c:@M@IslandCook@objc(cs)CVCellMyRecipes(im)setNameRecipe:",
               "mangledName": "$s10IslandCook15CVCellMyRecipesC10nameRecipeSo7UILabelCSgvs",
->>>>>>> cely2.0
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -15151,13 +14551,8 @@
                 }
               ],
               "declKind": "Accessor",
-<<<<<<< HEAD
-              "usr": "s:10IslandCook15VCUpdateRecipe2C14lblValueSliderSo7UILabelCSgvM",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C14lblValueSliderSo7UILabelCSgvM",
-=======
               "usr": "s:10IslandCook15CVCellMyRecipesC10nameRecipeSo7UILabelCSgvM",
               "mangledName": "$s10IslandCook15CVCellMyRecipesC10nameRecipeSo7UILabelCSgvM",
->>>>>>> cely2.0
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -15167,13 +14562,8 @@
         },
         {
           "kind": "Function",
-<<<<<<< HEAD
-          "name": "btnAddIngredient",
-          "printedName": "btnAddIngredient(_:)",
-=======
           "name": "configure",
           "printedName": "configure(with:recipeImage:)",
->>>>>>> cely2.0
           "children": [
             {
               "kind": "TypeNominal",
@@ -15194,13 +14584,8 @@
             }
           ],
           "declKind": "Func",
-<<<<<<< HEAD
-          "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)btnAddIngredient:",
-          "mangledName": "$s10IslandCook15VCUpdateRecipe2C16btnAddIngredientyyypF",
-=======
           "usr": "s:10IslandCook15CVCellMyRecipesC9configure4with11recipeImageySS_SStF",
           "mangledName": "$s10IslandCook15CVCellMyRecipesC9configure4with11recipeImageySS_SStF",
->>>>>>> cely2.0
           "moduleName": "IslandCook",
           "isOpen": true,
           "declAttributes": [
@@ -15209,23 +14594,6 @@
           "funcSelfKind": "NonMutating"
         },
         {
-<<<<<<< HEAD
-          "kind": "Var",
-          "name": "txtSteps",
-          "printedName": "txtSteps",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "WeakStorage",
-              "printedName": "UIKit.UITextField?"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(py)txtSteps",
-          "mangledName": "$s10IslandCook15VCUpdateRecipe2C8txtStepsSo11UITextFieldCSgvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-=======
           "kind": "Constructor",
           "name": "init",
           "printedName": "init(frame:)",
@@ -15250,339 +14618,6 @@
           "overriding": true,
           "implicit": true,
           "objc_name": "initWithFrame:",
->>>>>>> cely2.0
-          "declAttributes": [
-            "HasInitialValue",
-            "Custom",
-            "IBOutlet",
-            "ReferenceOwnership",
-            "HasStorage",
-            "ObjC"
-          ],
-          "fixedbinaryorder": 3,
-          "ownership": 1,
-          "hasStorage": true,
-          "accessors": [
-            {
-<<<<<<< HEAD
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UITextField?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UITextField",
-                      "printedName": "UIKit.UITextField",
-                      "usr": "c:objc(cs)UITextField"
-                    }
-                  ],
-                  "usr": "s:Sq"
-=======
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "IslandCook.CVCellMyRecipes?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "CVCellMyRecipes",
-                  "printedName": "IslandCook.CVCellMyRecipes",
-                  "usr": "c:@M@IslandCook@objc(cs)CVCellMyRecipes"
->>>>>>> cely2.0
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)txtSteps",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C8txtStepsSo11UITextFieldCSgvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "get"
-            },
-            {
-<<<<<<< HEAD
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UITextField?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UITextField",
-                      "printedName": "UIKit.UITextField",
-                      "usr": "c:objc(cs)UITextField"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)setTxtSteps:",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C8txtStepsSo11UITextFieldCSgvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook15VCUpdateRecipe2C8txtStepsSo11UITextFieldCSgvM",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C8txtStepsSo11UITextFieldCSgvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Function",
-          "name": "btnAddSteps",
-          "printedName": "btnAddSteps(_:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "ProtocolComposition",
-              "printedName": "Any"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)btnAddSteps:",
-          "mangledName": "$s10IslandCook15VCUpdateRecipe2C11btnAddStepsyyypF",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "Custom",
-            "IBAction",
-            "ObjC"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Var",
-          "name": "txtTags",
-          "printedName": "txtTags",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "WeakStorage",
-              "printedName": "UIKit.UITextField?"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(py)txtTags",
-          "mangledName": "$s10IslandCook15VCUpdateRecipe2C7txtTagsSo11UITextFieldCSgvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "HasInitialValue",
-            "Custom",
-            "IBOutlet",
-            "ReferenceOwnership",
-            "HasStorage",
-            "ObjC"
-          ],
-          "fixedbinaryorder": 4,
-          "ownership": 1,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UITextField?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UITextField",
-                      "printedName": "UIKit.UITextField",
-                      "usr": "c:objc(cs)UITextField"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)txtTags",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C7txtTagsSo11UITextFieldCSgvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "get"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UITextField?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UITextField",
-                      "printedName": "UIKit.UITextField",
-                      "usr": "c:objc(cs)UITextField"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)setTxtTags:",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C7txtTagsSo11UITextFieldCSgvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook15VCUpdateRecipe2C7txtTagsSo11UITextFieldCSgvM",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe2C7txtTagsSo11UITextFieldCSgvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Function",
-          "name": "btnAddTags",
-          "printedName": "btnAddTags(_:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "ProtocolComposition",
-              "printedName": "Any"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)btnAddTags:",
-          "mangledName": "$s10IslandCook15VCUpdateRecipe2C10btnAddTagsyyypF",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "Custom",
-            "IBAction",
-            "ObjC"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Constructor",
-          "name": "init",
-          "printedName": "init(nibName:bundle:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "VCUpdateRecipe2",
-              "printedName": "IslandCook.VCUpdateRecipe2",
-              "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "Swift.String?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "usr": "s:Sq"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "Foundation.Bundle?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Bundle",
-                  "printedName": "Foundation.Bundle",
-                  "usr": "c:objc(cs)NSBundle"
-                }
-              ],
-              "usr": "s:Sq"
-            }
-          ],
-          "declKind": "Constructor",
-          "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)initWithNibName:bundle:",
-          "mangledName": "$s10IslandCook15VCUpdateRecipe2C7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "implicit": true,
-          "objc_name": "initWithNibName:bundle:",
           "declAttributes": [
             "Dynamic",
             "ObjC",
@@ -15599,20 +14634,18 @@
             {
               "kind": "TypeNominal",
               "name": "Optional",
-              "printedName": "IslandCook.VCUpdateRecipe2?",
+              "printedName": "IslandCook.CVCellMyRecipes?",
               "children": [
                 {
                   "kind": "TypeNominal",
-                  "name": "VCUpdateRecipe2",
-                  "printedName": "IslandCook.VCUpdateRecipe2",
-                  "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2"
+                  "name": "CVCellMyRecipes",
+                  "printedName": "IslandCook.CVCellMyRecipes",
+                  "usr": "c:@M@IslandCook@objc(cs)CVCellMyRecipes"
                 }
               ],
               "usr": "s:Sq"
             },
             {
-=======
->>>>>>> cely2.0
               "kind": "TypeNominal",
               "name": "NSCoder",
               "printedName": "Foundation.NSCoder",
@@ -15620,13 +14653,8 @@
             }
           ],
           "declKind": "Constructor",
-<<<<<<< HEAD
-          "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2(im)initWithCoder:",
-          "mangledName": "$s10IslandCook15VCUpdateRecipe2C5coderACSgSo7NSCoderC_tcfc",
-=======
           "usr": "c:@M@IslandCook@objc(cs)CVCellMyRecipes(im)initWithCoder:",
           "mangledName": "$s10IslandCook15CVCellMyRecipesC5coderACSgSo7NSCoderC_tcfc",
->>>>>>> cely2.0
           "moduleName": "IslandCook",
           "overriding": true,
           "implicit": true,
@@ -15641,18 +14669,20 @@
         }
       ],
       "declKind": "Class",
-      "usr": "c:@M@IslandCook@objc(cs)VCUpdateRecipe2",
-      "mangledName": "$s10IslandCook15VCUpdateRecipe2C",
+      "usr": "c:@M@IslandCook@objc(cs)CVCellMyRecipes",
+      "mangledName": "$s10IslandCook15CVCellMyRecipesC",
       "moduleName": "IslandCook",
       "isOpen": true,
       "declAttributes": [
         "Custom",
         "ObjC"
       ],
-      "superclassUsr": "c:objc(cs)UIViewController",
+      "superclassUsr": "c:objc(cs)UICollectionViewCell",
       "inheritsConvenienceInitializers": true,
       "superclassNames": [
-        "UIKit.UIViewController",
+        "UIKit.UICollectionViewCell",
+        "UIKit.UICollectionReusableView",
+        "UIKit.UIView",
         "UIKit.UIResponder",
         "ObjectiveC.NSObject"
       ],
@@ -15705,6 +14735,13 @@
           "printedName": "CustomDebugStringConvertible",
           "usr": "s:s28CustomDebugStringConvertibleP",
           "mangledName": "$ss28CustomDebugStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "__DefaultCustomPlaygroundQuickLookable",
+          "printedName": "__DefaultCustomPlaygroundQuickLookable",
+          "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+          "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
         }
       ]
     },
@@ -16140,33 +15177,18 @@
         }
       ],
       "declKind": "Class",
-<<<<<<< HEAD
       "usr": "c:@M@IslandCook@objc(cs)Ingredients",
       "mangledName": "$s10IslandCook11IngredientsC",
-=======
-      "usr": "c:@M@IslandCook@objc(cs)CVCellMyRecipes",
-      "mangledName": "$s10IslandCook15CVCellMyRecipesC",
->>>>>>> cely2.0
       "moduleName": "IslandCook",
       "isOpen": true,
       "objc_name": "Ingredients",
       "declAttributes": [
         "ObjC"
       ],
-<<<<<<< HEAD
       "superclassUsr": "c:objc(cs)NSManagedObject",
       "inheritsConvenienceInitializers": true,
       "superclassNames": [
         "CoreData.NSManagedObject",
-=======
-      "superclassUsr": "c:objc(cs)UICollectionViewCell",
-      "inheritsConvenienceInitializers": true,
-      "superclassNames": [
-        "UIKit.UICollectionViewCell",
-        "UIKit.UICollectionReusableView",
-        "UIKit.UIView",
-        "UIKit.UIResponder",
->>>>>>> cely2.0
         "ObjectiveC.NSObject"
       ],
       "conformances": [
@@ -16240,111 +15262,6 @@
           "printedName": "CustomDebugStringConvertible",
           "usr": "s:s28CustomDebugStringConvertibleP",
           "mangledName": "$ss28CustomDebugStringConvertibleP"
-<<<<<<< HEAD
-=======
-        },
-        {
-          "kind": "Conformance",
-          "name": "__DefaultCustomPlaygroundQuickLookable",
-          "printedName": "__DefaultCustomPlaygroundQuickLookable",
-          "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-          "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-        }
-      ]
-    },
-    {
-      "kind": "Import",
-      "name": "CoreData",
-      "printedName": "CoreData",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "Foundation",
-      "printedName": "Foundation",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftOnoneSupport",
-      "printedName": "SwiftOnoneSupport",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftUI",
-      "printedName": "SwiftUI",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "UIKit",
-      "printedName": "UIKit",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "_Concurrency",
-      "printedName": "_Concurrency",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "TypeDecl",
-      "name": "Ingredients",
-      "printedName": "Ingredients",
-      "children": [
-        {
-          "kind": "Constructor",
-          "name": "init",
-          "printedName": "init(entity:insertInto:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Ingredients",
-              "printedName": "IslandCook.Ingredients",
-              "usr": "c:@M@IslandCook@objc(cs)Ingredients"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "NSEntityDescription",
-              "printedName": "CoreData.NSEntityDescription",
-              "usr": "c:objc(cs)NSEntityDescription"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "CoreData.NSManagedObjectContext?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "NSManagedObjectContext",
-                  "printedName": "CoreData.NSManagedObjectContext",
-                  "usr": "c:objc(cs)NSManagedObjectContext"
-                }
-              ],
-              "usr": "s:Sq"
-            }
-          ],
-          "declKind": "Constructor",
-          "usr": "c:@M@IslandCook@objc(cs)Ingredients(im)initWithEntity:insertIntoManagedObjectContext:",
-          "mangledName": "$s10IslandCook11IngredientsC6entity10insertIntoACSo19NSEntityDescriptionC_So22NSManagedObjectContextCSgtcfc",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "implicit": true,
-          "objc_name": "initWithEntity:insertIntoManagedObjectContext:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Override"
-          ],
-          "init_kind": "Designated"
->>>>>>> cely2.0
         },
         {
           "kind": "Conformance",
@@ -16367,488 +15284,6 @@
           ],
           "usr": "s:7Combine16ObservableObjectP",
           "mangledName": "$s7Combine16ObservableObjectP"
-        }
-      ]
-    },
-    {
-      "kind": "Import",
-      "name": "CoreData",
-      "printedName": "CoreData",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "Foundation",
-      "printedName": "Foundation",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftOnoneSupport",
-      "printedName": "SwiftOnoneSupport",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftUI",
-      "printedName": "SwiftUI",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "UIKit",
-      "printedName": "UIKit",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "_Concurrency",
-      "printedName": "_Concurrency",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "TypeDecl",
-      "name": "CVCFavorites",
-      "printedName": "CVCFavorites",
-      "children": [
-        {
-          "kind": "Var",
-          "name": "favoritesExamples",
-          "printedName": "favoritesExamples",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Array",
-              "printedName": "[Swift.String]",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "usr": "s:Sa"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "s:10IslandCook12CVCFavoritesC17favoritesExamplesSaySSGvp",
-          "mangledName": "$s10IslandCook12CVCFavoritesC17favoritesExamplesSaySSGvp",
-          "moduleName": "IslandCook",
-          "declAttributes": [
-            "Custom",
-            "HasInitialValue",
-            "Final",
-            "HasStorage"
-          ],
-          "fixedbinaryorder": 0,
-          "isLet": true,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Array",
-                  "printedName": "[Swift.String]",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "String",
-                      "printedName": "Swift.String",
-                      "usr": "s:SS"
-                    }
-                  ],
-                  "usr": "s:Sa"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook12CVCFavoritesC17favoritesExamplesSaySSGvg",
-              "mangledName": "$s10IslandCook12CVCFavoritesC17favoritesExamplesSaySSGvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "declAttributes": [
-                "Final"
-              ],
-              "accessorKind": "get"
-            }
-          ]
-        },
-        {
-          "kind": "Var",
-          "name": "favoriteLabels",
-          "printedName": "favoriteLabels",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Array",
-              "printedName": "[Swift.String]",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "usr": "s:Sa"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "s:10IslandCook12CVCFavoritesC14favoriteLabelsSaySSGvp",
-          "mangledName": "$s10IslandCook12CVCFavoritesC14favoriteLabelsSaySSGvp",
-          "moduleName": "IslandCook",
-          "declAttributes": [
-            "Custom",
-            "HasInitialValue",
-            "Final",
-            "HasStorage"
-          ],
-          "fixedbinaryorder": 1,
-          "isLet": true,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Array",
-                  "printedName": "[Swift.String]",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "String",
-                      "printedName": "Swift.String",
-                      "usr": "s:SS"
-                    }
-                  ],
-                  "usr": "s:Sa"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook12CVCFavoritesC14favoriteLabelsSaySSGvg",
-              "mangledName": "$s10IslandCook12CVCFavoritesC14favoriteLabelsSaySSGvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "declAttributes": [
-                "Final"
-              ],
-              "accessorKind": "get"
-            }
-          ]
-        },
-        {
-          "kind": "Function",
-          "name": "viewDidLoad",
-          "printedName": "viewDidLoad()",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)CVCFavorites(im)viewDidLoad",
-          "mangledName": "$s10IslandCook12CVCFavoritesC11viewDidLoadyyF",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "isOpen": true,
-          "objc_name": "viewDidLoad",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "collectionView",
-          "printedName": "collectionView(_:numberOfItemsInSection:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Int",
-              "printedName": "Swift.Int",
-              "usr": "s:Si"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "UICollectionView",
-              "printedName": "UIKit.UICollectionView",
-              "usr": "c:objc(cs)UICollectionView"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Int",
-              "printedName": "Swift.Int",
-              "usr": "s:Si"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)CVCFavorites(im)collectionView:numberOfItemsInSection:",
-          "mangledName": "$s10IslandCook12CVCFavoritesC14collectionView_22numberOfItemsInSectionSiSo012UICollectionE0C_SitF",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "isOpen": true,
-          "objc_name": "collectionView:numberOfItemsInSection:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "collectionView",
-          "printedName": "collectionView(_:cellForItemAt:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "UICollectionViewCell",
-              "printedName": "UIKit.UICollectionViewCell",
-              "usr": "c:objc(cs)UICollectionViewCell"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "UICollectionView",
-              "printedName": "UIKit.UICollectionView",
-              "usr": "c:objc(cs)UICollectionView"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "IndexPath",
-              "printedName": "Foundation.IndexPath",
-              "usr": "s:10Foundation9IndexPathV"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)CVCFavorites(im)collectionView:cellForItemAtIndexPath:",
-          "mangledName": "$s10IslandCook12CVCFavoritesC14collectionView_13cellForItemAtSo012UICollectionE4CellCSo0jE0C_10Foundation9IndexPathVtF",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "isOpen": true,
-          "objc_name": "collectionView:cellForItemAtIndexPath:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Constructor",
-          "name": "init",
-          "printedName": "init(collectionViewLayout:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "CVCFavorites",
-              "printedName": "IslandCook.CVCFavorites",
-              "usr": "c:@M@IslandCook@objc(cs)CVCFavorites"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "UICollectionViewLayout",
-              "printedName": "UIKit.UICollectionViewLayout",
-              "usr": "c:objc(cs)UICollectionViewLayout"
-            }
-          ],
-          "declKind": "Constructor",
-          "usr": "c:@M@IslandCook@objc(cs)CVCFavorites(im)initWithCollectionViewLayout:",
-          "mangledName": "$s10IslandCook12CVCFavoritesC20collectionViewLayoutACSo012UICollectioneF0C_tcfc",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "implicit": true,
-          "objc_name": "initWithCollectionViewLayout:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "init_kind": "Designated"
-        },
-        {
-          "kind": "Constructor",
-          "name": "init",
-          "printedName": "init(nibName:bundle:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "CVCFavorites",
-              "printedName": "IslandCook.CVCFavorites",
-              "usr": "c:@M@IslandCook@objc(cs)CVCFavorites"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "Swift.String?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "usr": "s:Sq"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "Foundation.Bundle?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Bundle",
-                  "printedName": "Foundation.Bundle",
-                  "usr": "c:objc(cs)NSBundle"
-                }
-              ],
-              "usr": "s:Sq"
-            }
-          ],
-          "declKind": "Constructor",
-          "usr": "c:@M@IslandCook@objc(cs)CVCFavorites(im)initWithNibName:bundle:",
-          "mangledName": "$s10IslandCook12CVCFavoritesC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "implicit": true,
-          "objc_name": "initWithNibName:bundle:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "init_kind": "Designated"
-        },
-        {
-          "kind": "Constructor",
-          "name": "init",
-          "printedName": "init(coder:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "IslandCook.CVCFavorites?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "CVCFavorites",
-                  "printedName": "IslandCook.CVCFavorites",
-                  "usr": "c:@M@IslandCook@objc(cs)CVCFavorites"
-                }
-              ],
-              "usr": "s:Sq"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "NSCoder",
-              "printedName": "Foundation.NSCoder",
-              "usr": "c:objc(cs)NSCoder"
-            }
-          ],
-          "declKind": "Constructor",
-          "usr": "c:@M@IslandCook@objc(cs)CVCFavorites(im)initWithCoder:",
-          "mangledName": "$s10IslandCook12CVCFavoritesC5coderACSgSo7NSCoderC_tcfc",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "implicit": true,
-          "objc_name": "initWithCoder:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Required"
-          ],
-          "init_kind": "Designated"
-        }
-      ],
-      "declKind": "Class",
-      "usr": "c:@M@IslandCook@objc(cs)CVCFavorites",
-      "mangledName": "$s10IslandCook12CVCFavoritesC",
-      "moduleName": "IslandCook",
-      "isOpen": true,
-      "declAttributes": [
-        "Custom",
-        "ObjC"
-      ],
-      "superclassUsr": "c:objc(cs)UICollectionViewController",
-      "inheritsConvenienceInitializers": true,
-      "superclassNames": [
-        "UIKit.UICollectionViewController",
-        "UIKit.UIViewController",
-        "UIKit.UIResponder",
-        "ObjectiveC.NSObject"
-      ],
-      "conformances": [
-        {
-          "kind": "Conformance",
-          "name": "Equatable",
-          "printedName": "Equatable",
-          "usr": "s:SQ",
-          "mangledName": "$sSQ"
-        },
-        {
-          "kind": "Conformance",
-          "name": "Hashable",
-          "printedName": "Hashable",
-          "usr": "s:SH",
-          "mangledName": "$sSH"
-        },
-        {
-          "kind": "Conformance",
-          "name": "CVarArg",
-          "printedName": "CVarArg",
-          "usr": "s:s7CVarArgP",
-          "mangledName": "$ss7CVarArgP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "_KeyValueCodingAndObservingPublishing",
-          "printedName": "_KeyValueCodingAndObservingPublishing",
-          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "_KeyValueCodingAndObserving",
-          "printedName": "_KeyValueCodingAndObserving",
-          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "CustomStringConvertible",
-          "printedName": "CustomStringConvertible",
-          "usr": "s:s23CustomStringConvertibleP",
-          "mangledName": "$ss23CustomStringConvertibleP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "CustomDebugStringConvertible",
-          "printedName": "CustomDebugStringConvertible",
-          "usr": "s:s28CustomDebugStringConvertibleP",
-          "mangledName": "$ss28CustomDebugStringConvertibleP"
         }
       ]
     },

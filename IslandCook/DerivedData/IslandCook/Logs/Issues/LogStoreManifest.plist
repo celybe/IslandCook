@@ -5,11 +5,8 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-<<<<<<< HEAD
-	<dict/>
-=======
 	<dict>
-		<key>A951D27D-38FF-485A-920E-9711F7C1BDD6</key>
+		<key>3D2386AC-3E9E-4152-A26C-8BBC54605205</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -18,27 +15,26 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>A951D27D-38FF-485A-920E-9711F7C1BDD6.xcactivitylog</string>
+			<string>3D2386AC-3E9E-4152-A26C-8BBC54605205.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>E</string>
 			</dict>
 			<key>signature</key>
 			<string>IslandCook-hjddlkkxifnmhtdltypkzjkevigv</string>
 			<key>timeStartedRecording</key>
-			<real>667164971.73307705</real>
+			<real>667168091.44164598</real>
 			<key>timeStoppedRecording</key>
-			<real>667164974.29347396</real>
+			<real>667168096.17905498</real>
 			<key>title</key>
 			<string>Build target IslandCook</string>
 			<key>uniqueIdentifier</key>
-			<string>A951D27D-38FF-485A-920E-9711F7C1BDD6</string>
+			<string>3D2386AC-3E9E-4152-A26C-8BBC54605205</string>
 		</dict>
 	</dict>
->>>>>>> cely2.0
 	<key>preserveOldLogs</key>
 	<true/>
 </dict>

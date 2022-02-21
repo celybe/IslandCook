@@ -15,16 +15,10 @@
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/Provider/API/Model/ApiResponse.swift
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/Provider/DataBase/Entities/Recipe+CoreDataClass.swift
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/Extensions/extensions.swift
-<<<<<<< HEAD
-/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/UseCases/Favorites/CVCellFavorites.swift
-/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/VCUpdateRecipe2.swift
-=======
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/UseCases/AddRecipe/VCAddRecipe.swift
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/Provider/API/Model/ApiBody.swift
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/UseCases/MyRecipes/CVCellMyRecipes.swift
->>>>>>> cely2.0
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/Provider/DataBase/Entities/Ingredients+CoreDataClass.swift
-/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/UseCases/Favorites/CVCFavorites.swift
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/Utils/LoadImage.swift
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/SceneDelegate.swift
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/Provider/API/Model/Alerts/AlertDeleteRecipes/VCAlertDelete.swift
