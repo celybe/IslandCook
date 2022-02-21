@@ -5383,8 +5383,8 @@
           "moduleName": "IslandCook",
           "isOpen": true,
           "declAttributes": [
-            "HasInitialValue",
             "Custom",
+            "HasInitialValue",
             "HasStorage"
           ],
           "fixedbinaryorder": 0,
