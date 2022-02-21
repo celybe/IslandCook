@@ -324,8 +324,8 @@
 				873B313E27BAD988009C6F7B /* Utils */,
 				A23D170527B293C200AC4DA8 /* AppDelegate.swift */,
 				0E75F3A727B42F7300C9E5B0 /* recipes.json */,
-				A23D170B27B293C200AC4DA8 /* Main.storyboard */,
 				A23D170727B293C200AC4DA8 /* SceneDelegate.swift */,
+				A23D170B27B293C200AC4DA8 /* Main.storyboard */,
 				A23D170E27B293C200AC4DA8 /* Assets.xcassets */,
 				A23D171327B293C200AC4DA8 /* Info.plist */,
 			);

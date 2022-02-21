@@ -14,8 +14,8 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     var tags: [String] = []
     var steps: [String] = []
     var pickedDifficulty: Int = 55
-    var difficulties = ["Easy", "Medium", "Hard"]
-    var selectDifficulty: String = "Easy"
+    var difficulties = ["Easy", "Medium", "Show off"]
+    var selectDifficulty: String?
     var arraysDicci = [[String:String]]()
     
     override func viewDidLoad() {
@@ -60,7 +60,7 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         let nameRecipe = txtRecipeName.text!
         let author = txtAuthor.text!
         let picture_url = txtImageUrl.text!
-        let difficulty = selectDifficulty
+        let difficulty = selectDifficulty!
         var stringTags = txtTags.text!
         tags.append(stringTags)
         let recipeTags = tags

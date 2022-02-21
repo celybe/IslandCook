@@ -16,7 +16,7 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     private var myIngredients = [[String:String]]()
     var pickedDifficulty: Int = 55
     var difficulties = ["Easy", "Medium", "Hard"]
-    var selectDifficulty: String = "Easy"
+    var selectDifficulty: String?
     @IBOutlet weak var lblIngredients: UILabel!
     @IBOutlet weak var lblTags: UILabel!
     @IBOutlet weak var lblStep: UILabel!
@@ -50,7 +50,7 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         let nameRecipe = txtName.text!
         let author = txtAuthor.text!
         let picture_url = txtImage_Url.text!
-        let difficulty = selectDifficulty
+        let difficulty = selectDifficulty!
         let recipeTags = tags
         let recipeSteps = steps
         let recipeIngredients = myIngredients
