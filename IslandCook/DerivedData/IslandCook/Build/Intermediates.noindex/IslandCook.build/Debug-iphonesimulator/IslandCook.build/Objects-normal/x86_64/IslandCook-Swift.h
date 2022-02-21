@@ -223,14 +223,40 @@ SWIFT_CLASS("_TtC10IslandCook11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UICollectionView;
+@class NSIndexPath;
+@class UICollectionViewCell;
+@class UICollectionViewLayout;
+@class NSString;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC10IslandCook12CVCFavorites")
+@interface CVCFavorites : UICollectionViewController
+- (void)viewDidLoad;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithCollectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UILabel;
 @class UIImageView;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC10IslandCook7CVCHome")
 @interface CVCHome : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified txtTitle;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified ivRecipe;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10IslandCook14CVCellFavorite")
+@interface CVCellFavorite : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified recipeImage;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified recipeLabel;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -244,7 +270,6 @@ SWIFT_CLASS_NAMED("Ingredients")
 @end
 
 
-@class NSString;
 @class Recipe;
 
 @interface Ingredients (SWIFT_EXTENSION(IslandCook))
@@ -306,10 +331,8 @@ SWIFT_CLASS_NAMED("Steps")
 @end
 
 @class UITableView;
-@class NSIndexPath;
 @class UITableViewCell;
 @class UIStoryboardSegue;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC10IslandCook16TVCGetAllRecipes")
 @interface TVCGetAllRecipes : UITableViewController
@@ -325,7 +348,6 @@ SWIFT_CLASS("_TtC10IslandCook16TVCGetAllRecipes")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UICollectionView;
 
 SWIFT_CLASS("_TtC10IslandCook10TVCHomeRow")
 @interface TVCHomeRow : UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
@@ -350,6 +372,7 @@ SWIFT_CLASS_NAMED("Tags")
 @property (nonatomic, copy) NSString * _Nullable tags;
 @property (nonatomic, strong) Recipe * _Nullable recipe_tags;
 @end
+
 
 
 @class UITextView;
