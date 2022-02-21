@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>3D2386AC-3E9E-4152-A26C-8BBC54605205</key>
+		<key>553A5308-7195-4CEB-A9EE-3B34A0EA3748</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,24 +15,24 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>3D2386AC-3E9E-4152-A26C-8BBC54605205.xcactivitylog</string>
+			<string>553A5308-7195-4CEB-A9EE-3B34A0EA3748.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>W</string>
 			</dict>
 			<key>signature</key>
 			<string>IslandCook-hjddlkkxifnmhtdltypkzjkevigv</string>
 			<key>timeStartedRecording</key>
-			<real>667168091.44164598</real>
+			<real>667169844.88815999</real>
 			<key>timeStoppedRecording</key>
-			<real>667168096.17905498</real>
+			<real>667169852.08455098</real>
 			<key>title</key>
 			<string>Build target IslandCook</string>
 			<key>uniqueIdentifier</key>
-			<string>3D2386AC-3E9E-4152-A26C-8BBC54605205</string>
+			<string>553A5308-7195-4CEB-A9EE-3B34A0EA3748</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
