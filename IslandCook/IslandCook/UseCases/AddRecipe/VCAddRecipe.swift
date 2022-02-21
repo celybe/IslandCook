@@ -10,13 +10,12 @@ import UIKit
 class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var myRecipe: ApiResponse?
-    var dicciIngredients: [String:String] = [:]
     var getApi: [ApiResponse] = []
     var tags: [String] = []
     var steps: [String] = []
     private var myIngredients = [[String:String]]()
     var pickedDifficulty: Int = 55
-    var difficulties = ["Easy", "Medium", "Show off"]
+    var difficulties = ["Easy", "Medium", "Hard"]
     var selectDifficulty: String?
     @IBOutlet weak var lblIngredients: UILabel!
     @IBOutlet weak var lblTags: UILabel!
@@ -54,8 +53,8 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         let difficulty = selectDifficulty!
         let recipeTags = tags
         let recipeSteps = steps
-        
-        let recipeIngredients: [Ingredients] = myIngredients as! [Ingredients]
+        let recipeIngredients = myIngredients
+        print(recipeIngredients)
         let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: recipeIngredients, steps: recipeSteps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
         return myRecipe
     }
@@ -70,7 +69,7 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     @IBAction func btnAddIngredient(_ sender: Any) {
         guard let name = txtIngredients.text, let amount = txtQuantityIngredients.text else
         {return}
-        dicciIngredients = ["Name": name, "Amount": amount]
+        var dicciIngredients = ["name": name, "amount": amount]
         myIngredients.append(dicciIngredients)
         txtIngredients.text = ""
         txtQuantityIngredients.text = ""
@@ -89,12 +88,20 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     
     @IBAction func btnSave(_ sender: Any) {
         let receta = pasaDatos()
-        APIService.shared.postRecipe(recipe: receta )
+        do
+        {
+            try APIService.shared.postRecipe(recipe: receta )
+        }
+        catch
+        {
+            let error = error as NSError
+            print("Error al editar, \(error)")
+        }
     }
     private func addIngredientToLbl(){
         var tagsString : String = ""
         for item in myIngredients{
-            tagsString += "\(item["Name"]!) "
+            tagsString += "\(item["name"]!) "
         }
         lblIngredients.text = tagsString
     }
@@ -112,5 +119,4 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         }
         lblTags.text = tagsString
     }
-    
 }

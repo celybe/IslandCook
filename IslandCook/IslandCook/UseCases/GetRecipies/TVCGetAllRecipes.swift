@@ -15,8 +15,6 @@ class TVCGetAllRecipes: UITableViewController {
 //    let origen = "Local"
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(filterEndPoint)
-        decodeData = APIService.shared.decodeJson(endpoint: filterEndPoint)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -51,7 +49,5 @@ class TVCGetAllRecipes: UITableViewController {
 
         vistaDetalle.miReceta = postSeleccionado
     }
-
-
     @IBOutlet var miTabla: UITableView!
 }

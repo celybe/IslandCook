@@ -52,7 +52,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tk-Wk-0ma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="367" y="-374"/>
+            <point key="canvasLocation" x="203" y="-374"/>
         </scene>
         <!--Detail Recipe-->
         <scene sceneID="nOP-c7-vGT">
@@ -218,9 +218,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WA1-yD-VOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052.8037383177571" y="-15.550755939524839"/>
+            <point key="canvasLocation" x="1050" y="-16"/>
         </scene>
-        <!--Save-->
+        <!--Update Recipe1-->
         <scene sceneID="RCU-ne-brE">
             <objects>
                 <viewController id="imZ-2L-g3q" customClass="VCUpdateRecipe1" customModule="IslandCook" customModuleProvider="target" sceneMemberID="viewController">
@@ -393,7 +393,13 @@
                             <constraint firstItem="ArA-Ag-sAf" firstAttribute="trailing" secondItem="24m-hk-PpB" secondAttribute="trailing" id="fp3-74-7NP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Save" id="Ttu-UR-YPn"/>
+                    <navigationItem key="navigationItem" id="Ttu-UR-YPn">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="21F-XZ-ldl">
+                            <connections>
+                                <action selector="btnUpdate:" destination="imZ-2L-g3q" id="Wjo-5L-VcJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="txtAuthor" destination="82Z-7J-gAX" id="0mV-Lp-GsA"/>
                         <outlet property="txtImageUrl" destination="Y05-nX-c1J" id="SYf-Sn-6NU"/>
@@ -417,7 +423,13 @@
                         <viewLayoutGuide key="safeArea" id="nrh-ca-Aea"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vXl-Xb-PPd"/>
+                    <navigationItem key="navigationItem" id="vXl-Xb-PPd">
+                        <barButtonItem key="rightBarButtonItem" title="New" id="7Tp-PO-cRv">
+                            <connections>
+                                <segue destination="wDh-7k-111" kind="show" id="ayf-7E-yVN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBb-iM-NxI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -442,13 +454,7 @@
                         <viewLayoutGuide key="safeArea" id="rxW-zx-vdW"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ubI-1c-Dim">
-                        <barButtonItem key="rightBarButtonItem" title="New" id="v7M-Fv-DFp">
-                            <connections>
-                                <segue destination="wDh-7k-111" kind="show" id="JRp-y5-tr3"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="ubI-1c-Dim"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VVb-bJ-nS0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1082,11 +1088,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VN0-tU-ugF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="314.01869158878503" y="726.34989200863936"/>
+            <point key="canvasLocation" x="203" y="1476"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ivq-2z-a3m"/>
+        <segue reference="dNX-iU-SWX"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="pencil" catalog="system" width="128" height="113"/>

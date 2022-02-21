@@ -10,14 +10,14 @@ import Foundation
 class ApiBody
 {
     var name: String
-    var ingredients: [Ingredients]
+    var ingredients = [[String:String]]()
     var steps: [String]
     var picture_url: String
     var difficulty: String
     var author: String
     var tags: [String]
     
-    init(name: String, ingredients : [Ingredients], steps: [String], picture_url: String, difficulty: String,author: String, tags: [String]) {
+    init(name: String, ingredients : [[String:String]], steps: [String], picture_url: String, difficulty: String,author: String, tags: [String]) {
         self.name = name
         self.ingredients = ingredients
         self.steps = steps
