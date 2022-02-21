@@ -42,6 +42,7 @@
 		A23D170D27B293C200AC4DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23D170B27B293C200AC4DA8 /* Main.storyboard */; };
 		A23D170F27B293C200AC4DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23D170E27B293C200AC4DA8 /* Assets.xcassets */; };
 		A23D171227B293C200AC4DA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23D171027B293C200AC4DA8 /* LaunchScreen.storyboard */; };
+		A25DB11B27C38F0600A96909 /* CVCellFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25DB11A27C38F0600A96909 /* CVCellFavorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		A23D170E27B293C200AC4DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A23D171127B293C200AC4DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A23D171327B293C200AC4DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25DB11A27C38F0600A96909 /* CVCellFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCellFavorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				3987340627BAE38F0066F9E4 /* VCFavorites.swift */,
+				A25DB11A27C38F0600A96909 /* CVCellFavorites.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				0EB6FF0D27BD6EDD0026E980 /* VCDetailRecipe.swift in Sources */,
 				3987340727BAE38F0066F9E4 /* VCFavorites.swift in Sources */,
 				873A0AD427B934FB006F15E9 /* Steps+CoreDataClass.swift in Sources */,
+				A25DB11B27C38F0600A96909 /* CVCellFavorites.swift in Sources */,
 				873A0AD127B934FB006F15E9 /* Ingredients+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
