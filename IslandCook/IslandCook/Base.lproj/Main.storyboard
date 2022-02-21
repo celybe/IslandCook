@@ -457,17 +457,17 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellMyRecipe" id="bdK-uc-w8d" customClass="CVCellMyRecipes" customModule="IslandCook" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="168" height="206"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsS-vk-8p7" customClass="CVCellMyRecipes" customModule="IslandCook" customModuleProvider="target">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsS-vk-8p7" customClass="CVCellMyRecipes" customModule="IslandCook" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="168" height="206"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxj-L1-pTx">
-                                                    <rect key="frame" x="8" y="8.0000000000000018" width="152" height="17.666666666666671"/>
+                                                    <rect key="frame" x="8" y="8.0000000000000018" width="39" height="17.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="Sora-SemiBold" family="Sora" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BGj-SB-veN">
-                                                    <rect key="frame" x="8" y="35.666666666666671" width="152" height="162.33333333333331"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BGj-SB-veN">
+                                                    <rect key="frame" x="8" y="35.666666666666671" width="39" height="162.33333333333331"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -480,12 +480,6 @@
                                                 <constraint firstItem="nxj-L1-pTx" firstAttribute="top" secondItem="YsS-vk-8p7" secondAttribute="topMargin" id="pmQ-2B-xly"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <constraints>
-                                            <constraint firstItem="YsS-vk-8p7" firstAttribute="top" secondItem="bdK-uc-w8d" secondAttribute="topMargin" constant="-8" id="8OK-7n-Lia"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="YsS-vk-8p7" secondAttribute="trailing" constant="-8" id="Ma5-Rr-0W7"/>
-                                            <constraint firstItem="YsS-vk-8p7" firstAttribute="leading" secondItem="bdK-uc-w8d" secondAttribute="leadingMargin" constant="-8" id="ool-N6-OQ9"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="YsS-vk-8p7" secondAttribute="bottom" constant="-8" id="qUv-tU-QVl"/>
-                                        </constraints>
                                         <size key="customSize" width="168" height="206"/>
                                         <connections>
                                             <outlet property="imageRecipe" destination="BGj-SB-veN" id="TXm-4Y-IqS"/>
@@ -1134,7 +1128,7 @@
             <color red="0.29399999976158142" green="0.3880000114440918" blue="0.34900000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Surface Variant">
-            <color red="0.98039215686274506" green="0.99215686274509807" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98000001907348633" green="0.99199998378753662" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Tertiary 1">
             <color red="0.24300000071525574" green="0.3880000114440918" blue="0.45899999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
