@@ -2,8 +2,7 @@
 //  extensions.swift
 //  IslandCook
 //
-//  Created by user209640 on 2/21/22.
-//
+
 
 import Foundation
 import UIKit

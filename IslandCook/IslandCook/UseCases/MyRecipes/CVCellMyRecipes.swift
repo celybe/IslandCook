@@ -1,13 +1,11 @@
 //
 //  CVCellMyRecipes.swift
 //  IslandCook
-//
-//  Created by user209640 on 2/21/22.
-//
 
 import UIKit
 
 class CVCellMyRecipes: UICollectionViewCell {
+
     
     
     @IBOutlet weak var imageRecipe: UIImageView!
@@ -18,5 +16,5 @@ class CVCellMyRecipes: UICollectionViewCell {
         self.imageRecipe.load(urlString: recipeImage)
         self.imageRecipe.layer.cornerRadius = 11
     }
- 
+
 }

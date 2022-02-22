@@ -32,14 +32,19 @@ class TVCGetAllRecipes: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return decodeData.count
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+       return 150
+    }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TVCRecipeList
         urlImg = decodeData[indexPath.row].picture_url
-        cell.textLabel?.text = decodeData [indexPath.row].name
-        cell.imageView?.downloaded(from: urlImg!)
-
-        return cell
+        cell!.lblRecipeName.text = decodeData [indexPath.row].name
+        cell!.lblRecipeListAuthor.text = decodeData [indexPath.row].author
+        cell!.ivRecipeList.downloaded(from: urlImg!)
+        cell!.ivRecipeList.layer.cornerRadius = 10
+        return cell!
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
