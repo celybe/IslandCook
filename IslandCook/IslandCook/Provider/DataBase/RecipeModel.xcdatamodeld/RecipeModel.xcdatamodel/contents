@@ -9,11 +9,8 @@
         <attribute name="author" optional="YES" attributeType="String"/>
         <attribute name="difficulty" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="String"/>
-        <attribute name="ingredients" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="picture_url" optional="YES" attributeType="String"/>
-        <attribute name="steps" optional="YES" attributeType="String"/>
-        <attribute name="tags" optional="YES" attributeType="String"/>
         <relationship name="ingredients_recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ingredients" inverseName="recipe_ingredients" inverseEntity="Ingredients"/>
         <relationship name="steps_recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Steps" inverseName="recipe_steps" inverseEntity="Steps"/>
         <relationship name="tags_recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tags" inverseName="recipe_tags" inverseEntity="Tags"/>
@@ -27,9 +24,9 @@
         <relationship name="recipe_tags" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="tags_recipe" inverseEntity="Recipe"/>
     </entity>
     <elements>
-        <element name="Recipe" positionX="-63" positionY="-18" width="128" height="194"/>
+        <element name="Ingredients" positionX="0" positionY="63" width="128" height="74"/>
+        <element name="Recipe" positionX="-63" positionY="-18" width="128" height="149"/>
         <element name="Steps" positionX="-36" positionY="63" width="128" height="59"/>
         <element name="Tags" positionX="-18" positionY="72" width="128" height="59"/>
-        <element name="Ingredients" positionX="0" positionY="63" width="128" height="74"/>
     </elements>
 </model>

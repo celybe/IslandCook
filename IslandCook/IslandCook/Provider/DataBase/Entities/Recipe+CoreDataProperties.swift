@@ -21,13 +21,6 @@ extension Recipe {
     @NSManaged public var picture_url: String?
     @NSManaged public var difficulty: String?
     @NSManaged public var author: String?
-    @NSManaged public var tags: String?
-    @NSManaged public var ingredients: String?
-    @NSManaged public var steps: String?
-    @NSManaged public var steps_recipe: Steps?
-    @NSManaged public var ingredients_recipe: Ingredients?
-    @NSManaged public var tags_recipe: Tags?
-
 }
 
 extension Recipe : Identifiable {

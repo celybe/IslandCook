@@ -414,6 +414,40 @@
 			<key>uniqueIdentifier</key>
 			<string>157462EA-24C3-405E-8276-B863DB227448</string>
 		</dict>
+		<key>16AE6D4D-5FE3-471C-92FA-9C09A62F2C2D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>16AE6D4D-5FE3-471C-92FA-9C09A62F2C2D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>IslandCook Build Description</string>
+			<key>timeStartedRecording</key>
+			<real>667262280.45528102</real>
+			<key>timeStoppedRecording</key>
+			<real>667262285.43928003</real>
+			<key>title</key>
+			<string>IslandCook Build Description</string>
+			<key>uniqueIdentifier</key>
+			<string>16AE6D4D-5FE3-471C-92FA-9C09A62F2C2D</string>
+		</dict>
 		<key>1803AFE8-7441-4F21-B063-8AB87ED37383</key>
 		<dict>
 			<key>className</key>
@@ -481,6 +515,40 @@
 			<string>IslandCook Build Preparation</string>
 			<key>uniqueIdentifier</key>
 			<string>1CB17A57-0391-432C-B1A6-EF1CC03A0AD5</string>
+		</dict>
+		<key>1D13D62B-D70B-4D1C-9F9B-A303F0A7884F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>1D13D62B-D70B-4D1C-9F9B-A303F0A7884F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Workspace Build Description</string>
+			<key>timeStartedRecording</key>
+			<real>667262280.45486605</real>
+			<key>timeStoppedRecording</key>
+			<real>667262285.49100304</real>
+			<key>title</key>
+			<string>Workspace Build Description</string>
+			<key>uniqueIdentifier</key>
+			<string>1D13D62B-D70B-4D1C-9F9B-A303F0A7884F</string>
 		</dict>
 		<key>1F8BAE25-7F57-4FE1-AFBE-CAD09023AD93</key>
 		<dict>
@@ -2963,6 +3031,40 @@
 			<string>IslandCook Build Preparation</string>
 			<key>uniqueIdentifier</key>
 			<string>E12F3A59-35DE-4006-8C04-DB43E6637D92</string>
+		</dict>
+		<key>E335F7A2-6A57-410B-8787-B130A4BE3BBC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>E335F7A2-6A57-410B-8787-B130A4BE3BBC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>IslandCook Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>667262285.44308996</real>
+			<key>timeStoppedRecording</key>
+			<real>667262285.544958</real>
+			<key>title</key>
+			<string>IslandCook Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>E335F7A2-6A57-410B-8787-B130A4BE3BBC</string>
 		</dict>
 		<key>E9F4E344-9FDC-4A6D-A711-6862346A5CD8</key>
 		<dict>

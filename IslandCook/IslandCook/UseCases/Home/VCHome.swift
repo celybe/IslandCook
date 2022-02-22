@@ -9,6 +9,7 @@ import UIKit
 
 class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource {
     private var filterEndPoint = "/"
+    private var nextWindowTitle = "All"
     private var decodeData: ApiResponse?
     
     
@@ -62,26 +63,32 @@ class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource,UICol
         performSegue(withIdentifier: "fromHomeToAllList", sender: self)
     }
     @IBAction func clickPasta(_ sender: Any) {
+        nextWindowTitle = "Pasta"
         filterEndPoint = "/tag/Pasta"
         performSegue(withIdentifier: "fromHomeToAllList", sender: self)
     }
     @IBAction func clickDesssert(_ sender: Any) {
+        nextWindowTitle = "Dessert"
         filterEndPoint = "/tag/Dessert"
         performSegue(withIdentifier: "fromHomeToAllList", sender: self)
     }
     @IBAction func clickDinner(_ sender: Any) {
+        nextWindowTitle = "Dinner"
         filterEndPoint = "/tag/Dinner"
         performSegue(withIdentifier: "fromHomeToAllList", sender: self)
     }
     @IBAction func clickEasy(_ sender: Any) {
+        nextWindowTitle = "Easy"
         filterEndPoint = "/difficulty/easy"
         performSegue(withIdentifier: "fromHomeToAllList", sender: self)
     }
     @IBAction func clickMedium(_ sender: Any) {
+        nextWindowTitle = "Medium"
         filterEndPoint = "/difficulty/medium"
         performSegue(withIdentifier: "fromHomeToAllList", sender: self)
     }
     @IBAction func clickHigh(_ sender: Any) {
+        nextWindowTitle = "High"
         filterEndPoint = "/difficulty/high"
         performSegue(withIdentifier: "fromHomeToAllList", sender: self)
 
@@ -90,8 +97,9 @@ class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource,UICol
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "fromHomeToAllList"
         {
-            let vistaDetalle = segue.destination as! TVCGetAllRecipes
+            let vistaDetalle = segue.destination as! VCList
             vistaDetalle.filterEndPoint = filterEndPoint
+            vistaDetalle.windowTitle = nextWindowTitle
         }
         
         if segue.identifier == "homeToDetail"
