@@ -9,6 +9,7 @@ import UIKit
 
 class VCList: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var mitabla: UITableView!
     var filterEndPoint: String = ""
     var decodeData: [ApiResponse] = []
     var urlImg: String?
@@ -42,6 +43,13 @@ class VCList: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let celdaSeleccionada = mitabla.indexPathForSelectedRow?.row else {return}
+        let postSeleccionado = decodeData[celdaSeleccionada]
+        let vistaDetalle = segue.destination as! VCDetailRecipe
+
+        vistaDetalle.miReceta = postSeleccionado
     }
     
     

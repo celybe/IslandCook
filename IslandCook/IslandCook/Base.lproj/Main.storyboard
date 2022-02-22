@@ -103,14 +103,37 @@
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="755"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNW-UG-kX4">
-                                                <rect key="frame" x="0.0" y="0.0" width="428" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="428" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mg8-5e-A5L">
+                                                        <rect key="frame" x="111.66666666666667" y="9.6666666666666714" width="54.333333333333329" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" title="Easy"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwn-5d-qXw">
+                                                        <rect key="frame" x="176" y="9.6666666666666714" width="76" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" title="Medium"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBZ-8I-kWe">
+                                                        <rect key="frame" x="262" y="9.6666666666666714" width="55.333333333333314" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" title="Hard"/>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="dLn-li-X6n"/>
+                                                    <constraint firstItem="QBZ-8I-kWe" firstAttribute="leading" secondItem="nwn-5d-qXw" secondAttribute="trailing" constant="10" id="KJC-m7-0WV"/>
+                                                    <constraint firstItem="nwn-5d-qXw" firstAttribute="centerY" secondItem="sNW-UG-kX4" secondAttribute="centerY" id="X8a-q8-lnc"/>
+                                                    <constraint firstItem="QBZ-8I-kWe" firstAttribute="centerY" secondItem="sNW-UG-kX4" secondAttribute="centerY" id="XXp-X0-yQc"/>
+                                                    <constraint firstItem="nwn-5d-qXw" firstAttribute="centerX" secondItem="sNW-UG-kX4" secondAttribute="centerX" id="Y7q-Sf-LW3"/>
+                                                    <constraint firstAttribute="height" constant="50" id="dLn-li-X6n"/>
+                                                    <constraint firstItem="nwn-5d-qXw" firstAttribute="leading" secondItem="Mg8-5e-A5L" secondAttribute="trailing" constant="10" id="ji5-Ee-3JL"/>
+                                                    <constraint firstItem="Mg8-5e-A5L" firstAttribute="centerY" secondItem="sNW-UG-kX4" secondAttribute="centerY" id="odr-XD-zHi"/>
                                                 </constraints>
                                             </view>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dWP-cJ-e0b">
-                                                <rect key="frame" x="0.0" y="100" width="428" height="655"/>
+                                                <rect key="frame" x="0.0" y="50" width="428" height="705"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="150" id="g7c-UV-QIw" customClass="TVCRecipeList" customModule="IslandCook" customModuleProvider="target">
@@ -155,6 +178,7 @@
                                                             <outlet property="ivRecipeList" destination="tbK-BO-ddJ" id="RS9-On-IqW"/>
                                                             <outlet property="lblRecipeListAuthor" destination="kEg-H2-6jE" id="0ih-rW-Jv6"/>
                                                             <outlet property="lblRecipeName" destination="Qg1-3I-xCy" id="Jag-ab-RkZ"/>
+                                                            <segue destination="qei-aU-kwD" kind="show" id="qLr-NS-AiA"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
@@ -189,6 +213,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7WL-ct-bjU"/>
+                    <connections>
+                        <outlet property="mitabla" destination="dWP-cJ-e0b" id="EaG-S0-LKk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAW-f9-gQV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1251,6 +1278,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="cy3-1Y-gkQ"/>
+        <segue reference="qLr-NS-AiA"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Primary 1"/>
     <resources>
