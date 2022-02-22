@@ -24,7 +24,6 @@ class APIService{
             let decoder = JSONDecoder()
             let datosArchivo = try Data(contentsOf: loadDataFromremoteUrl(endpoint: endpoint))
             decodeData = try decoder.decode([ApiResponse].self, from: datosArchivo)
-            print(decodeData)
         }catch let error{
             print("errorr:::::: \(error)")
             ACGetRecipies()
