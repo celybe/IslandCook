@@ -19,7 +19,7 @@ class CoreDataManager{
         return container
     }()
     
-    func saveContext(id: String, author: String, difficulty: String,  ingredients: String, name: String, picture_url: String, steps: Steps, ingredients_recipe: Ingredients, tags_recipe: Tags){
+    func saveContext(id: String, author: String, difficulty: String,  ingredients: String, name: String, picture_url: String){
         let context = persistentContainer.viewContext
         if context.hasChanges{
             do{
@@ -28,10 +28,7 @@ class CoreDataManager{
                 recipe.author=author
                 recipe.difficulty = difficulty
                 recipe.picture_url = picture_url
-                recipe.ingredients_recipe = ingredients_recipe
                 recipe.name = name
-                recipe.steps_recipe = steps
-                recipe.tags_recipe = tags_recipe
                 try context.save()
             }catch{
                 print("Save in database failed,\(error as NSError)")
