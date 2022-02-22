@@ -37,6 +37,7 @@
 		873A0AD727B934FB006F15E9 /* Tags+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A0ACF27B934FB006F15E9 /* Tags+CoreDataProperties.swift */; };
 		873A0AD927B936B1006F15E9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A0AD827B936B1006F15E9 /* CoreDataManager.swift */; };
 		873A0ADD27B945CA006F15E9 /* VCHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A0ADC27B945CA006F15E9 /* VCHome.swift */; };
+		87A9FDCD27C5203C00FA86F3 /* TVCRecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A9FDCC27C5203C00FA86F3 /* TVCRecipeList.swift */; };
 		87B53B6227B9947E0044D4A5 /* CVCHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B53B6127B9947E0044D4A5 /* CVCHome.swift */; };
 		87E1F37F27BF036F00ABA6A3 /* ApiBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E1F37E27BF036F00ABA6A3 /* ApiBody.swift */; };
 		A23D170627B293C200AC4DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23D170527B293C200AC4DA8 /* AppDelegate.swift */; };
@@ -77,6 +78,7 @@
 		873A0ACF27B934FB006F15E9 /* Tags+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tags+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		873A0AD827B936B1006F15E9 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		873A0ADC27B945CA006F15E9 /* VCHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCHome.swift; sourceTree = "<group>"; };
+		87A9FDCC27C5203C00FA86F3 /* TVCRecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCRecipeList.swift; sourceTree = "<group>"; };
 		87B53B6127B9947E0044D4A5 /* CVCHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCHome.swift; sourceTree = "<group>"; };
 		87E1F37E27BF036F00ABA6A3 /* ApiBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiBody.swift; sourceTree = "<group>"; };
 		A23D170227B293C200AC4DA8 /* IslandCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IslandCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				0EB6FF0B27BD6ED70026E980 /* TVCGetAllRecipes.swift */,
+				87A9FDCC27C5203C00FA86F3 /* TVCRecipeList.swift */,
 			);
 			path = GetRecipies;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				A23D170627B293C200AC4DA8 /* AppDelegate.swift in Sources */,
 				872971C527B9B36A001AE4E3 /* TVCHomeRow.swift in Sources */,
 				393CBF3B27C3FA52003D285B /* VCMyRecipes.swift in Sources */,
+				87A9FDCD27C5203C00FA86F3 /* TVCRecipeList.swift in Sources */,
 				0E77F92C27BAC90D00187F93 /* ApiResponse.swift in Sources */,
 				873A0AD227B934FB006F15E9 /* Recipe+CoreDataClass.swift in Sources */,
 				393CBF3D27C40760003D285B /* extensions.swift in Sources */,

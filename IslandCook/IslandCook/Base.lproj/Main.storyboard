@@ -29,15 +29,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="iJR-xR-Vdg">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="150" id="NP0-bA-CQd" customClass="TVCRecipeList" customModule="IslandCook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iJR-xR-Vdg" id="gg2-FY-ijj">
-                                    <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NP0-bA-CQd" id="aqs-Wk-LO1">
+                                    <rect key="frame" x="0.0" y="0.0" width="428" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8sp-Tj-3wF">
+                                            <rect key="frame" x="20" y="16" width="120" height="120"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="120" id="928-xb-hQx"/>
+                                                <constraint firstAttribute="height" constant="120" id="KeD-9l-7d4"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeG-Og-k60">
+                                            <rect key="frame" x="160" y="16" width="228" height="23"/>
+                                            <fontDescription key="fontDescription" name="Sora-Regular" family="Sora" pointSize="18"/>
+                                            <color key="textColor" name="AccentColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrE-K3-VrI">
+                                            <rect key="frame" x="160" y="63.999999999999993" width="228" height="12.666666666666664"/>
+                                            <fontDescription key="fontDescription" name="Sora-Regular" family="Sora" pointSize="10"/>
+                                            <color key="textColor" name="Secondary 1"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8sp-Tj-3wF" firstAttribute="leading" secondItem="aqs-Wk-LO1" secondAttribute="leadingMargin" id="AJA-rg-sT1"/>
+                                        <constraint firstItem="TrE-K3-VrI" firstAttribute="leading" secondItem="8sp-Tj-3wF" secondAttribute="trailing" constant="20" id="NCM-H5-RCq"/>
+                                        <constraint firstItem="8sp-Tj-3wF" firstAttribute="top" secondItem="aqs-Wk-LO1" secondAttribute="topMargin" constant="5" id="Rx9-qi-Olf"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="YeG-Og-k60" secondAttribute="trailing" constant="20" id="TUZ-2Q-ooX"/>
+                                        <constraint firstItem="YeG-Og-k60" firstAttribute="top" secondItem="aqs-Wk-LO1" secondAttribute="topMargin" constant="5" id="VWX-lb-8EB"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="TrE-K3-VrI" secondAttribute="trailing" constant="20" id="ee7-MD-x3M"/>
+                                        <constraint firstItem="YeG-Og-k60" firstAttribute="leading" secondItem="8sp-Tj-3wF" secondAttribute="trailing" constant="20" id="jD4-g0-fgZ"/>
+                                        <constraint firstItem="TrE-K3-VrI" firstAttribute="top" secondItem="YeG-Og-k60" secondAttribute="bottom" constant="25" id="xyv-xk-u7G"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="qei-aU-kwD" kind="show" id="dNX-iU-SWX"/>
+                                    <outlet property="ivRecipeList" destination="8sp-Tj-3wF" id="QeA-10-L9X"/>
+                                    <outlet property="lblRecipeListAuthor" destination="TrE-K3-VrI" id="uOl-cF-4b9"/>
+                                    <outlet property="lblRecipeName" destination="YeG-Og-k60" id="KRH-6P-huR"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -53,7 +86,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tk-Wk-0ma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="203" y="-374"/>
+            <point key="canvasLocation" x="201.86915887850466" y="-374.51403887688986"/>
         </scene>
         <!--Detail Recipe-->
         <scene sceneID="nOP-c7-vGT">
@@ -457,17 +490,21 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellMyRecipe" id="bdK-uc-w8d" customClass="CVCellMyRecipes" customModule="IslandCook" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="168" height="206"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsS-vk-8p7" customClass="CVCellMyRecipes" customModule="IslandCook" customModuleProvider="target">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsS-vk-8p7" customClass="CVCellMyRecipes" customModule="IslandCook" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="168" height="206"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxj-L1-pTx">
-                                                    <rect key="frame" x="8" y="8.0000000000000018" width="39" height="17.666666666666671"/>
+                                                    <rect key="frame" x="8" y="8.0000000000000018" width="150" height="17.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="Sora-SemiBold" family="Sora" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BGj-SB-veN">
-                                                    <rect key="frame" x="8" y="35.666666666666671" width="39" height="162.33333333333331"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BGj-SB-veN">
+                                                    <rect key="frame" x="8" y="35.666666666666657" width="150" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="NJV-sn-JPH"/>
+                                                        <constraint firstAttribute="width" constant="150" id="NeV-7W-XyA"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -480,6 +517,10 @@
                                                 <constraint firstItem="nxj-L1-pTx" firstAttribute="top" secondItem="YsS-vk-8p7" secondAttribute="topMargin" id="pmQ-2B-xly"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="YsS-vk-8p7" firstAttribute="leading" secondItem="bdK-uc-w8d" secondAttribute="leadingMargin" constant="-8" id="PZx-3c-DZw"/>
+                                            <constraint firstItem="YsS-vk-8p7" firstAttribute="top" secondItem="bdK-uc-w8d" secondAttribute="topMargin" constant="-8" id="Ujb-oR-0kO"/>
+                                        </constraints>
                                         <size key="customSize" width="168" height="206"/>
                                         <connections>
                                             <outlet property="imageRecipe" destination="BGj-SB-veN" id="TXm-4Y-IqS"/>
@@ -575,7 +616,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df5-Q5-XLO">
-                                                                <rect key="frame" x="67" y="2.6666666666666572" width="54" height="30"/>
+                                                                <rect key="frame" x="66.999999999999986" y="2.6666666666666572" width="54" height="30"/>
                                                                 <state key="normal" title="Pasta"/>
                                                                 <connections>
                                                                     <action selector="clickPasta:" destination="tZu-WF-y5P" eventType="touchUpInside" id="hnb-Ng-r3f"/>
@@ -1108,7 +1149,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="cy3-1Y-gkQ"/>
-        <segue reference="Ivq-2z-a3m"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Primary 1"/>
     <resources>
