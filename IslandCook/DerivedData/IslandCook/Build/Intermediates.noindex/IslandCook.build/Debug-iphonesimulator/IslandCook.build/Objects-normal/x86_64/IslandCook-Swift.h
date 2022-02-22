@@ -297,8 +297,6 @@ SWIFT_CLASS_NAMED("Recipe")
 @end
 
 
-@class Steps;
-@class Tags;
 
 @interface Recipe (SWIFT_EXTENSION(IslandCook))
 @property (nonatomic, copy) NSString * _Nullable id;
@@ -306,12 +304,6 @@ SWIFT_CLASS_NAMED("Recipe")
 @property (nonatomic, copy) NSString * _Nullable picture_url;
 @property (nonatomic, copy) NSString * _Nullable difficulty;
 @property (nonatomic, copy) NSString * _Nullable author;
-@property (nonatomic, copy) NSString * _Nullable tags;
-@property (nonatomic, copy) NSString * _Nullable ingredients;
-@property (nonatomic, copy) NSString * _Nullable steps;
-@property (nonatomic, strong) Steps * _Nullable steps_recipe;
-@property (nonatomic, strong) Ingredients * _Nullable ingredients_recipe;
-@property (nonatomic, strong) Tags * _Nullable tags_recipe;
 @end
 
 @class UIWindow;
@@ -342,28 +334,21 @@ SWIFT_CLASS_NAMED("Steps")
 @property (nonatomic, strong) Recipe * _Nullable recipe_steps;
 @end
 
-@class UITableView;
-@class NSIndexPath;
-@class UITableViewCell;
-@class UIStoryboardSegue;
 
-SWIFT_CLASS("_TtC10IslandCook16TVCGetAllRecipes")
-@interface TVCGetAllRecipes : UITableViewController
-- (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified miTabla;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC10IslandCook10TVCHomeRow")
+@interface TVCHomeRow : UITableViewCell
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC10IslandCook10TVCHomeRow")
-@interface TVCHomeRow : UITableViewCell
+SWIFT_CLASS("_TtC10IslandCook13TVCRecipeList")
+@interface TVCRecipeList : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblRecipeListAuthor;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified ivRecipeList;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblRecipeName;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -422,6 +407,7 @@ SWIFT_CLASS("_TtC10IslandCook13VCAlertDelete")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIStoryboardSegue;
 @class UITextView;
 
 SWIFT_CLASS("_TtC10IslandCook14VCDetailRecipe")
@@ -441,6 +427,8 @@ SWIFT_CLASS("_TtC10IslandCook14VCDetailRecipe")
 @class UIStackView;
 @class UITraitCollection;
 @protocol UIViewControllerTransitionCoordinator;
+@class UITableView;
+@class NSIndexPath;
 @class UICollectionView;
 
 SWIFT_CLASS("_TtC10IslandCook6VCHome")
@@ -467,12 +455,37 @@ SWIFT_CLASS("_TtC10IslandCook6VCHome")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIView;
+@class UINavigationItem;
+
+SWIFT_CLASS("_TtC10IslandCook6VCList")
+@interface VCList : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified viewBtns;
+@property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified lblWindowTitle;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified mitabla;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (IBAction)btnEasy:(id _Nonnull)sender;
+- (IBAction)btnMedium:(id _Nonnull)sender;
+- (IBAction)btnHigh:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC10IslandCook11VCMyRecipes")
 @interface VCMyRecipes : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collection;
 - (void)viewDidLoad;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewWillAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
