@@ -5,6 +5,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Sora-Regular.ttf</string>
+		<string>Sora-SemiBold.ttf</string>
 	</array>
 </dict>
 </plist>
