@@ -2362,14 +2362,22 @@
           "children": [
             {
               "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
             }
           ],
           "declKind": "Var",
-          "usr": "s:10IslandCook15VCUpdateRecipe1C16selectDifficultySSvp",
-          "mangledName": "$s10IslandCook15VCUpdateRecipe1C16selectDifficultySSvp",
+          "usr": "s:10IslandCook15VCUpdateRecipe1C16selectDifficultySSSgvp",
+          "mangledName": "$s10IslandCook15VCUpdateRecipe1C16selectDifficultySSSgvp",
           "moduleName": "IslandCook",
           "isOpen": true,
           "declAttributes": [
@@ -2387,14 +2395,22 @@
               "children": [
                 {
                   "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:10IslandCook15VCUpdateRecipe1C16selectDifficultySSvg",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe1C16selectDifficultySSvg",
+              "usr": "s:10IslandCook15VCUpdateRecipe1C16selectDifficultySSSgvg",
+              "mangledName": "$s10IslandCook15VCUpdateRecipe1C16selectDifficultySSSgvg",
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -2412,14 +2428,22 @@
                 },
                 {
                   "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:10IslandCook15VCUpdateRecipe1C16selectDifficultySSvs",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe1C16selectDifficultySSvs",
+              "usr": "s:10IslandCook15VCUpdateRecipe1C16selectDifficultySSSgvs",
+              "mangledName": "$s10IslandCook15VCUpdateRecipe1C16selectDifficultySSSgvs",
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -2437,8 +2461,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:10IslandCook15VCUpdateRecipe1C16selectDifficultySSvM",
-              "mangledName": "$s10IslandCook15VCUpdateRecipe1C16selectDifficultySSvM",
+              "usr": "s:10IslandCook15VCUpdateRecipe1C16selectDifficultySSSgvM",
+              "mangledName": "$s10IslandCook15VCUpdateRecipe1C16selectDifficultySSSgvM",
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -3869,31 +3893,6 @@
         },
         {
           "kind": "Var",
-          "name": "nextWindowTitle",
-          "printedName": "nextWindowTitle",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "s:10IslandCook6VCHomeC15nextWindowTitle33_4CFA243FB1A9E9A72A62CA33E20E6E5BLLSSvp",
-          "mangledName": "$s10IslandCook6VCHomeC15nextWindowTitle33_4CFA243FB1A9E9A72A62CA33E20E6E5BLLSSvp",
-          "moduleName": "IslandCook",
-          "isInternal": true,
-          "declAttributes": [
-            "Custom",
-            "HasInitialValue",
-            "HasStorage"
-          ],
-          "fixedbinaryorder": 1,
-          "hasStorage": true
-        },
-        {
-          "kind": "Var",
           "name": "decodeData",
           "printedName": "decodeData",
           "children": [
@@ -3922,7 +3921,7 @@
             "HasInitialValue",
             "HasStorage"
           ],
-          "fixedbinaryorder": 2,
+          "fixedbinaryorder": 1,
           "hasStorage": true
         },
         {
@@ -3955,7 +3954,7 @@
             "HasInitialValue",
             "HasStorage"
           ],
-          "fixedbinaryorder": 3,
+          "fixedbinaryorder": 2,
           "hasStorage": true
         },
         {
@@ -3982,7 +3981,7 @@
             "HasStorage",
             "ObjC"
           ],
-          "fixedbinaryorder": 4,
+          "fixedbinaryorder": 3,
           "ownership": 1,
           "hasStorage": true,
           "accessors": [
@@ -4098,7 +4097,7 @@
             "HasStorage",
             "ObjC"
           ],
-          "fixedbinaryorder": 5,
+          "fixedbinaryorder": 4,
           "ownership": 1,
           "hasStorage": true,
           "accessors": [
@@ -5363,6 +5362,910 @@
     },
     {
       "kind": "TypeDecl",
+      "name": "TVCGetAllRecipes",
+      "printedName": "TVCGetAllRecipes",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "filterEndPoint",
+          "printedName": "filterEndPoint",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:10IslandCook16TVCGetAllRecipesC14filterEndPointSSvp",
+          "mangledName": "$s10IslandCook16TVCGetAllRecipesC14filterEndPointSSvp",
+          "moduleName": "IslandCook",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10IslandCook16TVCGetAllRecipesC14filterEndPointSSvg",
+              "mangledName": "$s10IslandCook16TVCGetAllRecipesC14filterEndPointSSvg",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10IslandCook16TVCGetAllRecipesC14filterEndPointSSvs",
+              "mangledName": "$s10IslandCook16TVCGetAllRecipesC14filterEndPointSSvs",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10IslandCook16TVCGetAllRecipesC14filterEndPointSSvM",
+              "mangledName": "$s10IslandCook16TVCGetAllRecipesC14filterEndPointSSvM",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "decodeData",
+          "printedName": "decodeData",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[IslandCook.ApiResponse]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ApiResponse",
+                  "printedName": "IslandCook.ApiResponse",
+                  "usr": "s:10IslandCook11ApiResponseV"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:10IslandCook16TVCGetAllRecipesC10decodeDataSayAA11ApiResponseVGvp",
+          "mangledName": "$s10IslandCook16TVCGetAllRecipesC10decodeDataSayAA11ApiResponseVGvp",
+          "moduleName": "IslandCook",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[IslandCook.ApiResponse]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ApiResponse",
+                      "printedName": "IslandCook.ApiResponse",
+                      "usr": "s:10IslandCook11ApiResponseV"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10IslandCook16TVCGetAllRecipesC10decodeDataSayAA11ApiResponseVGvg",
+              "mangledName": "$s10IslandCook16TVCGetAllRecipesC10decodeDataSayAA11ApiResponseVGvg",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[IslandCook.ApiResponse]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ApiResponse",
+                      "printedName": "IslandCook.ApiResponse",
+                      "usr": "s:10IslandCook11ApiResponseV"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10IslandCook16TVCGetAllRecipesC10decodeDataSayAA11ApiResponseVGvs",
+              "mangledName": "$s10IslandCook16TVCGetAllRecipesC10decodeDataSayAA11ApiResponseVGvs",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10IslandCook16TVCGetAllRecipesC10decodeDataSayAA11ApiResponseVGvM",
+              "mangledName": "$s10IslandCook16TVCGetAllRecipesC10decodeDataSayAA11ApiResponseVGvM",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "urlImg",
+          "printedName": "urlImg",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:10IslandCook16TVCGetAllRecipesC6urlImgSSSgvp",
+          "mangledName": "$s10IslandCook16TVCGetAllRecipesC6urlImgSSSgvp",
+          "moduleName": "IslandCook",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10IslandCook16TVCGetAllRecipesC6urlImgSSSgvg",
+              "mangledName": "$s10IslandCook16TVCGetAllRecipesC6urlImgSSSgvg",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10IslandCook16TVCGetAllRecipesC6urlImgSSSgvs",
+              "mangledName": "$s10IslandCook16TVCGetAllRecipesC6urlImgSSSgvs",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10IslandCook16TVCGetAllRecipesC6urlImgSSSgvM",
+              "mangledName": "$s10IslandCook16TVCGetAllRecipesC6urlImgSSSgvM",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "viewDidLoad",
+          "printedName": "viewDidLoad()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes(im)viewDidLoad",
+          "mangledName": "$s10IslandCook16TVCGetAllRecipesC11viewDidLoadyyF",
+          "moduleName": "IslandCook",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "viewDidLoad",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "viewWillAppear",
+          "printedName": "viewWillAppear(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes(im)viewWillAppear:",
+          "mangledName": "$s10IslandCook16TVCGetAllRecipesC14viewWillAppearyySbF",
+          "moduleName": "IslandCook",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "viewWillAppear:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "numberOfSections",
+          "printedName": "numberOfSections(in:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UITableView",
+              "printedName": "UIKit.UITableView",
+              "usr": "c:objc(cs)UITableView"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes(im)numberOfSectionsInTableView:",
+          "mangledName": "$s10IslandCook16TVCGetAllRecipesC16numberOfSections2inSiSo11UITableViewC_tF",
+          "moduleName": "IslandCook",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "numberOfSectionsInTableView:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "tableView",
+          "printedName": "tableView(_:numberOfRowsInSection:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UITableView",
+              "printedName": "UIKit.UITableView",
+              "usr": "c:objc(cs)UITableView"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes(im)tableView:numberOfRowsInSection:",
+          "mangledName": "$s10IslandCook16TVCGetAllRecipesC9tableView_21numberOfRowsInSectionSiSo07UITableG0C_SitF",
+          "moduleName": "IslandCook",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "tableView:numberOfRowsInSection:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "tableView",
+          "printedName": "tableView(_:cellForRowAt:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "UITableViewCell",
+              "printedName": "UIKit.UITableViewCell",
+              "usr": "c:objc(cs)UITableViewCell"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UITableView",
+              "printedName": "UIKit.UITableView",
+              "usr": "c:objc(cs)UITableView"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "IndexPath",
+              "printedName": "Foundation.IndexPath",
+              "usr": "s:10Foundation9IndexPathV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes(im)tableView:cellForRowAtIndexPath:",
+          "mangledName": "$s10IslandCook16TVCGetAllRecipesC9tableView_12cellForRowAtSo07UITableG4CellCSo0lG0C_10Foundation9IndexPathVtF",
+          "moduleName": "IslandCook",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "tableView:cellForRowAtIndexPath:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "prepare",
+          "printedName": "prepare(for:sender:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "UIStoryboardSegue",
+              "printedName": "UIKit.UIStoryboardSegue",
+              "usr": "c:objc(cs)UIStoryboardSegue"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Any?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ProtocolComposition",
+                  "printedName": "Any"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes(im)prepareForSegue:sender:",
+          "mangledName": "$s10IslandCook16TVCGetAllRecipesC7prepare3for6senderySo17UIStoryboardSegueC_ypSgtF",
+          "moduleName": "IslandCook",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "prepareForSegue:sender:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Var",
+          "name": "miTabla",
+          "printedName": "miTabla",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ImplicitlyUnwrappedOptional",
+              "printedName": "UIKit.UITableView?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UITableView",
+                  "printedName": "UIKit.UITableView",
+                  "usr": "c:objc(cs)UITableView"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes(py)miTabla",
+          "mangledName": "$s10IslandCook16TVCGetAllRecipesC7miTablaSo11UITableViewCSgvp",
+          "moduleName": "IslandCook",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "IBOutlet",
+            "HasStorage",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 3,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UITableView?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UITableView",
+                      "printedName": "UIKit.UITableView",
+                      "usr": "c:objc(cs)UITableView"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes(im)miTabla",
+              "mangledName": "$s10IslandCook16TVCGetAllRecipesC7miTablaSo11UITableViewCSgvg",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UITableView?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UITableView",
+                      "printedName": "UIKit.UITableView",
+                      "usr": "c:objc(cs)UITableView"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes(im)setMiTabla:",
+              "mangledName": "$s10IslandCook16TVCGetAllRecipesC7miTablaSo11UITableViewCSgvs",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10IslandCook16TVCGetAllRecipesC7miTablaSo11UITableViewCSgvM",
+              "mangledName": "$s10IslandCook16TVCGetAllRecipesC7miTablaSo11UITableViewCSgvM",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(style:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "TVCGetAllRecipes",
+              "printedName": "IslandCook.TVCGetAllRecipes",
+              "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Style",
+              "printedName": "UIKit.UITableView.Style",
+              "usr": "c:@E@UITableViewStyle"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes(im)initWithStyle:",
+          "mangledName": "$s10IslandCook16TVCGetAllRecipesC5styleACSo16UITableViewStyleV_tcfc",
+          "moduleName": "IslandCook",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithStyle:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(nibName:bundle:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "TVCGetAllRecipes",
+              "printedName": "IslandCook.TVCGetAllRecipes",
+              "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.Bundle?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bundle",
+                  "printedName": "Foundation.Bundle",
+                  "usr": "c:objc(cs)NSBundle"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes(im)initWithNibName:bundle:",
+          "mangledName": "$s10IslandCook16TVCGetAllRecipesC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+          "moduleName": "IslandCook",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithNibName:bundle:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(coder:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "IslandCook.TVCGetAllRecipes?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "TVCGetAllRecipes",
+                  "printedName": "IslandCook.TVCGetAllRecipes",
+                  "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSCoder",
+              "printedName": "Foundation.NSCoder",
+              "usr": "c:objc(cs)NSCoder"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes(im)initWithCoder:",
+          "mangledName": "$s10IslandCook16TVCGetAllRecipesC5coderACSgSo7NSCoderC_tcfc",
+          "moduleName": "IslandCook",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithCoder:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Required"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@IslandCook@objc(cs)TVCGetAllRecipes",
+      "mangledName": "$s10IslandCook16TVCGetAllRecipesC",
+      "moduleName": "IslandCook",
+      "isOpen": true,
+      "declAttributes": [
+        "Custom",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)UITableViewController",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "UIKit.UITableViewController",
+        "UIKit.UIViewController",
+        "UIKit.UIResponder",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "CoreData",
+      "printedName": "CoreData",
+      "declKind": "Import",
+      "moduleName": "IslandCook"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "IslandCook"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftOnoneSupport",
+      "printedName": "SwiftOnoneSupport",
+      "declKind": "Import",
+      "moduleName": "IslandCook"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "IslandCook"
+    },
+    {
+      "kind": "Import",
+      "name": "UIKit",
+      "printedName": "UIKit",
+      "declKind": "Import",
+      "moduleName": "IslandCook"
+    },
+    {
+      "kind": "Import",
+      "name": "_Concurrency",
+      "printedName": "_Concurrency",
+      "declKind": "Import",
+      "moduleName": "IslandCook"
+    },
+    {
+      "kind": "TypeDecl",
       "name": "CoreDataManager",
       "printedName": "CoreDataManager",
       "children": [
@@ -5493,47 +6396,17 @@
         {
           "kind": "Function",
           "name": "saveContext",
-          "printedName": "saveContext(id:author:difficulty:name:picture_url:)",
+          "printedName": "saveContext()",
           "children": [
             {
               "kind": "TypeNominal",
               "name": "Void",
               "printedName": "()"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
             }
           ],
           "declKind": "Func",
-          "usr": "s:10IslandCook15CoreDataManagerC11saveContext2id6author10difficulty4name11picture_urlySS_S4StF",
-          "mangledName": "$s10IslandCook15CoreDataManagerC11saveContext2id6author10difficulty4name11picture_urlySS_S4StF",
+          "usr": "s:10IslandCook15CoreDataManagerC11saveContextyyF",
+          "mangledName": "$s10IslandCook15CoreDataManagerC11saveContextyyF",
           "moduleName": "IslandCook",
           "isOpen": true,
           "funcSelfKind": "NonMutating"
@@ -6405,159 +7278,36 @@
       "children": [
         {
           "kind": "Var",
-          "name": "collection",
-          "printedName": "collection",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "WeakStorage",
-              "printedName": "UIKit.UICollectionView?"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "c:@M@IslandCook@objc(cs)VCMyRecipes(py)collection",
-          "mangledName": "$s10IslandCook11VCMyRecipesC10collectionSo16UICollectionViewCSgvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "HasInitialValue",
-            "Custom",
-            "IBOutlet",
-            "ReferenceOwnership",
-            "HasStorage",
-            "ObjC"
-          ],
-          "fixedbinaryorder": 0,
-          "ownership": 1,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UICollectionView?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UICollectionView",
-                      "printedName": "UIKit.UICollectionView",
-                      "usr": "c:objc(cs)UICollectionView"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCMyRecipes(im)collection",
-              "mangledName": "$s10IslandCook11VCMyRecipesC10collectionSo16UICollectionViewCSgvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "get"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UICollectionView?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UICollectionView",
-                      "printedName": "UIKit.UICollectionView",
-                      "usr": "c:objc(cs)UICollectionView"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCMyRecipes(im)setCollection:",
-              "mangledName": "$s10IslandCook11VCMyRecipesC10collectionSo16UICollectionViewCSgvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook11VCMyRecipesC10collectionSo16UICollectionViewCSgvM",
-              "mangledName": "$s10IslandCook11VCMyRecipesC10collectionSo16UICollectionViewCSgvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Var",
           "name": "myRecipesExamples",
           "printedName": "myRecipesExamples",
           "children": [
             {
               "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "[IslandCook.Recipe]?",
+              "name": "Array",
+              "printedName": "[Swift.String]",
               "children": [
                 {
                   "kind": "TypeNominal",
-                  "name": "Array",
-                  "printedName": "[IslandCook.Recipe]",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "Recipe",
-                      "printedName": "IslandCook.Recipe",
-                      "usr": "c:@M@IslandCook@objc(cs)Recipe"
-                    }
-                  ],
-                  "usr": "s:Sa"
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
                 }
               ],
-              "usr": "s:Sq"
+              "usr": "s:Sa"
             }
           ],
           "declKind": "Var",
-          "usr": "s:10IslandCook11VCMyRecipesC02myD8ExamplesSayAA6RecipeCGSgvp",
-          "mangledName": "$s10IslandCook11VCMyRecipesC02myD8ExamplesSayAA6RecipeCGSgvp",
+          "usr": "s:10IslandCook11VCMyRecipesC02myD8ExamplesSaySSGvp",
+          "mangledName": "$s10IslandCook11VCMyRecipesC02myD8ExamplesSaySSGvp",
           "moduleName": "IslandCook",
-          "isOpen": true,
           "declAttributes": [
             "Custom",
             "HasInitialValue",
+            "Final",
             "HasStorage"
           ],
-          "fixedbinaryorder": 1,
+          "fixedbinaryorder": 0,
+          "isLet": true,
           "hasStorage": true,
           "accessors": [
             {
@@ -6567,94 +7317,94 @@
               "children": [
                 {
                   "kind": "TypeNominal",
-                  "name": "Optional",
-                  "printedName": "[IslandCook.Recipe]?",
+                  "name": "Array",
+                  "printedName": "[Swift.String]",
                   "children": [
                     {
                       "kind": "TypeNominal",
-                      "name": "Array",
-                      "printedName": "[IslandCook.Recipe]",
-                      "children": [
-                        {
-                          "kind": "TypeNominal",
-                          "name": "Recipe",
-                          "printedName": "IslandCook.Recipe",
-                          "usr": "c:@M@IslandCook@objc(cs)Recipe"
-                        }
-                      ],
-                      "usr": "s:Sa"
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
                     }
                   ],
-                  "usr": "s:Sq"
+                  "usr": "s:Sa"
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:10IslandCook11VCMyRecipesC02myD8ExamplesSayAA6RecipeCGSgvg",
-              "mangledName": "$s10IslandCook11VCMyRecipesC02myD8ExamplesSayAA6RecipeCGSgvg",
+              "usr": "s:10IslandCook11VCMyRecipesC02myD8ExamplesSaySSGvg",
+              "mangledName": "$s10IslandCook11VCMyRecipesC02myD8ExamplesSaySSGvg",
               "moduleName": "IslandCook",
               "implicit": true,
-              "isOpen": true,
+              "declAttributes": [
+                "Final"
+              ],
               "accessorKind": "get"
-            },
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "myRecipesLabels",
+          "printedName": "myRecipesLabels",
+          "children": [
             {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Swift.String]",
               "children": [
                 {
                   "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:10IslandCook11VCMyRecipesC02myD6LabelsSaySSGvp",
+          "mangledName": "$s10IslandCook11VCMyRecipesC02myD6LabelsSaySSGvp",
+          "moduleName": "IslandCook",
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
                 {
                   "kind": "TypeNominal",
-                  "name": "Optional",
-                  "printedName": "[IslandCook.Recipe]?",
+                  "name": "Array",
+                  "printedName": "[Swift.String]",
                   "children": [
                     {
                       "kind": "TypeNominal",
-                      "name": "Array",
-                      "printedName": "[IslandCook.Recipe]",
-                      "children": [
-                        {
-                          "kind": "TypeNominal",
-                          "name": "Recipe",
-                          "printedName": "IslandCook.Recipe",
-                          "usr": "c:@M@IslandCook@objc(cs)Recipe"
-                        }
-                      ],
-                      "usr": "s:Sa"
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
                     }
                   ],
-                  "usr": "s:Sq"
+                  "usr": "s:Sa"
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:10IslandCook11VCMyRecipesC02myD8ExamplesSayAA6RecipeCGSgvs",
-              "mangledName": "$s10IslandCook11VCMyRecipesC02myD8ExamplesSayAA6RecipeCGSgvs",
+              "usr": "s:10IslandCook11VCMyRecipesC02myD6LabelsSaySSGvg",
+              "mangledName": "$s10IslandCook11VCMyRecipesC02myD6LabelsSaySSGvg",
               "moduleName": "IslandCook",
               "implicit": true,
-              "isOpen": true,
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
+              "declAttributes": [
+                "Final"
               ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook11VCMyRecipesC02myD8ExamplesSayAA6RecipeCGSgvM",
-              "mangledName": "$s10IslandCook11VCMyRecipesC02myD8ExamplesSayAA6RecipeCGSgvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
+              "accessorKind": "get"
             }
           ]
         },
@@ -6753,70 +7503,6 @@
           "declAttributes": [
             "ObjC",
             "Custom"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "viewDidAppear",
-          "printedName": "viewDidAppear(_:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Bool",
-              "printedName": "Swift.Bool",
-              "usr": "s:Sb"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCMyRecipes(im)viewDidAppear:",
-          "mangledName": "$s10IslandCook11VCMyRecipesC13viewDidAppearyySbF",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "isOpen": true,
-          "objc_name": "viewDidAppear:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "viewWillAppear",
-          "printedName": "viewWillAppear(_:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Bool",
-              "printedName": "Swift.Bool",
-              "usr": "s:Sb"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCMyRecipes(im)viewWillAppear:",
-          "mangledName": "$s10IslandCook11VCMyRecipesC14viewWillAppearyySbF",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "isOpen": true,
-          "objc_name": "viewWillAppear:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
           ],
           "funcSelfKind": "NonMutating"
         },
@@ -6982,631 +7668,6 @@
           "printedName": "CustomDebugStringConvertible",
           "usr": "s:s28CustomDebugStringConvertibleP",
           "mangledName": "$ss28CustomDebugStringConvertibleP"
-        }
-      ]
-    },
-    {
-      "kind": "Import",
-      "name": "CoreData",
-      "printedName": "CoreData",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "Foundation",
-      "printedName": "Foundation",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftOnoneSupport",
-      "printedName": "SwiftOnoneSupport",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftUI",
-      "printedName": "SwiftUI",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "UIKit",
-      "printedName": "UIKit",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "_Concurrency",
-      "printedName": "_Concurrency",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "TypeDecl",
-      "name": "TVCRecipeList",
-      "printedName": "TVCRecipeList",
-      "children": [
-        {
-          "kind": "Var",
-          "name": "lblRecipeListAuthor",
-          "printedName": "lblRecipeListAuthor",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "WeakStorage",
-              "printedName": "UIKit.UILabel?"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList(py)lblRecipeListAuthor",
-          "mangledName": "$s10IslandCook13TVCRecipeListC09lblRecipeD6AuthorSo7UILabelCSgvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "HasInitialValue",
-            "Custom",
-            "IBOutlet",
-            "ReferenceOwnership",
-            "HasStorage",
-            "ObjC"
-          ],
-          "fixedbinaryorder": 0,
-          "ownership": 1,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UILabel?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UILabel",
-                      "printedName": "UIKit.UILabel",
-                      "usr": "c:objc(cs)UILabel"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList(im)lblRecipeListAuthor",
-              "mangledName": "$s10IslandCook13TVCRecipeListC09lblRecipeD6AuthorSo7UILabelCSgvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "get"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UILabel?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UILabel",
-                      "printedName": "UIKit.UILabel",
-                      "usr": "c:objc(cs)UILabel"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList(im)setLblRecipeListAuthor:",
-              "mangledName": "$s10IslandCook13TVCRecipeListC09lblRecipeD6AuthorSo7UILabelCSgvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook13TVCRecipeListC09lblRecipeD6AuthorSo7UILabelCSgvM",
-              "mangledName": "$s10IslandCook13TVCRecipeListC09lblRecipeD6AuthorSo7UILabelCSgvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Var",
-          "name": "ivRecipeList",
-          "printedName": "ivRecipeList",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "WeakStorage",
-              "printedName": "UIKit.UIImageView?"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList(py)ivRecipeList",
-          "mangledName": "$s10IslandCook13TVCRecipeListC08ivRecipeD0So11UIImageViewCSgvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "HasInitialValue",
-            "Custom",
-            "IBOutlet",
-            "ReferenceOwnership",
-            "HasStorage",
-            "ObjC"
-          ],
-          "fixedbinaryorder": 1,
-          "ownership": 1,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UIImageView?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UIImageView",
-                      "printedName": "UIKit.UIImageView",
-                      "usr": "c:objc(cs)UIImageView"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList(im)ivRecipeList",
-              "mangledName": "$s10IslandCook13TVCRecipeListC08ivRecipeD0So11UIImageViewCSgvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "get"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UIImageView?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UIImageView",
-                      "printedName": "UIKit.UIImageView",
-                      "usr": "c:objc(cs)UIImageView"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList(im)setIvRecipeList:",
-              "mangledName": "$s10IslandCook13TVCRecipeListC08ivRecipeD0So11UIImageViewCSgvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook13TVCRecipeListC08ivRecipeD0So11UIImageViewCSgvM",
-              "mangledName": "$s10IslandCook13TVCRecipeListC08ivRecipeD0So11UIImageViewCSgvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Var",
-          "name": "lblRecipeName",
-          "printedName": "lblRecipeName",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "WeakStorage",
-              "printedName": "UIKit.UILabel?"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList(py)lblRecipeName",
-          "mangledName": "$s10IslandCook13TVCRecipeListC13lblRecipeNameSo7UILabelCSgvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "HasInitialValue",
-            "Custom",
-            "IBOutlet",
-            "ReferenceOwnership",
-            "HasStorage",
-            "ObjC"
-          ],
-          "fixedbinaryorder": 2,
-          "ownership": 1,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UILabel?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UILabel",
-                      "printedName": "UIKit.UILabel",
-                      "usr": "c:objc(cs)UILabel"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList(im)lblRecipeName",
-              "mangledName": "$s10IslandCook13TVCRecipeListC13lblRecipeNameSo7UILabelCSgvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "get"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UILabel?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UILabel",
-                      "printedName": "UIKit.UILabel",
-                      "usr": "c:objc(cs)UILabel"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList(im)setLblRecipeName:",
-              "mangledName": "$s10IslandCook13TVCRecipeListC13lblRecipeNameSo7UILabelCSgvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook13TVCRecipeListC13lblRecipeNameSo7UILabelCSgvM",
-              "mangledName": "$s10IslandCook13TVCRecipeListC13lblRecipeNameSo7UILabelCSgvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Function",
-          "name": "awakeFromNib",
-          "printedName": "awakeFromNib()",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList(im)awakeFromNib",
-          "mangledName": "$s10IslandCook13TVCRecipeListC12awakeFromNibyyF",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "isOpen": true,
-          "objc_name": "awakeFromNib",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Override"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "setSelected",
-          "printedName": "setSelected(_:animated:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Bool",
-              "printedName": "Swift.Bool",
-              "usr": "s:Sb"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Bool",
-              "printedName": "Swift.Bool",
-              "usr": "s:Sb"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList(im)setSelected:animated:",
-          "mangledName": "$s10IslandCook13TVCRecipeListC11setSelected_8animatedySb_SbtF",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "isOpen": true,
-          "objc_name": "setSelected:animated:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Constructor",
-          "name": "init",
-          "printedName": "init(style:reuseIdentifier:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "TVCRecipeList",
-              "printedName": "IslandCook.TVCRecipeList",
-              "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "CellStyle",
-              "printedName": "UIKit.UITableViewCell.CellStyle",
-              "usr": "c:@E@UITableViewCellStyle"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "Swift.String?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "usr": "s:Sq"
-            }
-          ],
-          "declKind": "Constructor",
-          "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList(im)initWithStyle:reuseIdentifier:",
-          "mangledName": "$s10IslandCook13TVCRecipeListC5style15reuseIdentifierACSo20UITableViewCellStyleV_SSSgtcfc",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "implicit": true,
-          "intro_iOS": "3.0",
-          "objc_name": "initWithStyle:reuseIdentifier:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Available",
-            "Override"
-          ],
-          "init_kind": "Designated"
-        },
-        {
-          "kind": "Constructor",
-          "name": "init",
-          "printedName": "init(coder:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "IslandCook.TVCRecipeList?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "TVCRecipeList",
-                  "printedName": "IslandCook.TVCRecipeList",
-                  "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList"
-                }
-              ],
-              "usr": "s:Sq"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "NSCoder",
-              "printedName": "Foundation.NSCoder",
-              "usr": "c:objc(cs)NSCoder"
-            }
-          ],
-          "declKind": "Constructor",
-          "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList(im)initWithCoder:",
-          "mangledName": "$s10IslandCook13TVCRecipeListC5coderACSgSo7NSCoderC_tcfc",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "implicit": true,
-          "objc_name": "initWithCoder:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Required"
-          ],
-          "init_kind": "Designated"
-        }
-      ],
-      "declKind": "Class",
-      "usr": "c:@M@IslandCook@objc(cs)TVCRecipeList",
-      "mangledName": "$s10IslandCook13TVCRecipeListC",
-      "moduleName": "IslandCook",
-      "isOpen": true,
-      "declAttributes": [
-        "Custom",
-        "ObjC"
-      ],
-      "superclassUsr": "c:objc(cs)UITableViewCell",
-      "inheritsConvenienceInitializers": true,
-      "superclassNames": [
-        "UIKit.UITableViewCell",
-        "UIKit.UIView",
-        "UIKit.UIResponder",
-        "ObjectiveC.NSObject"
-      ],
-      "conformances": [
-        {
-          "kind": "Conformance",
-          "name": "Equatable",
-          "printedName": "Equatable",
-          "usr": "s:SQ",
-          "mangledName": "$sSQ"
-        },
-        {
-          "kind": "Conformance",
-          "name": "Hashable",
-          "printedName": "Hashable",
-          "usr": "s:SH",
-          "mangledName": "$sSH"
-        },
-        {
-          "kind": "Conformance",
-          "name": "CVarArg",
-          "printedName": "CVarArg",
-          "usr": "s:s7CVarArgP",
-          "mangledName": "$ss7CVarArgP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "_KeyValueCodingAndObservingPublishing",
-          "printedName": "_KeyValueCodingAndObservingPublishing",
-          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "_KeyValueCodingAndObserving",
-          "printedName": "_KeyValueCodingAndObserving",
-          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "CustomStringConvertible",
-          "printedName": "CustomStringConvertible",
-          "usr": "s:s23CustomStringConvertibleP",
-          "mangledName": "$ss23CustomStringConvertibleP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "CustomDebugStringConvertible",
-          "printedName": "CustomDebugStringConvertible",
-          "usr": "s:s28CustomDebugStringConvertibleP",
-          "mangledName": "$ss28CustomDebugStringConvertibleP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "__DefaultCustomPlaygroundQuickLookable",
-          "printedName": "__DefaultCustomPlaygroundQuickLookable",
-          "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-          "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
         }
       ]
     },
@@ -9759,6 +9820,618 @@
               "accessorKind": "set"
             }
           ]
+        },
+        {
+          "kind": "Var",
+          "name": "tags",
+          "printedName": "tags",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@CM@IslandCook@objc(cs)Recipe(py)tags",
+          "mangledName": "$s10IslandCook6RecipeC4tagsSSSgvp",
+          "moduleName": "IslandCook",
+          "isOpen": true,
+          "declAttributes": [
+            "Dynamic",
+            "NSManaged",
+            "ObjC"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@IslandCook@objc(cs)Recipe(im)tags",
+              "mangledName": "$s10IslandCook6RecipeC4tagsSSSgvg",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@IslandCook@objc(cs)Recipe(im)setTags:",
+              "mangledName": "$s10IslandCook6RecipeC4tagsSSSgvs",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "ingredients",
+          "printedName": "ingredients",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@CM@IslandCook@objc(cs)Recipe(py)ingredients",
+          "mangledName": "$s10IslandCook6RecipeC11ingredientsSSSgvp",
+          "moduleName": "IslandCook",
+          "isOpen": true,
+          "declAttributes": [
+            "Dynamic",
+            "NSManaged",
+            "ObjC"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@IslandCook@objc(cs)Recipe(im)ingredients",
+              "mangledName": "$s10IslandCook6RecipeC11ingredientsSSSgvg",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@IslandCook@objc(cs)Recipe(im)setIngredients:",
+              "mangledName": "$s10IslandCook6RecipeC11ingredientsSSSgvs",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "steps",
+          "printedName": "steps",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@CM@IslandCook@objc(cs)Recipe(py)steps",
+          "mangledName": "$s10IslandCook6RecipeC5stepsSSSgvp",
+          "moduleName": "IslandCook",
+          "isOpen": true,
+          "declAttributes": [
+            "Dynamic",
+            "NSManaged",
+            "ObjC"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@IslandCook@objc(cs)Recipe(im)steps",
+              "mangledName": "$s10IslandCook6RecipeC5stepsSSSgvg",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@IslandCook@objc(cs)Recipe(im)setSteps:",
+              "mangledName": "$s10IslandCook6RecipeC5stepsSSSgvs",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "steps_recipe",
+          "printedName": "steps_recipe",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "IslandCook.Steps?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Steps",
+                  "printedName": "IslandCook.Steps",
+                  "usr": "c:@M@IslandCook@objc(cs)Steps"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@CM@IslandCook@objc(cs)Recipe(py)steps_recipe",
+          "mangledName": "$s10IslandCook6RecipeC12steps_recipeAA5StepsCSgvp",
+          "moduleName": "IslandCook",
+          "isOpen": true,
+          "declAttributes": [
+            "Dynamic",
+            "NSManaged",
+            "ObjC"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "IslandCook.Steps?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Steps",
+                      "printedName": "IslandCook.Steps",
+                      "usr": "c:@M@IslandCook@objc(cs)Steps"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@IslandCook@objc(cs)Recipe(im)steps_recipe",
+              "mangledName": "$s10IslandCook6RecipeC12steps_recipeAA5StepsCSgvg",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "IslandCook.Steps?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Steps",
+                      "printedName": "IslandCook.Steps",
+                      "usr": "c:@M@IslandCook@objc(cs)Steps"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@IslandCook@objc(cs)Recipe(im)setSteps_recipe:",
+              "mangledName": "$s10IslandCook6RecipeC12steps_recipeAA5StepsCSgvs",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "ingredients_recipe",
+          "printedName": "ingredients_recipe",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "IslandCook.Ingredients?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Ingredients",
+                  "printedName": "IslandCook.Ingredients",
+                  "usr": "c:@M@IslandCook@objc(cs)Ingredients"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@CM@IslandCook@objc(cs)Recipe(py)ingredients_recipe",
+          "mangledName": "$s10IslandCook6RecipeC18ingredients_recipeAA11IngredientsCSgvp",
+          "moduleName": "IslandCook",
+          "isOpen": true,
+          "declAttributes": [
+            "Dynamic",
+            "NSManaged",
+            "ObjC"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "IslandCook.Ingredients?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Ingredients",
+                      "printedName": "IslandCook.Ingredients",
+                      "usr": "c:@M@IslandCook@objc(cs)Ingredients"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@IslandCook@objc(cs)Recipe(im)ingredients_recipe",
+              "mangledName": "$s10IslandCook6RecipeC18ingredients_recipeAA11IngredientsCSgvg",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "IslandCook.Ingredients?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Ingredients",
+                      "printedName": "IslandCook.Ingredients",
+                      "usr": "c:@M@IslandCook@objc(cs)Ingredients"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@IslandCook@objc(cs)Recipe(im)setIngredients_recipe:",
+              "mangledName": "$s10IslandCook6RecipeC18ingredients_recipeAA11IngredientsCSgvs",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "tags_recipe",
+          "printedName": "tags_recipe",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "IslandCook.Tags?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Tags",
+                  "printedName": "IslandCook.Tags",
+                  "usr": "c:@M@IslandCook@objc(cs)Tags"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@CM@IslandCook@objc(cs)Recipe(py)tags_recipe",
+          "mangledName": "$s10IslandCook6RecipeC11tags_recipeAA4TagsCSgvp",
+          "moduleName": "IslandCook",
+          "isOpen": true,
+          "declAttributes": [
+            "Dynamic",
+            "NSManaged",
+            "ObjC"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "IslandCook.Tags?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Tags",
+                      "printedName": "IslandCook.Tags",
+                      "usr": "c:@M@IslandCook@objc(cs)Tags"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@IslandCook@objc(cs)Recipe(im)tags_recipe",
+              "mangledName": "$s10IslandCook6RecipeC11tags_recipeAA4TagsCSgvg",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "IslandCook.Tags?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Tags",
+                      "printedName": "IslandCook.Tags",
+                      "usr": "c:@M@IslandCook@objc(cs)Tags"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@CM@IslandCook@objc(cs)Recipe(im)setTags_recipe:",
+              "mangledName": "$s10IslandCook6RecipeC11tags_recipeAA4TagsCSgvs",
+              "moduleName": "IslandCook",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "Dynamic",
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            }
+          ]
         }
       ],
       "declKind": "Class",
@@ -10689,14 +11362,22 @@
           "children": [
             {
               "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
             }
           ],
           "declKind": "Var",
-          "usr": "s:10IslandCook11VCAddRecipeC16selectDifficultySSvp",
-          "mangledName": "$s10IslandCook11VCAddRecipeC16selectDifficultySSvp",
+          "usr": "s:10IslandCook11VCAddRecipeC16selectDifficultySSSgvp",
+          "mangledName": "$s10IslandCook11VCAddRecipeC16selectDifficultySSSgvp",
           "moduleName": "IslandCook",
           "isOpen": true,
           "declAttributes": [
@@ -10714,14 +11395,22 @@
               "children": [
                 {
                   "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:10IslandCook11VCAddRecipeC16selectDifficultySSvg",
-              "mangledName": "$s10IslandCook11VCAddRecipeC16selectDifficultySSvg",
+              "usr": "s:10IslandCook11VCAddRecipeC16selectDifficultySSSgvg",
+              "mangledName": "$s10IslandCook11VCAddRecipeC16selectDifficultySSSgvg",
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -10739,14 +11428,22 @@
                 },
                 {
                   "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:10IslandCook11VCAddRecipeC16selectDifficultySSvs",
-              "mangledName": "$s10IslandCook11VCAddRecipeC16selectDifficultySSvs",
+              "usr": "s:10IslandCook11VCAddRecipeC16selectDifficultySSSgvs",
+              "mangledName": "$s10IslandCook11VCAddRecipeC16selectDifficultySSSgvs",
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -10764,8 +11461,8 @@
                 }
               ],
               "declKind": "Accessor",
-              "usr": "s:10IslandCook11VCAddRecipeC16selectDifficultySSvM",
-              "mangledName": "$s10IslandCook11VCAddRecipeC16selectDifficultySSvM",
+              "usr": "s:10IslandCook11VCAddRecipeC16selectDifficultySSSgvM",
+              "mangledName": "$s10IslandCook11VCAddRecipeC16selectDifficultySSSgvM",
               "moduleName": "IslandCook",
               "implicit": true,
               "isOpen": true,
@@ -13628,1303 +14325,6 @@
     },
     {
       "kind": "TypeDecl",
-      "name": "VCList",
-      "printedName": "VCList",
-      "children": [
-        {
-          "kind": "Var",
-          "name": "viewBtns",
-          "printedName": "viewBtns",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "WeakStorage",
-              "printedName": "UIKit.UIView?"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(py)viewBtns",
-          "mangledName": "$s10IslandCook6VCListC8viewBtnsSo6UIViewCSgvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "HasInitialValue",
-            "Custom",
-            "IBOutlet",
-            "ReferenceOwnership",
-            "HasStorage",
-            "ObjC"
-          ],
-          "fixedbinaryorder": 0,
-          "ownership": 1,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UIView?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UIView",
-                      "printedName": "UIKit.UIView",
-                      "usr": "c:objc(cs)UIView"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCList(im)viewBtns",
-              "mangledName": "$s10IslandCook6VCListC8viewBtnsSo6UIViewCSgvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "get"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UIView?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UIView",
-                      "printedName": "UIKit.UIView",
-                      "usr": "c:objc(cs)UIView"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCList(im)setViewBtns:",
-              "mangledName": "$s10IslandCook6VCListC8viewBtnsSo6UIViewCSgvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC8viewBtnsSo6UIViewCSgvM",
-              "mangledName": "$s10IslandCook6VCListC8viewBtnsSo6UIViewCSgvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Var",
-          "name": "lblWindowTitle",
-          "printedName": "lblWindowTitle",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "WeakStorage",
-              "printedName": "UIKit.UINavigationItem?"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(py)lblWindowTitle",
-          "mangledName": "$s10IslandCook6VCListC14lblWindowTitleSo16UINavigationItemCSgvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "HasInitialValue",
-            "Custom",
-            "IBOutlet",
-            "ReferenceOwnership",
-            "HasStorage",
-            "ObjC"
-          ],
-          "fixedbinaryorder": 1,
-          "ownership": 1,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UINavigationItem?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UINavigationItem",
-                      "printedName": "UIKit.UINavigationItem",
-                      "usr": "c:objc(cs)UINavigationItem"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCList(im)lblWindowTitle",
-              "mangledName": "$s10IslandCook6VCListC14lblWindowTitleSo16UINavigationItemCSgvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "get"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UINavigationItem?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UINavigationItem",
-                      "printedName": "UIKit.UINavigationItem",
-                      "usr": "c:objc(cs)UINavigationItem"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCList(im)setLblWindowTitle:",
-              "mangledName": "$s10IslandCook6VCListC14lblWindowTitleSo16UINavigationItemCSgvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC14lblWindowTitleSo16UINavigationItemCSgvM",
-              "mangledName": "$s10IslandCook6VCListC14lblWindowTitleSo16UINavigationItemCSgvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Var",
-          "name": "mitabla",
-          "printedName": "mitabla",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "WeakStorage",
-              "printedName": "UIKit.UITableView?"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(py)mitabla",
-          "mangledName": "$s10IslandCook6VCListC7mitablaSo11UITableViewCSgvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "HasInitialValue",
-            "Custom",
-            "IBOutlet",
-            "ReferenceOwnership",
-            "HasStorage",
-            "ObjC"
-          ],
-          "fixedbinaryorder": 2,
-          "ownership": 1,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UITableView?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UITableView",
-                      "printedName": "UIKit.UITableView",
-                      "usr": "c:objc(cs)UITableView"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCList(im)mitabla",
-              "mangledName": "$s10IslandCook6VCListC7mitablaSo11UITableViewCSgvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "get"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "ImplicitlyUnwrappedOptional",
-                  "printedName": "UIKit.UITableView?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "UITableView",
-                      "printedName": "UIKit.UITableView",
-                      "usr": "c:objc(cs)UITableView"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "c:@M@IslandCook@objc(cs)VCList(im)setMitabla:",
-              "mangledName": "$s10IslandCook6VCListC7mitablaSo11UITableViewCSgvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "declAttributes": [
-                "ObjC"
-              ],
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC7mitablaSo11UITableViewCSgvM",
-              "mangledName": "$s10IslandCook6VCListC7mitablaSo11UITableViewCSgvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Var",
-          "name": "filterEndPoint",
-          "printedName": "filterEndPoint",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "s:10IslandCook6VCListC14filterEndPointSSvp",
-          "mangledName": "$s10IslandCook6VCListC14filterEndPointSSvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "Custom",
-            "HasInitialValue",
-            "HasStorage"
-          ],
-          "fixedbinaryorder": 3,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC14filterEndPointSSvg",
-              "mangledName": "$s10IslandCook6VCListC14filterEndPointSSvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "get"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC14filterEndPointSSvs",
-              "mangledName": "$s10IslandCook6VCListC14filterEndPointSSvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC14filterEndPointSSvM",
-              "mangledName": "$s10IslandCook6VCListC14filterEndPointSSvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Var",
-          "name": "windowTitle",
-          "printedName": "windowTitle",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "String",
-              "printedName": "Swift.String",
-              "usr": "s:SS"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "s:10IslandCook6VCListC11windowTitleSSvp",
-          "mangledName": "$s10IslandCook6VCListC11windowTitleSSvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "Custom",
-            "HasInitialValue",
-            "HasStorage"
-          ],
-          "fixedbinaryorder": 4,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC11windowTitleSSvg",
-              "mangledName": "$s10IslandCook6VCListC11windowTitleSSvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "get"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC11windowTitleSSvs",
-              "mangledName": "$s10IslandCook6VCListC11windowTitleSSvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC11windowTitleSSvM",
-              "mangledName": "$s10IslandCook6VCListC11windowTitleSSvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Var",
-          "name": "decodeData",
-          "printedName": "decodeData",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Array",
-              "printedName": "[IslandCook.ApiResponse]",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "ApiResponse",
-                  "printedName": "IslandCook.ApiResponse",
-                  "usr": "s:10IslandCook11ApiResponseV"
-                }
-              ],
-              "usr": "s:Sa"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "s:10IslandCook6VCListC10decodeDataSayAA11ApiResponseVGvp",
-          "mangledName": "$s10IslandCook6VCListC10decodeDataSayAA11ApiResponseVGvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "Custom",
-            "HasInitialValue",
-            "HasStorage"
-          ],
-          "fixedbinaryorder": 5,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Array",
-                  "printedName": "[IslandCook.ApiResponse]",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "ApiResponse",
-                      "printedName": "IslandCook.ApiResponse",
-                      "usr": "s:10IslandCook11ApiResponseV"
-                    }
-                  ],
-                  "usr": "s:Sa"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC10decodeDataSayAA11ApiResponseVGvg",
-              "mangledName": "$s10IslandCook6VCListC10decodeDataSayAA11ApiResponseVGvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "get"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "Array",
-                  "printedName": "[IslandCook.ApiResponse]",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "ApiResponse",
-                      "printedName": "IslandCook.ApiResponse",
-                      "usr": "s:10IslandCook11ApiResponseV"
-                    }
-                  ],
-                  "usr": "s:Sa"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC10decodeDataSayAA11ApiResponseVGvs",
-              "mangledName": "$s10IslandCook6VCListC10decodeDataSayAA11ApiResponseVGvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC10decodeDataSayAA11ApiResponseVGvM",
-              "mangledName": "$s10IslandCook6VCListC10decodeDataSayAA11ApiResponseVGvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Var",
-          "name": "urlImg",
-          "printedName": "urlImg",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "Swift.String?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "usr": "s:Sq"
-            }
-          ],
-          "declKind": "Var",
-          "usr": "s:10IslandCook6VCListC6urlImgSSSgvp",
-          "mangledName": "$s10IslandCook6VCListC6urlImgSSSgvp",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "Custom",
-            "HasInitialValue",
-            "HasStorage"
-          ],
-          "fixedbinaryorder": 6,
-          "hasStorage": true,
-          "accessors": [
-            {
-              "kind": "Accessor",
-              "name": "Get",
-              "printedName": "Get()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Optional",
-                  "printedName": "Swift.String?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "String",
-                      "printedName": "Swift.String",
-                      "usr": "s:SS"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC6urlImgSSSgvg",
-              "mangledName": "$s10IslandCook6VCListC6urlImgSSSgvg",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "get"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Set",
-              "printedName": "Set()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                },
-                {
-                  "kind": "TypeNominal",
-                  "name": "Optional",
-                  "printedName": "Swift.String?",
-                  "children": [
-                    {
-                      "kind": "TypeNominal",
-                      "name": "String",
-                      "printedName": "Swift.String",
-                      "usr": "s:SS"
-                    }
-                  ],
-                  "usr": "s:Sq"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC6urlImgSSSgvs",
-              "mangledName": "$s10IslandCook6VCListC6urlImgSSSgvs",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "set"
-            },
-            {
-              "kind": "Accessor",
-              "name": "Modify",
-              "printedName": "Modify()",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Void",
-                  "printedName": "()"
-                }
-              ],
-              "declKind": "Accessor",
-              "usr": "s:10IslandCook6VCListC6urlImgSSSgvM",
-              "mangledName": "$s10IslandCook6VCListC6urlImgSSSgvM",
-              "moduleName": "IslandCook",
-              "implicit": true,
-              "isOpen": true,
-              "accessorKind": "_modify"
-            }
-          ]
-        },
-        {
-          "kind": "Function",
-          "name": "viewDidLoad",
-          "printedName": "viewDidLoad()",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(im)viewDidLoad",
-          "mangledName": "$s10IslandCook6VCListC11viewDidLoadyyF",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "isOpen": true,
-          "objc_name": "viewDidLoad",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "viewWillAppear",
-          "printedName": "viewWillAppear(_:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Bool",
-              "printedName": "Swift.Bool",
-              "usr": "s:Sb"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(im)viewWillAppear:",
-          "mangledName": "$s10IslandCook6VCListC14viewWillAppearyySbF",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "isOpen": true,
-          "objc_name": "viewWillAppear:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "numberOfSections",
-          "printedName": "numberOfSections(in:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Int",
-              "printedName": "Swift.Int",
-              "usr": "s:Si"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "UITableView",
-              "printedName": "UIKit.UITableView",
-              "usr": "c:objc(cs)UITableView"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(im)numberOfSectionsInTableView:",
-          "mangledName": "$s10IslandCook6VCListC16numberOfSections2inSiSo11UITableViewC_tF",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "objc_name": "numberOfSectionsInTableView:",
-          "declAttributes": [
-            "ObjC",
-            "Custom"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "tableView",
-          "printedName": "tableView(_:numberOfRowsInSection:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Int",
-              "printedName": "Swift.Int",
-              "usr": "s:Si"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "UITableView",
-              "printedName": "UIKit.UITableView",
-              "usr": "c:objc(cs)UITableView"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Int",
-              "printedName": "Swift.Int",
-              "usr": "s:Si"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(im)tableView:numberOfRowsInSection:",
-          "mangledName": "$s10IslandCook6VCListC9tableView_21numberOfRowsInSectionSiSo07UITableE0C_SitF",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "objc_name": "tableView:numberOfRowsInSection:",
-          "declAttributes": [
-            "ObjC",
-            "Custom"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "tableView",
-          "printedName": "tableView(_:cellForRowAt:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "UITableViewCell",
-              "printedName": "UIKit.UITableViewCell",
-              "usr": "c:objc(cs)UITableViewCell"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "UITableView",
-              "printedName": "UIKit.UITableView",
-              "usr": "c:objc(cs)UITableView"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "IndexPath",
-              "printedName": "Foundation.IndexPath",
-              "usr": "s:10Foundation9IndexPathV"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(im)tableView:cellForRowAtIndexPath:",
-          "mangledName": "$s10IslandCook6VCListC9tableView_12cellForRowAtSo07UITableE4CellCSo0jE0C_10Foundation9IndexPathVtF",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "objc_name": "tableView:cellForRowAtIndexPath:",
-          "declAttributes": [
-            "ObjC",
-            "Custom"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "tableView",
-          "printedName": "tableView(_:heightForRowAt:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "CGFloat",
-              "printedName": "CoreGraphics.CGFloat",
-              "usr": "s:12CoreGraphics7CGFloatV"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "UITableView",
-              "printedName": "UIKit.UITableView",
-              "usr": "c:objc(cs)UITableView"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "IndexPath",
-              "printedName": "Foundation.IndexPath",
-              "usr": "s:10Foundation9IndexPathV"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(im)tableView:heightForRowAtIndexPath:",
-          "mangledName": "$s10IslandCook6VCListC9tableView_14heightForRowAt12CoreGraphics7CGFloatVSo07UITableE0C_10Foundation9IndexPathVtF",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "objc_name": "tableView:heightForRowAtIndexPath:",
-          "declAttributes": [
-            "ObjC",
-            "Custom"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "prepare",
-          "printedName": "prepare(for:sender:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "UIStoryboardSegue",
-              "printedName": "UIKit.UIStoryboardSegue",
-              "usr": "c:objc(cs)UIStoryboardSegue"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "Any?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "ProtocolComposition",
-                  "printedName": "Any"
-                }
-              ],
-              "usr": "s:Sq"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(im)prepareForSegue:sender:",
-          "mangledName": "$s10IslandCook6VCListC7prepare3for6senderySo17UIStoryboardSegueC_ypSgtF",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "isOpen": true,
-          "objc_name": "prepareForSegue:sender:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "btnEasy",
-          "printedName": "btnEasy(_:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "ProtocolComposition",
-              "printedName": "Any"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(im)btnEasy:",
-          "mangledName": "$s10IslandCook6VCListC7btnEasyyyypF",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "Custom",
-            "IBAction",
-            "ObjC"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "btnMedium",
-          "printedName": "btnMedium(_:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "ProtocolComposition",
-              "printedName": "Any"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(im)btnMedium:",
-          "mangledName": "$s10IslandCook6VCListC9btnMediumyyypF",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "Custom",
-            "IBAction",
-            "ObjC"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
-          "name": "btnHigh",
-          "printedName": "btnHigh(_:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "ProtocolComposition",
-              "printedName": "Any"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(im)btnHigh:",
-          "mangledName": "$s10IslandCook6VCListC7btnHighyyypF",
-          "moduleName": "IslandCook",
-          "isOpen": true,
-          "declAttributes": [
-            "Custom",
-            "IBAction",
-            "ObjC"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Constructor",
-          "name": "init",
-          "printedName": "init(nibName:bundle:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "VCList",
-              "printedName": "IslandCook.VCList",
-              "usr": "c:@M@IslandCook@objc(cs)VCList"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "Swift.String?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "usr": "s:Sq"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "Foundation.Bundle?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "Bundle",
-                  "printedName": "Foundation.Bundle",
-                  "usr": "c:objc(cs)NSBundle"
-                }
-              ],
-              "usr": "s:Sq"
-            }
-          ],
-          "declKind": "Constructor",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(im)initWithNibName:bundle:",
-          "mangledName": "$s10IslandCook6VCListC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "implicit": true,
-          "objc_name": "initWithNibName:bundle:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "init_kind": "Designated"
-        },
-        {
-          "kind": "Constructor",
-          "name": "init",
-          "printedName": "init(coder:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Optional",
-              "printedName": "IslandCook.VCList?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "VCList",
-                  "printedName": "IslandCook.VCList",
-                  "usr": "c:@M@IslandCook@objc(cs)VCList"
-                }
-              ],
-              "usr": "s:Sq"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "NSCoder",
-              "printedName": "Foundation.NSCoder",
-              "usr": "c:objc(cs)NSCoder"
-            }
-          ],
-          "declKind": "Constructor",
-          "usr": "c:@M@IslandCook@objc(cs)VCList(im)initWithCoder:",
-          "mangledName": "$s10IslandCook6VCListC5coderACSgSo7NSCoderC_tcfc",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "implicit": true,
-          "objc_name": "initWithCoder:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Required"
-          ],
-          "init_kind": "Designated"
-        }
-      ],
-      "declKind": "Class",
-      "usr": "c:@M@IslandCook@objc(cs)VCList",
-      "mangledName": "$s10IslandCook6VCListC",
-      "moduleName": "IslandCook",
-      "isOpen": true,
-      "declAttributes": [
-        "Custom",
-        "ObjC"
-      ],
-      "superclassUsr": "c:objc(cs)UIViewController",
-      "inheritsConvenienceInitializers": true,
-      "superclassNames": [
-        "UIKit.UIViewController",
-        "UIKit.UIResponder",
-        "ObjectiveC.NSObject"
-      ],
-      "conformances": [
-        {
-          "kind": "Conformance",
-          "name": "Equatable",
-          "printedName": "Equatable",
-          "usr": "s:SQ",
-          "mangledName": "$sSQ"
-        },
-        {
-          "kind": "Conformance",
-          "name": "Hashable",
-          "printedName": "Hashable",
-          "usr": "s:SH",
-          "mangledName": "$sSH"
-        },
-        {
-          "kind": "Conformance",
-          "name": "CVarArg",
-          "printedName": "CVarArg",
-          "usr": "s:s7CVarArgP",
-          "mangledName": "$ss7CVarArgP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "_KeyValueCodingAndObservingPublishing",
-          "printedName": "_KeyValueCodingAndObservingPublishing",
-          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "_KeyValueCodingAndObserving",
-          "printedName": "_KeyValueCodingAndObserving",
-          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "CustomStringConvertible",
-          "printedName": "CustomStringConvertible",
-          "usr": "s:s23CustomStringConvertibleP",
-          "mangledName": "$ss23CustomStringConvertibleP"
-        },
-        {
-          "kind": "Conformance",
-          "name": "CustomDebugStringConvertible",
-          "printedName": "CustomDebugStringConvertible",
-          "usr": "s:s28CustomDebugStringConvertibleP",
-          "mangledName": "$ss28CustomDebugStringConvertibleP"
-        }
-      ]
-    },
-    {
-      "kind": "Import",
-      "name": "CoreData",
-      "printedName": "CoreData",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "Foundation",
-      "printedName": "Foundation",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftOnoneSupport",
-      "printedName": "SwiftOnoneSupport",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "SwiftUI",
-      "printedName": "SwiftUI",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "UIKit",
-      "printedName": "UIKit",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "Import",
-      "name": "_Concurrency",
-      "printedName": "_Concurrency",
-      "declKind": "Import",
-      "moduleName": "IslandCook"
-    },
-    {
-      "kind": "TypeDecl",
       "name": "CVCellMyRecipes",
       "printedName": "CVCellMyRecipes",
       "children": [
@@ -15172,36 +14572,20 @@
             },
             {
               "kind": "TypeNominal",
-              "name": "ImplicitlyUnwrappedOptional",
-              "printedName": "Swift.String?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "usr": "s:Sq"
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
             },
             {
               "kind": "TypeNominal",
-              "name": "ImplicitlyUnwrappedOptional",
-              "printedName": "Swift.String?",
-              "children": [
-                {
-                  "kind": "TypeNominal",
-                  "name": "String",
-                  "printedName": "Swift.String",
-                  "usr": "s:SS"
-                }
-              ],
-              "usr": "s:Sq"
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
             }
           ],
           "declKind": "Func",
-          "usr": "s:10IslandCook15CVCellMyRecipesC9configure4with11recipeImageySSSg_AGtF",
-          "mangledName": "$s10IslandCook15CVCellMyRecipesC9configure4with11recipeImageySSSg_AGtF",
+          "usr": "s:10IslandCook15CVCellMyRecipesC9configure4with11recipeImageySS_SStF",
+          "mangledName": "$s10IslandCook15CVCellMyRecipesC9configure4with11recipeImageySS_SStF",
           "moduleName": "IslandCook",
           "isOpen": true,
           "declAttributes": [
