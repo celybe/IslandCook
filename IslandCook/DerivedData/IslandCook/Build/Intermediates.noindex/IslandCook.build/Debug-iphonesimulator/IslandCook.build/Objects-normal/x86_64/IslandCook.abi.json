@@ -6758,38 +6758,6 @@
         },
         {
           "kind": "Function",
-          "name": "viewDidAppear",
-          "printedName": "viewDidAppear(_:)",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Void",
-              "printedName": "()"
-            },
-            {
-              "kind": "TypeNominal",
-              "name": "Bool",
-              "printedName": "Swift.Bool",
-              "usr": "s:Sb"
-            }
-          ],
-          "declKind": "Func",
-          "usr": "c:@M@IslandCook@objc(cs)VCMyRecipes(im)viewDidAppear:",
-          "mangledName": "$s10IslandCook11VCMyRecipesC13viewDidAppearyySbF",
-          "moduleName": "IslandCook",
-          "overriding": true,
-          "isOpen": true,
-          "objc_name": "viewDidAppear:",
-          "declAttributes": [
-            "Dynamic",
-            "ObjC",
-            "Custom",
-            "Override"
-          ],
-          "funcSelfKind": "NonMutating"
-        },
-        {
-          "kind": "Function",
           "name": "viewWillAppear",
           "printedName": "viewWillAppear(_:)",
           "children": [
@@ -15172,7 +15140,7 @@
             },
             {
               "kind": "TypeNominal",
-              "name": "ImplicitlyUnwrappedOptional",
+              "name": "Optional",
               "printedName": "Swift.String?",
               "children": [
                 {
@@ -15186,7 +15154,7 @@
             },
             {
               "kind": "TypeNominal",
-              "name": "ImplicitlyUnwrappedOptional",
+              "name": "Optional",
               "printedName": "Swift.String?",
               "children": [
                 {

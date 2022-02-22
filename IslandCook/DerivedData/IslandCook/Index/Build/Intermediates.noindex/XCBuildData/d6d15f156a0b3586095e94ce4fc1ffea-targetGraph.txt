@@ -1,3 +1,0 @@
-Target dependency graph (2 targets)
-IslandCook in IslandCook, no dependencies
-IslandCook in IslandCook, no dependencies

@@ -686,15 +686,9 @@
                             <constraint firstItem="nrh-ca-Aea" firstAttribute="trailing" secondItem="Sac-mq-UcE" secondAttribute="trailing" constant="20" id="xrS-Co-69C"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vXl-Xb-PPd">
-                        <barButtonItem key="rightBarButtonItem" title="New" id="7Tp-PO-cRv">
-                            <connections>
-                                <segue destination="wDh-7k-111" kind="show" id="ayf-7E-yVN"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="vXl-Xb-PPd"/>
                     <connections>
-                        <outlet property="collection" destination="Sac-mq-UcE" id="icK-pJ-LdI"/>
+                        <outlet property="collection" destination="Sac-mq-UcE" id="Dkd-4k-2vl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBb-iM-NxI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1291,7 +1285,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cy3-1Y-gkQ"/>
         <segue reference="qLr-NS-AiA"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Primary 1"/>
