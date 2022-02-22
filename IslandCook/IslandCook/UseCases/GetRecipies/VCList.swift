@@ -61,9 +61,15 @@ class VCList: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     @IBAction func btnEasy(_ sender: Any) {
+        decodeData = APIService.shared.decodeJson(endpoint: "/tagDifficulty?tags=\(windowTitle)&difficulty=easy")
+        mitabla.reloadData()
     }
     @IBAction func btnMedium(_ sender: Any) {
+        decodeData = APIService.shared.decodeJson(endpoint: "/tagDifficulty?tags=\(windowTitle)&difficulty=medium")
+        mitabla.reloadData()
     }
     @IBAction func btnHigh(_ sender: Any) {
+        decodeData = APIService.shared.decodeJson(endpoint: "/tagDifficulty?tags=\(windowTitle)&difficulty=hard")
+        mitabla.reloadData()
     }
 }

@@ -14,7 +14,6 @@
 		0E80127127BEAFA200DA3687 /* VCAlertDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E80127027BEAFA200DA3687 /* VCAlertDelete.swift */; };
 		0E80127F27BEB65900DA3687 /* ACPutRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E80127E27BEB65900DA3687 /* ACPutRecipes.swift */; };
 		0E80128227BEB67600DA3687 /* ACPushRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E80128127BEB67600DA3687 /* ACPushRecipes.swift */; };
-		0EB6FF0C27BD6ED70026E980 /* TVCGetAllRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB6FF0B27BD6ED70026E980 /* TVCGetAllRecipes.swift */; };
 		0EB6FF0D27BD6EDD0026E980 /* VCDetailRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB6FF0927BD61460026E980 /* VCDetailRecipe.swift */; };
 		0EB6FF0F27BD6EE00026E980 /* VCUpdateRecipe1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB6FF0E27BD6EE00026E980 /* VCUpdateRecipe1.swift */; };
 		0EB6FF1327BD6EE50026E980 /* VCAddRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB6FF1227BD6EE50026E980 /* VCAddRecipe.swift */; };
@@ -57,7 +56,6 @@
 		0E80127E27BEB65900DA3687 /* ACPutRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACPutRecipes.swift; sourceTree = "<group>"; };
 		0E80128127BEB67600DA3687 /* ACPushRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACPushRecipes.swift; sourceTree = "<group>"; };
 		0EB6FF0927BD61460026E980 /* VCDetailRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetailRecipe.swift; sourceTree = "<group>"; };
-		0EB6FF0B27BD6ED70026E980 /* TVCGetAllRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCGetAllRecipes.swift; sourceTree = "<group>"; };
 		0EB6FF0E27BD6EE00026E980 /* VCUpdateRecipe1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCUpdateRecipe1.swift; sourceTree = "<group>"; };
 		0EB6FF1227BD6EE50026E980 /* VCAddRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCAddRecipe.swift; sourceTree = "<group>"; };
 		393CBF3827C3F9FE003D285B /* CVCellMyRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCellMyRecipes.swift; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 		0EB6FF1627BD6F960026E980 /* GetRecipies */ = {
 			isa = PBXGroup;
 			children = (
-				0EB6FF0B27BD6ED70026E980 /* TVCGetAllRecipes.swift */,
 				87A9FDCC27C5203C00FA86F3 /* TVCRecipeList.swift */,
 				87D1042A27C547E700B80DCE /* VCList.swift */,
 			);
@@ -426,7 +423,6 @@
 				3987340A27BAE4C20066F9E4 /* themes.swift in Sources */,
 				873A0ADD27B945CA006F15E9 /* VCHome.swift in Sources */,
 				0E80127F27BEB65900DA3687 /* ACPutRecipes.swift in Sources */,
-				0EB6FF0C27BD6ED70026E980 /* TVCGetAllRecipes.swift in Sources */,
 				873A0AC727B93020006F15E9 /* RecipeModel.xcdatamodeld in Sources */,
 				873A0AD927B936B1006F15E9 /* CoreDataManager.swift in Sources */,
 				A23D170627B293C200AC4DA8 /* AppDelegate.swift in Sources */,
