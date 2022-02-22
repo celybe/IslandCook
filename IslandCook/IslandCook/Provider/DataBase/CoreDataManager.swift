@@ -19,10 +19,16 @@ class CoreDataManager{
         return container
     }()
     
-    func saveContext(){
+    func saveContext(id: String, author: String, difficulty: String,  ingredients: String, name: String, picture_url: String){
         let context = persistentContainer.viewContext
         if context.hasChanges{
             do{
+                let recipe = NSEntityDescription.insertNewObject(forEntityName: "Recipe", into: context) as! Recipe
+                recipe.id = id
+                recipe.author=author
+                recipe.difficulty = difficulty
+                recipe.picture_url = picture_url
+                recipe.name = name
                 try context.save()
             }catch{
                 print("Save in database failed,\(error as NSError)")

@@ -75,6 +75,11 @@ class VCDetailRecipe: UIViewController {
         do
         {
             try APIService.shared.deleteRecipe(id: miReceta!._id, recipe: receta)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) { // Change `2.0` to the desired number of seconds.
+               // Code you want to be delayed
+                self.navigationController?.popViewController(animated: true)
+            }
+
         }
         catch
         {
