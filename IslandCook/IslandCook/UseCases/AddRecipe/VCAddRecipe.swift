@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -20,6 +21,7 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     @IBOutlet weak var lblIngredients: UILabel!
     @IBOutlet weak var lblTags: UILabel!
     @IBOutlet weak var lblStep: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +58,8 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         let recipeIngredients = myIngredients
         print(recipeIngredients)
         let myRecipe: ApiBody = ApiBody(name: nameRecipe, ingredients: recipeIngredients, steps: recipeSteps, picture_url: picture_url, difficulty: difficulty, author: author, tags: recipeTags)
+        CoreDataManager.shared.saveContext(id: nameRecipe, author: author, difficulty: difficulty,  name: nameRecipe, picture_url: picture_url)
+
         return myRecipe
     }
     @IBOutlet weak var txtName: UITextField!
@@ -97,6 +101,7 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
             let error = error as NSError
             print("Error al editar, \(error)")
         }
+       
     }
     private func addIngredientToLbl(){
         var tagsString : String = ""
