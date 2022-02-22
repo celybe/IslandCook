@@ -334,13 +334,6 @@ SWIFT_CLASS_NAMED("Steps")
 @property (nonatomic, strong) Recipe * _Nullable recipe_steps;
 @end
 
-<<<<<<< HEAD
-@class UITableView;
-@class NSIndexPath;
-@class UITableViewCell;
-@class UIStoryboardSegue;
-=======
->>>>>>> pruebasdb
 
 SWIFT_CLASS("_TtC10IslandCook10TVCHomeRow")
 @interface TVCHomeRow : UITableViewCell
@@ -351,16 +344,11 @@ SWIFT_CLASS("_TtC10IslandCook10TVCHomeRow")
 @end
 
 
-<<<<<<< HEAD
-SWIFT_CLASS("_TtC10IslandCook10TVCHomeRow")
-@interface TVCHomeRow : UITableViewCell
-=======
 SWIFT_CLASS("_TtC10IslandCook13TVCRecipeList")
 @interface TVCRecipeList : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblRecipeListAuthor;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified ivRecipeList;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblRecipeName;
->>>>>>> pruebasdb
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -381,10 +369,7 @@ SWIFT_CLASS_NAMED("Tags")
 @end
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> pruebasdb
 @class UIPickerView;
 @class UITextField;
 
@@ -422,10 +407,7 @@ SWIFT_CLASS("_TtC10IslandCook13VCAlertDelete")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-<<<<<<< HEAD
-=======
 @class UIStoryboardSegue;
->>>>>>> pruebasdb
 @class UITextView;
 
 SWIFT_CLASS("_TtC10IslandCook14VCDetailRecipe")
@@ -442,25 +424,11 @@ SWIFT_CLASS("_TtC10IslandCook14VCDetailRecipe")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-<<<<<<< HEAD
-
-SWIFT_CLASS("_TtC10IslandCook11VCFavorites")
-@interface VCFavorites : UIViewController
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIStackView;
-@class UITraitCollection;
-@protocol UIViewControllerTransitionCoordinator;
-=======
 @class UIStackView;
 @class UITraitCollection;
 @protocol UIViewControllerTransitionCoordinator;
 @class UITableView;
 @class NSIndexPath;
->>>>>>> pruebasdb
 @class UICollectionView;
 
 SWIFT_CLASS("_TtC10IslandCook6VCHome")
@@ -483,8 +451,6 @@ SWIFT_CLASS("_TtC10IslandCook6VCHome")
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-<<<<<<< HEAD
-=======
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -520,7 +486,6 @@ SWIFT_CLASS("_TtC10IslandCook11VCMyRecipes")
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillAppear:(BOOL)animated;
->>>>>>> pruebasdb
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

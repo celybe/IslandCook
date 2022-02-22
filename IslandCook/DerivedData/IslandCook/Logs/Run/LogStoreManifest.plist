@@ -380,6 +380,40 @@
 			<key>uniqueIdentifier</key>
 			<string>B3E38E14-6472-433C-AF94-CC5ED53ACDA2</string>
 		</dict>
+		<key>B98CD670-F852-4849-B469-30CC77341C4D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B98CD670-F852-4849-B469-30CC77341C4D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>IslandCook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>IslandCook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run IslandCook</string>
+			<key>timeStartedRecording</key>
+			<real>667262117.02229702</real>
+			<key>timeStoppedRecording</key>
+			<real>667263178.48645902</real>
+			<key>title</key>
+			<string>Run IslandCook</string>
+			<key>uniqueIdentifier</key>
+			<string>B98CD670-F852-4849-B469-30CC77341C4D</string>
+		</dict>
 		<key>D0301944-FC89-4857-97B1-CD5BA97D050F</key>
 		<dict>
 			<key>className</key>
@@ -515,6 +549,40 @@
 			<string>Run IslandCook</string>
 			<key>uniqueIdentifier</key>
 			<string>E827D462-C9DE-4ADE-B70D-2B658FECE2CD</string>
+		</dict>
+		<key>ECB09783-2BA6-478B-9CBF-2D6E9758B6B5</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>ECB09783-2BA6-478B-9CBF-2D6E9758B6B5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>IslandCook project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>IslandCook</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run IslandCook</string>
+			<key>timeStartedRecording</key>
+			<real>667259608.582142</real>
+			<key>timeStoppedRecording</key>
+			<real>667262106.76978695</real>
+			<key>title</key>
+			<string>Run IslandCook</string>
+			<key>uniqueIdentifier</key>
+			<string>ECB09783-2BA6-478B-9CBF-2D6E9758B6B5</string>
 		</dict>
 	</dict>
 </dict>
