@@ -12,6 +12,7 @@
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/AppDelegate.swift
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/UseCases/Home/TVCHomeRow.swift
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/UseCases/MyRecipes/VCMyRecipes.swift
+/Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/UseCases/GetRecipies/TVCRecipeList.swift
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/Provider/API/Model/ApiResponse.swift
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/IslandCook/Provider/DataBase/Entities/Recipe+CoreDataClass.swift
 /Users/user209640/Documents/GitHub/IslandCook/IslandCook/Extensions/extensions.swift
