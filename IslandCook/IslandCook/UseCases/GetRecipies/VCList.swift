@@ -21,11 +21,20 @@ class VCList: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         lblWindowTitle.title = windowTitle
         hideFilterButtons()
+        mitabla.reloadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         print(filterEndPoint)
+        mitabla.scrollsToTop = true
         decodeData = APIService.shared.decodeJson(endpoint: filterEndPoint)
+        mitabla.reloadData()
+        mitabla.estimatedRowHeight = 0;
+
+        mitabla.estimatedSectionHeaderHeight = 0;
+
+        mitabla.estimatedSectionFooterHeight = 0;
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -56,20 +65,38 @@ class VCList: UIViewController, UITableViewDelegate, UITableViewDataSource {
         guard let celdaSeleccionada = mitabla.indexPathForSelectedRow?.row else {return}
         let postSeleccionado = decodeData[celdaSeleccionada]
         let vistaDetalle = segue.destination as! VCDetailRecipe
-
+        
         vistaDetalle.miReceta = postSeleccionado
     }
     
     @IBAction func btnEasy(_ sender: Any) {
-        decodeData = APIService.shared.decodeJson(endpoint: "/tagDifficulty?tags=\(windowTitle)&difficulty=easy")
+        var endpoint = ""
+        if windowTitle=="All"
+        {
+            decodeData = APIService.shared.decodeJson(endpoint: "/difficulty/easy")
+        }else{
+            decodeData = APIService.shared.decodeJson(endpoint: "/tagDifficulty?tags=\(windowTitle)&difficulty=easy")
+        }
+        
         mitabla.reloadData()
     }
     @IBAction func btnMedium(_ sender: Any) {
-        decodeData = APIService.shared.decodeJson(endpoint: "/tagDifficulty?tags=\(windowTitle)&difficulty=medium")
+        if windowTitle=="All"
+        {
+            decodeData = APIService.shared.decodeJson(endpoint: "/difficulty/medium")
+        }else{
+            decodeData = APIService.shared.decodeJson(endpoint: "/tagDifficulty?tags=\(windowTitle)&difficulty=medium")
+        }
+        
         mitabla.reloadData()
     }
     @IBAction func btnHigh(_ sender: Any) {
-        decodeData = APIService.shared.decodeJson(endpoint: "/tagDifficulty?tags=\(windowTitle)&difficulty=hard")
+        if windowTitle=="All"
+        {
+            decodeData = APIService.shared.decodeJson(endpoint: "/difficulty/hard")
+        }else{
+            decodeData = APIService.shared.decodeJson(endpoint: "/tagDifficulty?tags=\(windowTitle)&difficulty=hard")
+        }
         mitabla.reloadData()
     }
 }
