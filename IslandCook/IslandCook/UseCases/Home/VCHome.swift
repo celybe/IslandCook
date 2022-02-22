@@ -90,7 +90,7 @@ class VCHome: UIViewController, UITableViewDelegate, UITableViewDataSource,UICol
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "fromHomeToAllList"
         {
-            let vistaDetalle = segue.destination as! TVCGetAllRecipes
+            let vistaDetalle = segue.destination as! VCList
             vistaDetalle.filterEndPoint = filterEndPoint
         }
         
