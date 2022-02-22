@@ -9,14 +9,18 @@ import UIKit
 
 class VCList: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var viewBtns: UIView!
+    @IBOutlet weak var lblWindowTitle: UINavigationItem!
     @IBOutlet weak var mitabla: UITableView!
     var filterEndPoint: String = ""
+    var windowTitle: String = ""
     var decodeData: [ApiResponse] = []
     var urlImg: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        lblWindowTitle.title = windowTitle
+        hideFilterButtons()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -27,7 +31,11 @@ class VCList: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
+    private func hideFilterButtons(){
+        if(windowTitle=="Easy"||windowTitle=="Medium"||windowTitle=="Hard"){
+            viewBtns.isHidden=true;
+        }
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return decodeData.count
     }
@@ -52,5 +60,10 @@ class VCList: UIViewController, UITableViewDelegate, UITableViewDataSource {
         vistaDetalle.miReceta = postSeleccionado
     }
     
-    
+    @IBAction func btnEasy(_ sender: Any) {
+    }
+    @IBAction func btnMedium(_ sender: Any) {
+    }
+    @IBAction func btnHigh(_ sender: Any) {
+    }
 }

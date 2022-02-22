@@ -88,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="-79" y="-1118"/>
         </scene>
-        <!--List-->
+        <!--Title-->
         <scene sceneID="dtc-jB-JUP">
             <objects>
                 <viewController id="LI6-sb-ZKv" customClass="VCList" customModule="IslandCook" customModuleProvider="target" sceneMemberID="viewController">
@@ -109,16 +109,25 @@
                                                         <rect key="frame" x="111.66666666666667" y="9.6666666666666714" width="54.333333333333329" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="tinted" title="Easy"/>
+                                                        <connections>
+                                                            <action selector="btnEasy:" destination="LI6-sb-ZKv" eventType="touchUpInside" id="Qz4-LD-4vk"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwn-5d-qXw">
                                                         <rect key="frame" x="176" y="9.6666666666666714" width="76" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="tinted" title="Medium"/>
+                                                        <connections>
+                                                            <action selector="btnMedium:" destination="LI6-sb-ZKv" eventType="touchUpInside" id="XKI-KX-kI5"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBZ-8I-kWe">
                                                         <rect key="frame" x="262" y="9.6666666666666714" width="55.333333333333314" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="tinted" title="Hard"/>
+                                                        <connections>
+                                                            <action selector="btnHigh:" destination="LI6-sb-ZKv" eventType="touchUpInside" id="oMj-Ay-4jv"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -212,9 +221,11 @@
                             <constraint firstItem="sxG-DI-eod" firstAttribute="bottom" secondItem="mHT-zX-gvR" secondAttribute="bottom" id="rNI-cr-Iku"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7WL-ct-bjU"/>
+                    <navigationItem key="navigationItem" title="Title" id="Loq-se-WnJ"/>
                     <connections>
+                        <outlet property="lblWindowTitle" destination="Loq-se-WnJ" id="gxr-mn-zik"/>
                         <outlet property="mitabla" destination="dWP-cJ-e0b" id="EaG-S0-LKk"/>
+                        <outlet property="viewBtns" destination="sNW-UG-kX4" id="3BG-yU-0zA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAW-f9-gQV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
