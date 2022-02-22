@@ -209,8 +209,38 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class UIApplication;
 @class NSNumber;
+@class NSString;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC10IslandCook13ACGetRecipies")
+@interface ACGetRecipies : UIAlertController
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10IslandCook13ACPushRecipes")
+@interface ACPushRecipes : UIAlertController
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10IslandCook12ACPutRecipes")
+@interface ACPutRecipes : UIAlertController
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIApplication;
 @class UISceneSession;
 @class UISceneConnectionOptions;
 @class UISceneConfiguration;
@@ -225,12 +255,20 @@ SWIFT_CLASS("_TtC10IslandCook11AppDelegate")
 
 @class UILabel;
 @class UIImageView;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC10IslandCook7CVCHome")
 @interface CVCHome : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified txtTitle;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified ivRecipe;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10IslandCook15CVCellMyRecipes")
+@interface CVCellMyRecipes : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageRecipe;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameRecipe;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -244,7 +282,6 @@ SWIFT_CLASS_NAMED("Ingredients")
 @end
 
 
-@class NSString;
 @class Recipe;
 
 @interface Ingredients (SWIFT_EXTENSION(IslandCook))
@@ -309,7 +346,6 @@ SWIFT_CLASS_NAMED("Steps")
 @class NSIndexPath;
 @class UITableViewCell;
 @class UIStoryboardSegue;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC10IslandCook16TVCGetAllRecipes")
 @interface TVCGetAllRecipes : UITableViewController
@@ -325,15 +361,11 @@ SWIFT_CLASS("_TtC10IslandCook16TVCGetAllRecipes")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UICollectionView;
 
 SWIFT_CLASS("_TtC10IslandCook10TVCHomeRow")
-@interface TVCHomeRow : UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
-@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
+@interface TVCHomeRow : UITableViewCell
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -352,33 +384,71 @@ SWIFT_CLASS_NAMED("Tags")
 @end
 
 
+
+@class UIPickerView;
+@class UITextField;
+
+SWIFT_CLASS("_TtC10IslandCook11VCAddRecipe")
+@interface VCAddRecipe : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblIngredients;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblTags;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblStep;
+- (void)viewDidLoad;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified txtName;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified txtAuthor;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified txtImage_Url;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified txtIngredients;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified txtQuantityIngredients;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified txtSteps;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified txtTags;
+- (IBAction)btnAddIngredient:(id _Nonnull)sender;
+- (IBAction)btnAddStep:(id _Nonnull)sender;
+- (IBAction)btnAddTag:(id _Nonnull)sender;
+- (IBAction)btnSave:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10IslandCook13VCAlertDelete")
+@interface VCAlertDelete : UIAlertController
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UITextView;
 
 SWIFT_CLASS("_TtC10IslandCook14VCDetailRecipe")
 @interface VCDetailRecipe : UIViewController
 - (void)viewDidLoad;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblNameRecipe;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified ivImageRecipe;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblAuthor;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified tvIngredients;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified tvSteps;
+- (IBAction)btnDelet5e:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC10IslandCook11VCFavorites")
-@interface VCFavorites : UIViewController
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
+@class UIStackView;
+@class UITraitCollection;
+@protocol UIViewControllerTransitionCoordinator;
+@class UICollectionView;
 
 SWIFT_CLASS("_TtC10IslandCook6VCHome")
-@interface VCHome : UIViewController <UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableViewTopRecipes;
+@interface VCHome : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UIStackView * _Null_unspecified stackLblsDifficultity;
+@property (nonatomic, weak) IBOutlet UIStackView * _Null_unspecified stackLblsTags;
 - (void)viewDidLoad;
+- (void)willTransitionToTraitCollection:(UITraitCollection * _Nonnull)newCollection withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -389,12 +459,24 @@ SWIFT_CLASS("_TtC10IslandCook6VCHome")
 - (IBAction)clickEasy:(id _Nonnull)sender;
 - (IBAction)clickMedium:(id _Nonnull)sender;
 - (IBAction)clickHigh:(id _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIPickerView;
-@class UITextField;
+
+SWIFT_CLASS("_TtC10IslandCook11VCMyRecipes")
+@interface VCMyRecipes : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+- (void)viewDidLoad;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC10IslandCook15VCUpdateRecipe1")
 @interface VCUpdateRecipe1 : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
@@ -403,26 +485,13 @@ SWIFT_CLASS("_TtC10IslandCook15VCUpdateRecipe1")
 - (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
 - (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (IBAction)btnUpdate:(id _Nonnull)sender;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified txtImageUrl;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified txtAuthor;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified txtRecipeName;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UISlider;
-
-SWIFT_CLASS("_TtC10IslandCook15VCUpdateRecipe2")
-@interface VCUpdateRecipe2 : UIViewController
-- (void)viewDidLoad;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified txtIngredients;
-@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified sliderQuantity;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblValueSlider;
-- (IBAction)btnAddIngredient:(id _Nonnull)sender;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified txtSteps;
-- (IBAction)btnAddSteps:(id _Nonnull)sender;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified txtTags;
-- (IBAction)btnAddTags:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
