@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+//Estructura a la cual son parseados los datos recibidos por la api
 struct ApiResponse: Codable
 {
     var _id: String

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+//Clase la cual es creada para enviar las recpuestas a la api
 class ApiBody
 {
     var name: String
