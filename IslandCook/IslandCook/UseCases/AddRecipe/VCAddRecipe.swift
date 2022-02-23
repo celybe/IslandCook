@@ -29,6 +29,8 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         // Do any additional setup after loading the view.
     }
     
+//    tratamiento de picker view
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -46,6 +48,8 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         selectDifficulty = difficulties[row]
         
     }
+    
+//    Datos que se pasan al método de añadir receta
     
     private func pasaDatos()-> ApiBody
     {
@@ -71,10 +75,12 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
     @IBOutlet weak var txtSteps: UITextField!
     @IBOutlet weak var txtTags: UITextField!
     @IBAction func btnAddIngredient(_ sender: Any) {
+//        convertimos los datos para poder tratar el array de diccionarios de los ingredientes
         guard let name = txtIngredients.text, let amount = txtQuantityIngredients.text else
         {return}
         var dicciIngredients = ["name": name, "amount": amount]
         myIngredients.append(dicciIngredients)
+//        vaciamos los campos al pulsar el botón
         txtIngredients.text = ""
         txtQuantityIngredients.text = ""
         addIngredientToLbl()
@@ -89,6 +95,8 @@ class VCAddRecipe: UIViewController, UIPickerViewDelegate, UIPickerViewDataSourc
         addTagsToLbl()
         txtTags.text = ""
     }
+    
+//    llamada al método de post de la api
     
     @IBAction func btnSave(_ sender: Any) {
         let receta = pasaDatos()

@@ -23,6 +23,8 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         cargareceta()
     }
     
+//    codificación de picker view
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -41,6 +43,8 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
    
     }
     
+//    cargamos los datos de la receta en los campos de edición
+    
     private func cargareceta()
     {
         let stringTags = myRecipe?.tags!.joined(separator: ".")
@@ -54,6 +58,8 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         txtSteps.text = myRecipe?.steps?.description
         txtTags.text = stringTags
     }
+    
+    //    Datos que se pasan al método de editar receta
     
     private func pasaReceta()-> ApiBody {
         
@@ -77,6 +83,8 @@ class VCUpdateRecipe1: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         return myRecipe
         
     }
+    
+//    llamamos al método de apiService para el put de la nueva receta
     
     @IBAction func btnUpdate(_ sender: Any) {
         let receta = pasaReceta()

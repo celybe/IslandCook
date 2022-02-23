@@ -37,6 +37,8 @@ class VCList: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     
+//    codificación de tablas para eimprimir lista
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -68,6 +70,8 @@ class VCList: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         vistaDetalle.miReceta = postSeleccionado
     }
+    
+//    funcionalidad buttons tags
     
     @IBAction func btnEasy(_ sender: Any) {
         var endpoint = ""

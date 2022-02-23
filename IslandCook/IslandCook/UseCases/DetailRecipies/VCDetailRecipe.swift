@@ -20,6 +20,8 @@ class VCDetailRecipe: UIViewController {
     }
     
     
+//    cargamos la receta en los campos de la vista
+    
     func loadRecipe()
     {
         let stringSteps = miReceta?.steps?.joined(separator: ".")
@@ -37,11 +39,15 @@ class VCDetailRecipe: UIViewController {
         ivImageRecipe.downloaded(from: miReceta!.picture_url)
     }
     
+//    pasamos los datos recogidos de la receta a la vista de edicion
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let update = segue.destination as! VCUpdateRecipe1
         
         update.myRecipe = miReceta
     }
+    
+    //    Datos que se pasan al método de editar receta
     
     private func pasaReceta()-> ApiBody {
         
@@ -71,6 +77,7 @@ class VCDetailRecipe: UIViewController {
     @IBOutlet weak var tvIngredients: UITextView!
     @IBOutlet weak var tvSteps: UITextView!
     @IBAction func btnDelet5e(_ sender: Any) {
+//        llamamos al método de delete de APIService
         let receta = pasaReceta()
         do
         {
