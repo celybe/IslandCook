@@ -997,7 +997,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="60u-aV-b9w" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My recipes" id="s0u-nS-UNf">
                         <imageReference key="image" image="person" catalog="system" symbolScale="small"/>
-                        <imageReference key="selectedImage" image="person" catalog="system" symbolScale="small"/>
+                        <imageReference key="selectedImage" image="person" catalog="system" symbolScale="small" renderingMode="hierarchical-single"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wSE-1Z-2RI">
@@ -1285,7 +1285,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qLr-NS-AiA"/>
+        <segue reference="Ivq-2z-a3m"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Primary 1"/>
     <resources>

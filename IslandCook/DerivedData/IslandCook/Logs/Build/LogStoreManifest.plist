@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>768B9F2B-7C24-483E-AA65-CBABB4D4322C</key>
+		<key>F77B630E-F8D9-40D0-9860-D9A00AA4CA9D</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>768B9F2B-7C24-483E-AA65-CBABB4D4322C.xcactivitylog</string>
+			<string>F77B630E-F8D9-40D0-9860-D9A00AA4CA9D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,47 +32,13 @@
 			<key>signature</key>
 			<string>Build IslandCook</string>
 			<key>timeStartedRecording</key>
-			<real>667266513.68657899</real>
+			<real>667305016.19353294</real>
 			<key>timeStoppedRecording</key>
-			<real>667266523.53981698</real>
+			<real>667305016.37576401</real>
 			<key>title</key>
 			<string>Build IslandCook</string>
 			<key>uniqueIdentifier</key>
-			<string>768B9F2B-7C24-483E-AA65-CBABB4D4322C</string>
-		</dict>
-		<key>D69D85AB-B6E2-4109-BC34-5FC9B8907D60</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D69D85AB-B6E2-4109-BC34-5FC9B8907D60.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>IslandCook project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>IslandCook</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build IslandCook</string>
-			<key>timeStartedRecording</key>
-			<real>667265323.11891699</real>
-			<key>timeStoppedRecording</key>
-			<real>667265329.35924804</real>
-			<key>title</key>
-			<string>Build IslandCook</string>
-			<key>uniqueIdentifier</key>
-			<string>D69D85AB-B6E2-4109-BC34-5FC9B8907D60</string>
+			<string>F77B630E-F8D9-40D0-9860-D9A00AA4CA9D</string>
 		</dict>
 	</dict>
 </dict>
