@@ -7,6 +7,7 @@
 
 import UIKit
 
+//Clase de la celda de la collectionView
 class CVCHome: UICollectionViewCell {
     @IBOutlet weak var txtTitle: UILabel!
     @IBOutlet weak var ivRecipe: UIImageView!

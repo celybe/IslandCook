@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 
 class CoreDataManager{
-    
+    //Retorna el persistance container de la BD
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "RecipeModel")
         container.loadPersistentStores{
@@ -18,7 +18,7 @@ class CoreDataManager{
         }
         return container
     }()
-    
+    //Función la cual capta por los parámetros los datos de la receta y crea un contexto que es almacenado en la base de datos
     func saveContext(id: String, author: String, difficulty: String, name: String, picture_url: String){
         let context = persistentContainer.viewContext
         var recipe: NSObject = Recipe(context: context)
@@ -37,7 +37,7 @@ class CoreDataManager{
             
         }
     }
-    
+    //Función la cual retorna la lista de recetas almacenadas en la BD
     func getRecipes()-> [Recipe]?{
         let context = persistentContainer.viewContext
         var recipesList: [Recipe] = []
@@ -48,7 +48,7 @@ class CoreDataManager{
         }
         return recipesList
     }
-    
+    //Función la cual recibe como parámetro una receta y ala elimina de la BD
     func deleteRecipe(recipe: Recipe)-> Bool {
         let context = persistentContainer.viewContext
         do{
